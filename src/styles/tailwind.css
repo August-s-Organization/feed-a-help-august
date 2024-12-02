@@ -5,12 +5,62 @@
 @layer base {
     @font-face {
         font-family: "Manrope", sans-serif;
-        font-weight: 200, 300, 400, 500, 600, 700, 800;
+        font-weight: 400, 600, 700, 800;
         src: url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
     }
     h1 {
         font-family: "Manrope", sans-serif;
+        color: #602105;
         font-weight: 700;
-        font-size: 4rem;
+        font-size: 1.75rem;
+    }
+    @media (min-width: 768px) {
+        h1 {
+            font-size: 4rem;
+        }
+    }
+    h2 {
+        font-family: "Manrope", sans-serif;
+        color: #602105;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+    @media (min-width: 768px) {
+        h2 {
+            font-size: 3rem;
+        }
+    }
+    h3 {
+        font-family: "Manrope", sans-serif;
+        color: #8C2E08;
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+    @media (min-width: 768px) {
+        h3 {
+            font-size: 2.5rem;
+        }
+    }
+    h4 {
+        font-family: "Manrope", sans-serif;
+        color: #8C2E08;
+        font-weight: 800;
+        font-size: 1rem;
+    }
+    @media (min-width: 768px) {
+        h4 {
+            font-size: 2.25rem;
+        }
+    }
+    p {
+        font-family: "Manrope", sans-serif;
+        color: #212121;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    @media (min-width: 768px) {
+        p {
+            font-size: 1.25rem;
+        }
     }
 };
