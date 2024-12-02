@@ -43,7 +43,6 @@
     }
     h4 {
         font-family: "Manrope", sans-serif;
-        color: #8C2E08;
         font-weight: 800;
         font-size: 1rem;
     }
@@ -54,11 +53,11 @@
     }
     p {
         font-family: "Manrope", sans-serif;
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
     @media (min-width: 768px) {
         p {
-            font-size: 1.25rem;
+            font-size: 1rem;
         }
     }
 };

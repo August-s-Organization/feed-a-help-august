@@ -2,6 +2,20 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
 import Card from "../components/Card.astro";
+import VerificationElement from "../components/VerificationElement.astro";
 ---
 <MainLayout title="Forside">
+    <VerificationElement variant="cause">
+        <div class="flex items-center">
+            <img src="/gorkha-district-nepal.webp" alt="" class="object-cover h-20 md:h-28 mr-2">
+            <div class="mr-auto">
+                <h4 class="text-black-500">Navn</h4>
+                <p class="text-black-300">Donation</p>
+                <p class="text-black-300">Beløb</p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 md:w-12 md:h-12 stroke-black-300">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+            </svg>
+        </div>
+    </VerificationElement>
 </MainLayout>
