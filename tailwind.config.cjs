@@ -14,9 +14,7 @@ module.exports = {
             },
             colors: {
                 'white': {
-                    white: '#FDFDFD', 
-                },
-                'cream': {
+                    white: '#FDFDFD',
                     cream: '#FCF9F0',
                 },
                 'black': {
@@ -36,8 +34,10 @@ module.exports = {
                 'yellow': {
                     50: '#FEF7EB',
                     100: '#FEF2DC',
+                    200: '#FDE4BA',
                     300: '#FBD592',
                     500: '#F8BB4D',
+                    800: "#815304",
                 },
             },
         },
