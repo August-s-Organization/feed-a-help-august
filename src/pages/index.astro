@@ -43,9 +43,16 @@ import myImage from "../assets/images/turkana-county-kenya.jpg";
 <MainLayout title="Forside">
     <section>
         <article class="grid justify-items-center">
-            <h2 class="mb-6">Causes</h2>
+            <h2>Causes</h2>
             <div class="justify-self-end">
-                <Button variant="tertiary"><p>See all</p></Button>
+                <Button variant="tertiary">
+                    <div class="flex items-center mb-1 md:mb-2">
+                        <p>See all</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-5 h-5 md:w-6 md:h-6">
+                            <path fill-rule="evenodd" d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                        </svg>
+                    </div>                    
+                </Button>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 xl:gap-6">
                 <Card size="small" heading="Gorkha, Nepal" description="Humanitarian Aid">
