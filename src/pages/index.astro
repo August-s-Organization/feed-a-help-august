@@ -8,16 +8,27 @@ import myImage from "../assets/images/turkana-county-kenya.jpg";
 <header>
     <section class="relative">
         <Image src={myImage} alt="A woman farming in Turkana County, Kenya."></Image>
-        <div class="absolute bottom-4 left-4 md:bottom-20 md:left-20">
+        <div class="absolute bottom-7 left-7 md:bottom-12 md:left-12 lg:bottom-20 lg:left-20">
             <Button variant="cta">
                 <div class="flex items-center space-x-2">
-                    <p class=“text-sm md:text-base”>Donate</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 md:w-6 md:h-6">
+                    <p>Donate</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-5 h-5 md:w-6 md:h-6">
                         <path d="M2 6.342a3.375 3.375 0 0 1 6-2.088 3.375 3.375 0 0 1 5.997 2.26c-.063 2.134-1.618 3.76-2.955 4.784a14.437 14.437 0 0 1-2.676 1.61c-.02.01-.038.017-.05.022l-.014.006-.004.002h-.002a.75.75 0 0 1-.592.001h-.002l-.004-.003-.015-.006a5.528 5.528 0 0 1-.232-.107 14.395 14.395 0 0 1-2.535-1.557C3.564 10.22 1.999 8.558 1.999 6.38L2 6.342Z" />
                     </svg>
                 </div>
             </Button>
         </div>
+    </section>
+    <section class="bg-blue-200 px-4 pt-3 pb-6 md:px-20 md:pt-6 md:pb-16">
+        <article class="grid justify-items-center">
+            <h2 class="mb-6">How to donate</h2>
+            <div class="grid grid-cols-3 gap-5 mb-7">
+                <Image src={myImage} alt=""></Image>
+                <Image src={myImage} alt=""></Image>
+                <Image src={myImage} alt=""></Image>
+            </div>
+            <Button variant="secondary"><p>Create profile</p></Button>
+        </article>
     </section>
 </header>
 <MainLayout title="Forside">
