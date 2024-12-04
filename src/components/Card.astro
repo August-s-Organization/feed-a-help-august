@@ -1,9 +1,15 @@
 ---
-const { size = "small" } = Astro.props;
+const { heading, description, size } = Astro.props;
 const cardStyling = "bg-yellow-200 hover:bg-yellow-100 active:bg-yellow-300 rounded-lg";
 const sizeClasses = {
-    "small": "w-40",
+    "small": "w-48 lg:w-80",
     "large": "w-80",
 };
 ---
-<div class:list={[cardStyling, sizeClasses[size]]}><slot /></div>
+<div class:list={[cardStyling, sizeClasses[size]]}>
+    <slot />
+    <div class="px-3 py-2 lg:px-6 lg:py-4">
+        <h4 class="text-red-700">{heading}</h4>
+        <p class="text-xs md:text-sm lg:text-base">{description}</p>
+    </div>
+</div>
