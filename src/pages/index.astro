@@ -3,11 +3,12 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
 import Card from "../components/Card.astro";
 import { Image } from 'astro:assets';
-import myImage from "../assets/images/turkana-county-kenya.jpg";
+import myImage1 from "../assets/images/woman.jpg";
+import myImage2 from "../assets/images/turkana-county-kenya.jpg";
 ---
 <header class="text-black-500">
     <section class="relative">
-        <Image src={myImage} alt="A woman farming in Turkana County, Kenya."></Image>
+        <Image src={myImage1} alt="A woman farming in Turkana County, Kenya." class="h-[28rem] md:h-[36rem] w-full object-cover"></Image>
         <div class="absolute bottom-7 left-7 md:bottom-12 md:left-12 lg:bottom-20 lg:left-20">
             <Button variant="cta">
                 <div class="flex items-center space-x-2">
@@ -24,15 +25,15 @@ import myImage from "../assets/images/turkana-county-kenya.jpg";
             <h2 class="mb-6">How to donate</h2>
             <div class="grid grid-cols-3 gap-5 mb-7 text-sm md:text-base text-center">
                 <div class="place-items-center">
-                    <Image src={myImage} alt="" class="mb-2 md:mb-4"></Image>
+                    <Image src={myImage2} alt="" class="mb-2 md:mb-4"></Image>
                     <p>You create a profile</p>
                 </div>
                 <div class="place-items-center">
-                    <Image src={myImage} alt="" class="mb-2 md:mb-4"></Image>
+                    <Image src={myImage2} alt="" class="mb-2 md:mb-4"></Image>
                     <p>Then, sign up as either a donor or a receiver</p>
                 </div>
                 <div class="place-items-center">
-                    <Image src={myImage} alt="" class="mb-2 md:mb-4"></Image>
+                    <Image src={myImage2} alt="" class="mb-2 md:mb-4"></Image>
                     <p>And share the impact together.</p>
                 </div>
             </div>
@@ -40,8 +41,18 @@ import myImage from "../assets/images/turkana-county-kenya.jpg";
         </article>
     </section>
 </header>
-<MainLayout title="Forside">
-    <section>
+<MainLayout title="Forside" class="overflow-clip">
+    <section id="horisontalscrollsection" class="cursor-grab h-[500vh] relative">
+
+<ul id="horisontalliste" class="list-none flex sticky top-0">
+
+<li class="flex h-[100vh] w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
+
+    
+</li>
+
+</ul>
+
         <article class="grid justify-items-center">
             <h2>Causes</h2>
             <div class="justify-self-end">
@@ -56,16 +67,16 @@ import myImage from "../assets/images/turkana-county-kenya.jpg";
             </div>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 xl:gap-6">
                 <Card size="small" heading="Gorkha, Nepal" description="Humanitarian Aid">
-                    <Image src={myImage} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
+                    <Image src={myImage2} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
                 </Card>
                 <Card size="small" heading="Turkana, Kenya" description="Climate">
-                    <Image src={myImage} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
+                    <Image src={myImage2} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
                 </Card>
                 <Card size="small" heading="Aleppo, Syria" description="Refugees">
-                    <Image src={myImage} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
+                    <Image src={myImage2} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
                 </Card>
                 <Card size="small" heading="Zambezia, Mozambique" description="Development">
-                    <Image src={myImage} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
+                    <Image src={myImage2} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
                 </Card>
             </div>
         </article>
