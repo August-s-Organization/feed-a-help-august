@@ -4,36 +4,40 @@ import Button from "../components/Button.astro";
 import Card from "../components/Card.astro";
 import { Image } from 'astro:assets';
 import myImage1 from "../assets/images/woman.jpg";
-import myImage2 from "../assets/images/turkana-county-kenya.jpg";
+import myImage2 from "../assets/images/grafik/profil.svg";
+import myImage3 from "../assets/images/grafik/blue_hands.svg";
+import myImage4 from "../assets/images/grafik/letter.svg";
+import myImage5 from "../assets/images/turkana-county-kenya.jpg";
+import myImage6 from "../assets/images/humanitarian-aid-1.jpg";
+import myImage7 from "../assets/images/humanitarian-aid-2.jpg";
+import myImage8 from "../assets/images/climate-1.jpg";
 ---
 <header class="text-black-500">
     <section class="relative">
         <Image src={myImage1} alt="A woman farming in Turkana County, Kenya." class="h-[28rem] md:h-[36rem] w-full object-cover"></Image>
         <div class="absolute bottom-7 left-7 md:bottom-12 md:left-12 lg:bottom-20 lg:left-20">
             <Button variant="cta">
-                <div class="flex items-center space-x-2">
-                    <p>Donate</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-5 h-5 md:w-6 md:h-6">
-                        <path d="M2 6.342a3.375 3.375 0 0 1 6-2.088 3.375 3.375 0 0 1 5.997 2.26c-.063 2.134-1.618 3.76-2.955 4.784a14.437 14.437 0 0 1-2.676 1.61c-.02.01-.038.017-.05.022l-.014.006-.004.002h-.002a.75.75 0 0 1-.592.001h-.002l-.004-.003-.015-.006a5.528 5.528 0 0 1-.232-.107 14.395 14.395 0 0 1-2.535-1.557C3.564 10.22 1.999 8.558 1.999 6.38L2 6.342Z" />
-                    </svg>
-                </div>
+                <p>Donate</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-5 h-5 md:w-6 md:h-6">
+                    <path d="M2 6.342a3.375 3.375 0 0 1 6-2.088 3.375 3.375 0 0 1 5.997 2.26c-.063 2.134-1.618 3.76-2.955 4.784a14.437 14.437 0 0 1-2.676 1.61c-.02.01-.038.017-.05.022l-.014.006-.004.002h-.002a.75.75 0 0 1-.592.001h-.002l-.004-.003-.015-.006a5.528 5.528 0 0 1-.232-.107 14.395 14.395 0 0 1-2.535-1.557C3.564 10.22 1.999 8.558 1.999 6.38L2 6.342Z" />
+                </svg>
             </Button>
         </div>
     </section>
     <section class="bg-blue-200 px-4 pt-3 pb-6 md:px-20 md:pt-6 md:pb-16">
         <article class="grid justify-items-center">
-            <h2 class="mb-6">How to donate</h2>
+            <h2 class="mb-6 md:mb-10">How to donate</h2>
             <div class="grid grid-cols-3 gap-5 mb-7 text-sm md:text-base text-center">
                 <div class="place-items-center">
-                    <Image src={myImage2} alt="" class="mb-2 md:mb-4"></Image>
+                    <Image src={myImage2} alt="" class="w-14 md:w-20 mb-2 md:mb-4"></Image>
                     <p>You create a profile</p>
                 </div>
                 <div class="place-items-center">
-                    <Image src={myImage2} alt="" class="mb-2 md:mb-4"></Image>
+                    <Image src={myImage3} alt="" class="w-14 md:w-20 mb-2 md:mb-4"></Image>
                     <p>Then, sign up as either a donor or a receiver</p>
                 </div>
                 <div class="place-items-center">
-                    <Image src={myImage2} alt="" class="mb-2 md:mb-4"></Image>
+                    <Image src={myImage4} alt="" class="w-14 md:w-20 mb-2 md:mb-4"></Image>
                     <p>And share the impact together.</p>
                 </div>
             </div>
@@ -41,44 +45,132 @@ import myImage2 from "../assets/images/turkana-county-kenya.jpg";
         </article>
     </section>
 </header>
-<MainLayout title="Forside" class="overflow-clip">
-    <section id="horisontalscrollsection" class="cursor-grab h-[500vh] relative">
-
-<ul id="horisontalliste" class="list-none flex sticky top-0">
-
-<li class="flex h-[100vh] w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
-
-    
-</li>
-
-</ul>
-
-        <article class="grid justify-items-center">
-            <h2>Causes</h2>
-            <div class="justify-self-end">
-                <Button variant="tertiary">
-                    <div class="flex items-center mb-1 md:mb-2">
-                        <p>See all</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-5 h-5 md:w-6 md:h-6">
-                            <path fill-rule="evenodd" d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-                        </svg>
-                    </div>                    
-                </Button>
-            </div>
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 xl:gap-6">
-                <Card size="small" heading="Gorkha, Nepal" description="Humanitarian Aid">
-                    <Image src={myImage2} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
-                </Card>
-                <Card size="small" heading="Turkana, Kenya" description="Climate">
-                    <Image src={myImage2} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
-                </Card>
-                <Card size="small" heading="Aleppo, Syria" description="Refugees">
-                    <Image src={myImage2} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
-                </Card>
-                <Card size="small" heading="Zambezia, Mozambique" description="Development">
-                    <Image src={myImage2} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
-                </Card>
-            </div>
-        </article>
+<MainLayout title="Forside">
+    <section id="horisontalscrollsection" class="cursor-grab h-[600vh] relative">
+        <ul id="horisontalliste" class="list-none flex sticky top-0">
+            <li class="flex h-[100vh] w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
+                <div class="flex items-center gap-10 md:gap-20">
+                    <h2>Causes</h2>
+                    <Image src={myImage5} alt="" class="w-1/2"></Image>
+                </div>
+            </li>
+            <li class="flex h-[100vh] w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
+                <article>
+                    <h3 class="mb-2 md:mb-5">Humanitarian Aid</h3>
+                    <div class="flex justify-end mb-1 md:mb-2">
+                        <Button variant="tertiary">
+                            <p>See all</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-5 h-5 md:w-6 md:h-6">
+                                <path fill-rule="evenodd" d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                            </svg>
+                        </Button>
+                    </div>
+                    <div class="flex justify-center gap-4 md:gap-8">
+                        <Card size="small" heading="Gorkha, Nepal" description="Humanitarian Aid">
+                            <Image src={myImage6} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
+                        </Card>
+                        <Card size="small" heading="Gorkha, Nepal" description="Humanitarian Aid">
+                            <Image src={myImage7} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
+                        </Card>
+                    </div>
+                </article>
+            </li>
+            <li class="flex h-[100vh] w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
+                <article>
+                    <h3 class="mb-2 md:mb-5">Climate</h3>
+                    <div class="flex justify-end mb-1 md:mb-2">
+                        <Button variant="tertiary">
+                            <p>See all</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-5 h-5 md:w-6 md:h-6">
+                                <path fill-rule="evenodd" d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                            </svg>
+                        </Button>
+                    </div>
+                    <div class="flex justify-center gap-4 md:gap-8">
+                        <Card size="small" heading="Turkana, Kenya" description="Climate">
+                            <Image src={myImage8} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
+                        </Card>
+                        <Card size="small" heading="Turkana, Kenya" description="Climate">
+                            <Image src={myImage1} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
+                        </Card>
+                    </div>
+                </article>
+            </li>
+            <li class="flex h-[100vh] w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
+                <article>
+                    <h3 class="mb-2 md:mb-5">Refugees</h3>
+                    <div class="flex justify-end mb-1 md:mb-2">
+                        <Button variant="tertiary">
+                            <p>See all</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-5 h-5 md:w-6 md:h-6">
+                                <path fill-rule="evenodd" d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                            </svg>
+                        </Button>
+                    </div>
+                    <div class="flex justify-center gap-4 md:gap-8">
+                        <Card size="small" heading="Aleppo, Syria" description="Refugees">
+                            <Image src={myImage1} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
+                        </Card>
+                        <Card size="small" heading="Aleppo, Syria" description="Refugees">
+                            <Image src={myImage1} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
+                        </Card>
+                    </div>
+                </article>
+            </li>
+            <li class="flex h-[100vh] w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
+                <article>
+                    <h3 class="mb-2 md:mb-5">Development</h3>
+                    <div class="flex justify-end mb-1 md:mb-2">
+                        <Button variant="tertiary">
+                            <p>See all</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-5 h-5 md:w-6 md:h-6">
+                                <path fill-rule="evenodd" d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                            </svg>
+                        </Button>
+                    </div>
+                    <div class="flex justify-center gap-4 md:gap-8">
+                        <Card size="small" heading="Zambezia, Mozambique" description="Development">
+                            <Image src={myImage1} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
+                        </Card>
+                        <Card size="small" heading="Zambezia, Mozambique" description="Development">
+                            <Image src={myImage1} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
+                        </Card>
+                    </div>
+                </article>
+            </li>
+            <li class="flex h-[100vh] w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
+                <article>
+                    <h3 class="mb-2 md:mb-5">Education</h3>
+                    <div class="flex justify-end mb-1 md:mb-2">
+                        <Button variant="tertiary">
+                            <p>See all</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-5 h-5 md:w-6 md:h-6">
+                                <path fill-rule="evenodd" d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                            </svg>
+                        </Button>
+                    </div>
+                    <div class="flex justify-center gap-4 md:gap-8">
+                        <Card size="small" heading="Zambezia, Mozambique" description="Education">
+                            <Image src={myImage1} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
+                        </Card>
+                        <Card size="small" heading="Zambezia, Mozambique" description="Education">
+                            <Image src={myImage1} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
+                        </Card>
+                    </div>
+                </article>
+            </li>
+        </ul>
     </section>
 </MainLayout>
+<script>
+import {animate, scroll} from "motion";
+
+const items = document.querySelectorAll("#horisontalliste li");
+
+scroll(
+    animate("#horisontalliste", {
+        transform: ["none", `translateX(-${items.length - 1}00vw)`]
+    }),
+    { target: document.querySelector("#horisontalscrollsection") }
+    );
+</script>
