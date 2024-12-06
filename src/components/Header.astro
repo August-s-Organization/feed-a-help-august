@@ -1,18 +1,19 @@
 ---
-const headerStyling = "bg-yellow-100 p-4 md:px-20 md:py-10";
+const headerStyling = "bg-yellow-100 text-red-800 lg:text-xl font-medium p-5 md:p-8 lg:p-10";
 import { Image } from 'astro:assets';
 import myImageLogo from "../assets/images/logo.svg";
+import myImageLogo2 from "../assets/images/grafik/logo.svg";
 ---
 <div x-data="{showmenu: false}" class:list={[headerStyling]}>
     <div class="flex justify-between">
-        <Image src={myImageLogo} alt="" class="w-52 lg:w-[37.5rem]"></Image>
-        <button id="burgermenu" x-on:click="showmenu = ! showmenu"><p>Knap</p></button>
+        <Image src={myImageLogo} alt="" class="w-52 md:w-64 lg:w-96"></Image>
+        <button id="burgermenu" x-on:click="showmenu = ! showmenu"><Image src={myImageLogo2} alt="" class="w-9 md:w-12 lg:w-16"></Image></button>
     </div>
-    <nav x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false" class="my-10 sticky top-0">
+    <nav x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false" class="sticky top-0 mt-5">
         <ul>
-            <li class="text-center py-3"><a href="">About</a></li>
-            <li class="text-center py-3"><a href="">Causes</a></li>
-            <li class="text-center py-3"><a href="">Profile</a></li>
+            <li class="text-center py-3"><a href=""><p class="hover:font-semibold">About</p></a></li>
+            <li class="text-center py-3"><a href=""><p class="hover:font-semibold">Causes</p></a></li>
+            <li class="text-center py-3"><a href=""><p class="hover:font-semibold">Profile</p></a></li>
         </ul>
     </nav>
 </div>
