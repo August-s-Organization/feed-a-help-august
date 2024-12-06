@@ -1,4 +1,18 @@
 ---
+const headerStyling = "bg-yellow-100 p-4 md:px-20 md:py-10";
+import { Image } from 'astro:assets';
+import myImageLogo from "../assets/images/logo.svg";
 ---
-<div>
+<div x-data="{showmenu: false}" class:list={[headerStyling]}>
+    <div class="flex justify-between">
+        <Image src={myImageLogo} alt="" class="w-52 lg:w-[37.5rem]"></Image>
+        <button id="burgermenu" x-on:click="showmenu = ! showmenu"><p>Knap</p></button>
+    </div>
+    <nav x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false" class="my-10 sticky top-0">
+        <ul>
+            <li class="text-center py-3"><a href="">About</a></li>
+            <li class="text-center py-3"><a href="">Causes</a></li>
+            <li class="text-center py-3"><a href="">Profile</a></li>
+        </ul>
+    </nav>
 </div>
