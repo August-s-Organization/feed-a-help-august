@@ -19,9 +19,11 @@ import myImage12 from "../assets/images/niamey-niger.jpg";
 import myImage13 from "../assets/images/uttar-pradesh-india.jpg";
 import myImage14 from "../assets/images/kathmandu-nepal.jpg";
 ---
-<Header></Header>
 <header class="text-black-500">
     <section class="relative">
+        <div class="absolute w-full z-10">
+            <Header></Header>
+        </div>
         <Image src={myImage} alt="A woman farming in Turkana County, Kenya." class="h-[28rem] md:h-[36rem] w-full object-cover"></Image>
         <div class="absolute bottom-7 left-7 md:bottom-12 md:left-12 lg:bottom-20 lg:left-20">
             <Button variant="cta">
