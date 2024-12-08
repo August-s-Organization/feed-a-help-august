@@ -8,16 +8,17 @@ import myImage from "../assets/images/hero-unit.jpg";
 import myImage2 from "../assets/images/grafik/profil.svg";
 import myImage3 from "../assets/images/grafik/blue_hands.svg";
 import myImage4 from "../assets/images/grafik/letter.svg";
-import myImage5 from "../assets/images/gorkha-nepal.jpg";
-import myImage6 from "../assets/images/leogane-haiti.jpg";
-import myImage7 from "../assets/images/turkana-county-kenya.jpg";
-import myImage8 from "../assets/images/dhaka-bangladesh.jpg";
-import myImage9 from "../assets/images/aleppo-syria.jpg";
-import myImage10 from "../assets/images/juba-south-sudan.jpg";
-import myImage11 from "../assets/images/tete-mozambique.jpg";
-import myImage12 from "../assets/images/niamey-niger.jpg";
-import myImage13 from "../assets/images/uttar-pradesh-india.jpg";
-import myImage14 from "../assets/images/kathmandu-nepal.jpg";
+import myImage5 from "../assets/images/grafik/yellow_hands.svg"
+import myImage6 from "../assets/images/gorkha-nepal.jpg";
+import myImage7 from "../assets/images/leogane-haiti.jpg";
+import myImage8 from "../assets/images/turkana-county-kenya.jpg";
+import myImage9 from "../assets/images/dhaka-bangladesh.jpg";
+import myImage10 from "../assets/images/aleppo-syria.jpg";
+import myImage11 from "../assets/images/juba-south-sudan.jpg";
+import myImage12 from "../assets/images/tete-mozambique.jpg";
+import myImage13 from "../assets/images/niamey-niger.jpg";
+import myImage14 from "../assets/images/uttar-pradesh-india.jpg";
+import myImage15 from "../assets/images/kathmandu-nepal.jpg";
 ---
 <header class="text-black-500">
     <section class="relative">
@@ -56,12 +57,22 @@ import myImage14 from "../assets/images/kathmandu-nepal.jpg";
     </section>
 </header>
 <MainLayout title="Forside">
-    <div class="grid place-items-center text-center">
-        <h2 class="mb-1 md:mb-2">Causes</h2>
-        <p class="w-1/2 lg:w-full">Explore our variety of categories and validated causes below.</p>
-    </div>
-    <section id="horisontalscrollsection" class="cursor-grab h-[500vh] relative">
+    <section id="horisontalscrollsection" class="cursor-grab h-[600vh] relative">
         <ul id="horisontalliste" class="list-none flex sticky top-0">
+            <li class="flex h-[100vh] w-[100vw] items-center justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
+                <div class="grid grid-cols-2 gap-3 md:gap-7 lg:gap-5 place-content-center items-center">
+                    <div class="w-3/4 justify-self-end">
+                        <h2 class="mb-1 md:mb-2">Causes</h2>
+                        <div class="flex">
+                            <p>Explore our variety of categories and validated causes.</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-20">
+                                <path fill-rule="evenodd" d="M2 8c0 .414.336.75.75.75h8.69l-1.22 1.22a.75.75 0 1 0 1.06 1.06l2.5-2.5a.75.75 0 0 0 0-1.06l-2.5-2.5a.75.75 0 1 0-1.06 1.06l1.22 1.22H2.75A.75.75 0 0 0 2 8Z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </div>
+                    <Image src={myImage5} alt="" class="w-3/4"></Image>
+                </div>
+            </li>
             <li class="flex h-[100vh] w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
                 <article>
                     <h3 class="mb-2 md:mb-4">Humanitarian Aid</h3>
@@ -75,10 +86,10 @@ import myImage14 from "../assets/images/kathmandu-nepal.jpg";
                     </div>
                     <div class="flex justify-center gap-4 md:gap-8">
                         <Card size="small" heading="Gorkha, Nepal" description="Humanitarian Aid">
-                            <Image src={myImage5} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
+                            <Image src={myImage6} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
                         </Card>
                         <Card size="small" heading="Leogane, Haiti" description="Humanitarian Aid">
-                            <Image src={myImage6} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
+                            <Image src={myImage7} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
                         </Card>
                     </div>
                 </article>
@@ -96,10 +107,10 @@ import myImage14 from "../assets/images/kathmandu-nepal.jpg";
                     </div>
                     <div class="flex justify-center gap-4 md:gap-8">
                         <Card size="small" heading="Turkana, Kenya" description="Climate">
-                            <Image src={myImage7} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
+                            <Image src={myImage8} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
                         </Card>
                         <Card size="small" heading="Dhaka, Bangladesh" description="Climate">
-                            <Image src={myImage8} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
+                            <Image src={myImage9} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
                         </Card>
                     </div>
                 </article>
@@ -117,10 +128,10 @@ import myImage14 from "../assets/images/kathmandu-nepal.jpg";
                     </div>
                     <div class="flex justify-center gap-4 md:gap-8">
                         <Card size="small" heading="Aleppo, Syria" description="Refugees">
-                            <Image src={myImage9} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
+                            <Image src={myImage10} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
                         </Card>
                         <Card size="small" heading="Juba, South Sudan" description="Refugees">
-                            <Image src={myImage10} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
+                            <Image src={myImage11} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
                         </Card>
                     </div>
                 </article>
@@ -138,10 +149,10 @@ import myImage14 from "../assets/images/kathmandu-nepal.jpg";
                     </div>
                     <div class="flex justify-center gap-4 md:gap-8">
                         <Card size="small" heading="Tete, Mozambique" description="Development">
-                            <Image src={myImage11} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
+                            <Image src={myImage12} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
                         </Card>
                         <Card size="small" heading="Niamey, Niger" description="Development">
-                            <Image src={myImage12} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
+                            <Image src={myImage13} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
                         </Card>
                     </div>
                 </article>
@@ -159,10 +170,10 @@ import myImage14 from "../assets/images/kathmandu-nepal.jpg";
                     </div>
                     <div class="flex justify-center gap-4 md:gap-8">
                         <Card size="small" heading="Uttar Pradesh, India" description="Education">
-                            <Image src={myImage13} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
+                            <Image src={myImage14} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
                         </Card>
                         <Card size="small" heading="Kathmandu, Nepal" description="Education">
-                            <Image src={myImage14} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
+                            <Image src={myImage15} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
                         </Card>
                     </div>
                 </article>
