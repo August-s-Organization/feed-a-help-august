@@ -1,0 +1,26 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+import Button from "../components/Button.astro";
+---
+
+<MainLayout>
+
+   <section class="flex flex-col items-start gap-8 mt-3 mb-6 mx-4">
+    <div class="flex flex-col items-center gap-2 self-stretch">
+        <h1>Create a profile</h1>
+<p class="font-semibold"> 1 Of 3</p>
+<p class="text-center">Please enter your contact information below to proceed.</p>
+    </div>
+    <div class="flex flex-col items-start gap-5 self-stretch">
+<h2>Contact information</h2>
+<div class="flex flex-col items-start gap-4 self-stretch">
+    <!-- FORMEN -->
+</div>
+    </div>
+    <div class="flex flex-col items-center content-center gap-3">
+    <Button variant="default"><p>Continue</p></Button>
+    <Button variant="tertiary"><p>Cancel</p></Button>
+</div>
+</section> 
+</MainLayout>
