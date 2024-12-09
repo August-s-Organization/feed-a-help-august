@@ -1,0 +1,45 @@
+[
+    {
+        "id": 1,
+        "causeoverskrift": "Gorkha, Nepal",
+        "causebeskrivelse": "Humanitarian Aid",
+        "causebillede": "gorkha-nepal.jpg",
+        "causebilledealt": "lorem" ,
+        "causelink": "/causes/gorkha"
+    },
+
+    {
+        "id": 2,
+        "causeoverskrift": "Aleppo, Syria",
+        "causebeskrivelse": "Refugees",
+        "causebillede": "aleppo-syria.jpg",
+        "causebilledealt": "lorem" ,
+        "causelink": "/causes/aleppo"
+    },
+
+    {
+        "id": 3,
+        "causeoverskrift": "Tete, Mozambique",
+        "causebeskrivelse": "Development",
+        "causebillede": "tete-mozambique.jpg",
+        "causebilledealt": "lorem" ,
+        "causelink": "/causes/tete"
+    },
+
+    {
+        "id": 4,
+        "causeoverskrift": "Turkana, Kenya",
+        "causebeskrivelse": "Climate",
+        "causebillede": "turkana-county-kenya.jpg",
+        "causebilledealt": "lorem" ,
+        "causelink": "/causes/turkana-county"
+    },
+    {
+        "id": 5,
+        "causeoverskrift": "Uttar Pradesh, India",
+        "causebeskrivelse": "Education",
+        "causebillede": "uttar-pradesh-india.jpg",
+        "causebilledealt": "lorem" ,
+        "causelink": "/causes/uttar-pradesh"
+    }
+]
