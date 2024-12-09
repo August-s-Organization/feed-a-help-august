@@ -1,0 +1,30 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+import Button from "../components/Button.astro";
+import { Image } from 'astro:assets';
+import myImage from "../assets/images/hero-unit.jpg";
+---
+
+
+<MainLayout>
+
+    <div class="bg-no-repeat bg-center bg-cover" style="background-image: url(src/assets/images/hero-unit.jpg);">
+        <section class="grid place-content-center h-[733px] md:h-[982px]">
+    <div class="flex flex-col items-center gap-16 px-5 pt-5 pb-6 bg-yellow-50 opacity-90 rounded-lg md:rounded-xl w-[293px] h-[404px] md:w-[583px] md:h-[554px] ">
+<div class="flex flex-col items-center gap-6 self-stretch ">
+    <h1>Join Feed A Help</h1>
+    <p class="w-[253px] md:w-[311px] text-center">To get started, create a profile and sign up as a donor or receiver.</p>
+</div>
+<div class="flex flex-col items-center justify-center gap-4">
+    <Button variant="secondary"><p>Become a donor</p></Button>
+    <p>Or</p>
+    <div class="flex flex-col items-center gap-3">
+        <Button variant="secondary"><p>Become a reciever</p></Button>
+        <p class="text-xs text-center w-[185px] md:w-[261px]">As a receiver, please proceed on mobile to prove your verification.</p>
+    </div>
+</div>
+    </div>
+</section>
+</div>
+</MainLayout>
