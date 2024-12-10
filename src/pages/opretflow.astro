@@ -6,21 +6,47 @@ import Button from "../components/Button.astro";
 
 <MainLayout>
 
-   <section class="flex flex-col items-start gap-8 mt-3 mb-6 mx-4">
-    <div class="flex flex-col items-center gap-2 self-stretch">
+   <section class="flex flex-col md:flex-row items-start md:items-center md:justify-between gap-8 mt-3 md:mt-5 mb-6 md:mb-6 mx-4 md:mx-20">
+    <div class="flex flex-col items-center gap-2 md:gap-4 md:w-[633px] self-stretch bg-none md:bg-[url('src/assets/images/Grafik/love.svg')] md:bg-no-repeat md:bg-contain md:bg-center">
+        
         <h1>Create a profile</h1>
 <p class="font-semibold"> 1 Of 3</p>
-<p class="text-center">Please enter your contact information below to proceed.</p>
+<p class="text-center md:w-[358px]">Please enter your contact information below to proceed.</p>
     </div>
-    <div class="flex flex-col items-start gap-5 self-stretch">
-<h2>Contact information</h2>
-<div class="flex flex-col items-start gap-4 self-stretch">
+    
+    
+    <div class="flex flex-col items-start md:items-center gap-5 self-stretch md:gap-10 md:pt-10 md:pb-10 md:w-[633px]">
+        <div class="flex flex-col items-start gap-5 md:gap-7">
+<h2 class="text-base md:text-4xl">Contact information</h2>
     <!-- FORMEN -->
+   <form class="flex flex-col items-start md:items-center gap-4 self-stretch">
+            <div class="flex flex-col items-start gap-1 md:gap-2">
+                <p>Name</p>
+              <input class="w-[343px] md:w-[420px] h-[38px] md:h-[43px] bg-white-cream border placeholder-black-100 border-black-200 focus-within:border-black-200 focus-within:border-2 focus-within:ring-0 outline-none rounded-lg md:rounded-x text-xs md:text-sm font-manrope" type="text" id="Name" name="Name" placeholder="Anders Andersen" />
+            </div>
+            <div class="flex flex-col items-start gap-1 md:gap-2">
+                <p>E-mail</p>
+              <input class="w-[343px] md:w-[420px] h-[38px] md:h-[43px] bg-white-cream border placeholder-black-100 border-black-200 focus-within:border-black-200 focus-within:border-2 focus-within:ring-0 outline-none rounded-lg md:rounded-x text-xs md:text-sm font-manrope" type="text" id="email" name="email" placeholder="andersandersen@hotmail.com" />
+            </div>
+            <div class="flex flex-col items-start gap-1 md:gap-2">
+                <p>CPR number</p>
+              <input class="w-[343px] md:w-[420px] h-[38px] md:h-[43px] bg-white-cream border placeholder-black-100 border-black-200 focus-within:border-black-200 focus-within:border-2 focus-within:ring-0 outline-none rounded-lg md:rounded-x text-xs md:text-sm font-manrope" type="text" id="cprnr" name="cprnr" placeholder="**********" />
+            </div>
+            <div class="flex flex-col items-start gap-1 md:gap-2">
+                <p>Username</p>
+              <input class="w-[343px] md:w-[420px] h-[38px] md:h-[43px] bg-white-cream border placeholder-black-100 border-black-200 focus-within:border-black-200 focus-within:border-2 focus-within:ring-0 outline-none rounded-lg md:rounded-x text-xs md:text-sm font-manrope" type="text" id="username" name="username" placeholder="AndersAnd" />
+            </div>
+            <div class="flex flex-col items-start gap-1 md:gap-2">
+                <p>Password</p>
+              <input class="w-[343px] md:w-[420px] h-[38px] md:h-[43px] bg-white-cream border placeholder-black-100 border-black-200 focus-within:border-black-200 focus-within:border-2 focus-within:ring-0 outline-none rounded-lg md:rounded-x text-xs md:text-sm font-manrope" type="text" id="password" name="password" placeholder="*******" />
+            </div>
+    </form>
 </div>
-    </div>
     <div class="flex flex-col items-center content-center gap-3">
-    <Button variant="default"><p>Continue</p></Button>
-    <Button variant="tertiary"><p>Cancel</p></Button>
+        <Button variant="default"><p>Continue</p></Button>
+        <Button variant="tertiary"><p>Cancel</p></Button>
+        </div>
+</div>
 </div>
 </section> 
 </MainLayout>
