@@ -1,7 +1,7 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Header from "../components/Header.astro";
-import Card from "../components/Card.astro";
+import Footer from "../components/Footer.astro";
 import Button from "../components/Button.astro";
 import { Image } from "astro:assets";
 import myImageCause from "../assets/images/grafik/climate.svg";
@@ -12,10 +12,14 @@ import myImageCause5 from "../assets/images/grafik/refugees.svg";
 ---
 <Header></Header>
 <MainLayout>
-    <section>
-        <div class="mb-10 lg:mb-20 lg:place-items-center">
+    <section class="mx-4 sm:mx-auto">
+        <div class="grid justify-items-center text-center mb-10 lg:mb-[80px] mt-3 lg:mt-5">
+            <h2 class="mb-6 lg:mb-10">Our causes</h2>
+            <p class="w-1/2 lg:w-1/4 justify-self-center">Please select one of our five donation categories below.</p>
+        </div>
+        <div class="mb-10 lg:mb-20 cursor-grab overflow-x-auto">
             <nav>
-                <ul class="flex items-center gap-6 lg:gap-20 text-red-800">
+                <ul class="flex sm:justify-center items-center gap-6 lg:gap-20 text-red-800">
                     <li><a href="" class="hover:text-red-700 grid justify-items-center"><Image src={myImageCause} alt="" class="w-[35px] lg:w-[45px] mb-1 lg:mb-2"></Image><p>Climate</p></a></li>
                     <li><a href="" class="hover:text-red-700 grid justify-items-center"><Image src={myImageCause2} alt="" class="w-[35px] lg:w-[45px] mb-1 lg:mb-2"></Image><p>Development</p></a></li>
                     <li><a href="" class="hover:text-red-700 grid justify-items-center"><Image src={myImageCause3} alt="" class="w-[35px] lg:w-[45px] mb-1 lg:mb-2"></Image><p>Education</p></a></li>
@@ -49,3 +53,4 @@ import myImageCause5 from "../assets/images/grafik/refugees.svg";
         </section>
     </section>
 </MainLayout>
+<Footer></Footer>
