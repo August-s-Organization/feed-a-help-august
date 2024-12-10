@@ -2,23 +2,11 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Header from "../components/Header.astro";
 import Button from "../components/Button.astro";
-import Card from "../components/Card.astro";
 import { Image } from 'astro:assets';
 import myImage from "../assets/images/hero-unit.jpg";
 import myImage2 from "../assets/images/grafik/profil.svg";
 import myImage3 from "../assets/images/grafik/blue_hands.svg";
 import myImage4 from "../assets/images/grafik/letter.svg";
-import myImage5 from "../assets/images/grafik/yellow_hands.svg"
-import myImage6 from "../assets/images/gorkha-nepal.jpg";
-import myImage7 from "../assets/images/leogane-haiti.jpg";
-import myImage8 from "../assets/images/turkana-county-kenya.jpg";
-import myImage9 from "../assets/images/dhaka-bangladesh.jpg";
-import myImage10 from "../assets/images/aleppo-syria.jpg";
-import myImage11 from "../assets/images/juba-south-sudan.jpg";
-import myImage12 from "../assets/images/tete-mozambique.jpg";
-import myImage13 from "../assets/images/niamey-niger.jpg";
-import myImage14 from "../assets/images/uttar-pradesh-india.jpg";
-import myImage15 from "../assets/images/kathmandu-nepal.jpg";
 ---
 <header class="text-black-500">
     <section class="relative">
@@ -37,7 +25,7 @@ import myImage15 from "../assets/images/kathmandu-nepal.jpg";
     </section>
     <section class="bg-blue-200 px-4 pt-8 pb-10 lg:px-20 lg:pt-10 lg:pb-12">
         <article class="grid justify-items-center">
-            <h2 class="mb-6 lg:mb-10">How does Feed A Help work?</h2>
+            <h2 class="text-center mb-6 lg:mb-10">How does Feed A Help work?</h2>
             <div class="grid grid-cols-3 gap-5 text-sm lg:text-base text-center">
                 <div class="place-items-center">
                     <Image src={myImage2} alt="" class="h-14 md:h-20 lg:h-24 mb-2 md:mb-4"></Image>
@@ -56,50 +44,31 @@ import myImage15 from "../assets/images/kathmandu-nepal.jpg";
     </section>
 </header>
 <MainLayout title="Forside">
-    <section class="pl-4 py-6 lg:py-10 cursor-grab">
-        <div class="grid justify-items-center">
+    <section x-data="{ allecauses: [] }" x-init="allecauses = await (await fetch('causes.json')).json(); allecauses.reverse();" class="pl-4 py-6 lg:pb-[60px]">
+        <div class="grid justify-items-center text-center">
             <h2 class="mb-6 lg:mb-10">Causes</h2>
-            <p class="mb-6 lg:mb-20">Explore our variety of categories and validated causes.</p>
+            <p class="w-1/2 lg:w-1/4 justify-self-center mb-6 lg:mb-20">Explore our variety of categories and validated causes.</p>
             <div class="flex justify-self-end mb-1 lg:mb-5">
                 <Button variant="tertiary" class="flex self-end">
-                    <p class="text-yellow-800">See all</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-5 h-5 lg:w-6 lg:h-6">
+                    <a href="/kategorier"><p class="text-yellow-800">See all</p></a>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="fill-yellow-800 w-5 h-5 lg:w-6 lg:h-6">
                         <path fill-rule="evenodd" d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
                     </svg>
                 </Button>
             </div>
         </div>
-        <article class="flex flex-row gap-2 lg:gap-4 py-[10px] overflow-x-auto">
-            <Card size="small" heading="Gorkha, Nepal" description="Humanitarian Aid">
-                <Image src={myImage6} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
-            </Card>
-            <Card size="small" heading="Aleppo, Syria" description="Refugees">
-                <Image src={myImage10} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
-            </Card>
-            <Card size="small" heading="Tete, Mozambique" description="Development">
-                <Image src={myImage12} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
-            </Card>
-            <Card size="small" heading="Turkana, Kenya" description="Climate">
-                <Image src={myImage8} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
-            </Card>
-            <Card size="small" heading="Uttar Pradesh, India" description="Education">
-                <Image src={myImage14} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
-            </Card>
-            <Card size="small" heading="Leogane, Haiti" description="Humanitarian Aid">
-                <Image src={myImage7} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
-            </Card>
-            <Card size="small" heading="Juba, South Sudan" description="Refugees">
-                <Image src={myImage11} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
-            </Card>
-            <Card size="small" heading="Niamey, Niger" description="Development">
-                <Image src={myImage13} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
-            </Card>
-            <Card size="small" heading="Dhaka, Bangladesh" description="Climate">
-                <Image src={myImage9} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
-            </Card>
-            <Card size="small" heading="Kathmandu, Nepal" description="Education">
-                <Image src={myImage15} alt="" class="object-cover h-20 lg:h-40 rounded-t-lg"></Image>
-            </Card>
-        </article>
+        <section class="flex flex-row gap-2 lg:gap-4 py-[10px] overflow-x-auto cursor-grab">
+            <template x-for="causes in allecauses" :key="causes.id">
+                <article>
+                    <div class="bg-yellow-200 hover:bg-yellow-100 active:bg-yellow-300 rounded-lg flex-none w-[160px] lg:w-[340px]">
+                        <img :src="causes.causebillede" :alt="causes.causebilledealt" class="object-cover h-20 lg:h-40 w-full rounded-t-lg">
+                        <div class="px-3 py-2 lg:py-3">
+                            <h4 x-text="causes.causeoverskrift" class="text-red-700 mb-1 lg:mb-3"></h4>
+                            <p x-text="causes.causebeskrivelse" class="text-xs md:text-sm lg:text-base mb-2 lg:mb-6"></p>
+                        </div>
+                    </div>
+                </article>
+            </template>
+        </section>
     </section>
 </MainLayout>

@@ -2,44 +2,45 @@
     {
         "id": 1,
         "causeoverskrift": "Gorkha, Nepal",
-        "causebeskrivelse": "Humanitarian Aid",
+        "causebeskrivelse": "Emergencies",
         "causebillede": "gorkha-nepal.jpg",
-        "causebilledealt": "lorem" ,
+        "causebilledealt": "Cause in Gorkha, Nepal" ,
         "causelink": "/causes/gorkha"
     },
 
     {
         "id": 2,
-        "causeoverskrift": "Aleppo, Syria",
-        "causebeskrivelse": "Refugees",
-        "causebillede": "aleppo-syria.jpg",
-        "causebilledealt": "lorem" ,
-        "causelink": "/causes/aleppo"
+        "causeoverskrift": "Turkana, Kenya",
+        "causebeskrivelse": "Climate",
+        "causebillede": "turkana-county-kenya.jpg",
+        "causebilledealt": "Cause in Turkana County, Kenya" ,
+        "causelink": "/causes/turkana-county"
     },
 
     {
         "id": 3,
-        "causeoverskrift": "Tete, Mozambique",
-        "causebeskrivelse": "Development",
-        "causebillede": "tete-mozambique.jpg",
-        "causebilledealt": "lorem" ,
-        "causelink": "/causes/tete"
+        "causeoverskrift": "Aleppo, Syria",
+        "causebeskrivelse": "Refugees",
+        "causebillede": "aleppo-syria.jpg",
+        "causebilledealt": "Cause in Aleppo, Syria" ,
+        "causelink": "/causes/aleppo"
     },
 
     {
         "id": 4,
-        "causeoverskrift": "Turkana, Kenya",
-        "causebeskrivelse": "Climate",
-        "causebillede": "turkana-county-kenya.jpg",
-        "causebilledealt": "lorem" ,
-        "causelink": "/causes/turkana-county"
+        "causeoverskrift": "Tete, Mozambique",
+        "causebeskrivelse": "Development",
+        "causebillede": "tete-mozambique.jpg",
+        "causebilledealt": "Cause in Tete, Mozambique" ,
+        "causelink": "/causes/tete"
     },
+
     {
         "id": 5,
         "causeoverskrift": "Uttar Pradesh, India",
         "causebeskrivelse": "Education",
         "causebillede": "uttar-pradesh-india.jpg",
-        "causebilledealt": "lorem" ,
+        "causebilledealt": "Cause in Uttar Pradesh, India" ,
         "causelink": "/causes/uttar-pradesh"
     }
 ]
