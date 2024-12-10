@@ -1,56 +1,36 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import Button from "../components/Button.astro";
+import Card from "../components/Card.astro";
 import { Image } from "astro:assets";
-import myImageCause from "../assets/images/grafik/climate.svg";
-import myImageCause2 from "../assets/images/grafik/development.svg";
-import myImageCause3 from "../assets/images/grafik/education.svg";
-import myImageCause4 from "../assets/images/grafik/emergencies.svg";
-import myImageCause5 from "../assets/images/grafik/refugees.svg";
+import myImageCause from "../assets/images/grafik/emergencies.svg";
+import myImageCause2 from "../assets/images/grafik/climate.svg";
+import myImageCause3 from "../assets/images/grafik/refugees.svg";
+import myImageCause4 from "../assets/images/grafik/development.svg";
+import myImageCause5 from "../assets/images/grafik/education.svg";
 ---
 <Header></Header>
 <MainLayout>
     <section class="mx-4 sm:mx-auto">
-        <div class="grid justify-items-center text-center mb-10 lg:mb-[80px] mt-3 lg:mt-5">
+        <div class="grid justify-items-center text-center mb-10 lg:mb-[60px] mt-3 lg:mt-5">
             <h2 class="mb-6 lg:mb-10">Our causes</h2>
             <p class="w-1/2 lg:w-1/4 justify-self-center">Please select one of our five donation categories below.</p>
         </div>
-        <div class="mb-10 lg:mb-20 cursor-grab overflow-x-auto">
+        <div class="mb-10 lg:mb-[80px] cursor-grab overflow-x-auto">
             <nav>
                 <ul class="flex sm:justify-center items-center gap-6 lg:gap-20 text-red-800">
-                    <li><a href="" class="hover:text-red-700 grid justify-items-center"><Image src={myImageCause} alt="" class="w-[35px] lg:w-[45px] mb-1 lg:mb-2"></Image><p>Climate</p></a></li>
-                    <li><a href="" class="hover:text-red-700 grid justify-items-center"><Image src={myImageCause2} alt="" class="w-[35px] lg:w-[45px] mb-1 lg:mb-2"></Image><p>Development</p></a></li>
-                    <li><a href="" class="hover:text-red-700 grid justify-items-center"><Image src={myImageCause3} alt="" class="w-[35px] lg:w-[45px] mb-1 lg:mb-2"></Image><p>Education</p></a></li>
-                    <li><a href="" class="hover:text-red-700 grid justify-items-center"><Image src={myImageCause4} alt="" class="w-[35px] lg:w-[45px] mb-1 lg:mb-2"></Image><p>Emergencies</p></a></li>
-                    <li><a href="" class="hover:text-red-700 grid justify-items-center"><Image src={myImageCause5} alt="" class="w-[35px] lg:w-[45px] mb-1 lg:mb-2"></Image><p>Refugees</p></a></li>
+                    <li><a href="" class="hover:text-red-700 grid justify-items-center"><Image src={myImageCause} alt="" class="w-[35px] lg:w-[45px] mb-1 lg:mb-2"></Image><p>Emergencies</p></a></li>
+                    <li><a href="" class="hover:text-red-700 grid justify-items-center"><Image src={myImageCause2} alt="" class="w-[35px] lg:w-[45px] mb-1 lg:mb-2"></Image><p>Climate</p></a></li>
+                    <li><a href="" class="hover:text-red-700 grid justify-items-center"><Image src={myImageCause3} alt="" class="w-[35px] lg:w-[45px] mb-1 lg:mb-2"></Image><p>Refugees</p></a></li>
+                    <li><a href="" class="hover:text-red-700 grid justify-items-center"><Image src={myImageCause4} alt="" class="w-[35px] lg:w-[45px] mb-1 lg:mb-2"></Image><p>Development</p></a></li>
+                    <li><a href="" class="hover:text-red-700 grid justify-items-center"><Image src={myImageCause5} alt="" class="w-[35px] lg:w-[45px] mb-1 lg:mb-2"></Image><p>Education</p></a></li>
                 </ul>
             </nav>
         </div>
     </section>
-    <section x-data="{ allecauses: [] }" x-init="allecauses = await (await fetch('causes.json')).json(); allecauses.reverse();" class="px-4 pt-3 pb-6 lg:px-20 lg:pt-5 lg:pb-[80px] ">
-        <section class="grid gap-x-4 gap-y-5 md:gap-x-auto md:gap-y-14 place-items-center md:grid-cols-2 lg:grid-cols-3">
-            <template x-for="causes in allecauses" :key="causes.id">
-                <article>
-                    <a href="#">
-                        <div class="bg-yellow-200 hover:bg-yellow-100 active:bg-yellow-300 rounded-lg flex-none w-[340px] lg:w-[420px]">
-                            <img :src="causes.causebillede" :alt="causes.causebilledealt" class="object-cover h-[116px] lg:h-[145px] w-full rounded-t-lg">
-                            <div class="px-3 py-2 lg:py-3">
-                                <h4 x-text="causes.causeoverskrift" class="text-red-700 mb-1 lg:mb-3"></h4>
-                                <p x-text="causes.causebeskrivelse" class="text-xs md:text-sm lg:text-base mb-2 lg:mb-6"></p>
-                                <Button variant="tertiary">
-                                    <p>Read more</p>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-5 h-5 md:w-6 md:h-6">
-                                        <path fill-rule="evenodd" d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                </Button>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-            </template>
-        </section>
+    <section class="px-4 pt-3 pb-6 lg:px-20 lg:pt-5 lg:pb-[80px]">
+        <div class="grid gap-x-4 gap-y-5 md:gap-x-auto md:gap-y-14 place-items-center md:grid-cols-2 lg:grid-cols-3">
+            <Card size="large"></Card>
+        </div>
     </section>
 </MainLayout>
-<Footer></Footer>
