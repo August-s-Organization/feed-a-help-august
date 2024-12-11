@@ -1,0 +1,58 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+import Button from "../components/Button.astro";
+import { Image } from 'astro:assets';
+import myImage from "../assets/images/hero-unit.jpg";
+import AmountElement from "../components/AmountElement.astro";
+const {frontmatter} = Astro.props;
+---
+
+
+<MainLayout>
+
+  <section class="flex flex-col items-center gap-10 mt-3 md:mt-0 mb-6 md:mb-0 mx-4 md:mx-0">
+    <div class="flex flex-col items-center gap-6">
+    <h1 class="md:hidden">Your donation</h1>
+    <div class="flex flex-col md:flex-row items-center gap-4">
+    <Image src={myImage} alt="picture of the team who started Feed A Help" class="w-[220px] h-[200px] md:w-[655px] md:h-[924px] object-cover rounded-lg md:rounded-none "></Image>
+    <div class="text-center md:w-[857px] md:mx-20">
+        <h1 class="hidden md:block ">Your donation</h1>
+    <h2 class="md:pt-[60px]">Maragoli Farmers</h2>
+    <p class="">Monthly donation</p>
+    
+    <div class="text-center pt-10 ">
+        <p class="pb-3">Select your desired amount here:</p>
+        <AmountElement class="w-80 md:w-96">
+            <div>
+                <p>50 Kr.</p>
+                <p>100 Kr.</p>
+                <p>150 Kr.</p>
+            </div>
+        </AmountElement>
+        </div>
+        <div class="text-center pt-8">
+            <p class="pb-3">Or choose your own amount:</p>
+            <input class="w-[343px] md:w-[420px] p-4 bg-white-cream border placeholder-black-100 border-black-200 focus-within:border-black-200 focus-within:border-2 focus-within:ring-0 outline-none rounded-lg md:rounded-x text-xs md:text-sm font-manrope" type="text" id="amount" name="amount" placeholder="50 Kr." />
+            </div>
+            
+            <div class="flex flex-col items-center content-center pt-10 md:pt-[60px] gap-3">
+                <Button variant="cta">
+                    <p>Donate here</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-5 h-5 lg:w-6 lg:h-6">
+                        <path d="M2 6.342a3.375 3.375 0 0 1 6-2.088 3.375 3.375 0 0 1 5.997 2.26c-.063 2.134-1.618 3.76-2.955 4.784a14.437 14.437 0 0 1-2.676 1.61c-.02.01-.038.017-.05.022l-.014.006-.004.002h-.002a.75.75 0 0 1-.592.001h-.002l-.004-.003-.015-.006a5.528 5.528 0 0 1-.232-.107 14.395 14.395 0 0 1-2.535-1.557C3.564 10.22 1.999 8.558 1.999 6.38L2 6.342Z" />
+                    </svg>
+                </Button>
+                <Button variant="tertiary"><p>Cancel</p></Button>
+                </div>
+</div>
+</div>
+</div>
+
+</section>  
+   
+
+
+</MainLayout>
+
+   
