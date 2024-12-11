@@ -11,23 +11,24 @@ import VerificationElement from "../components/VerificationElement.astro";
 
 
 <MainLayout>
-    <section class=" flex flex-col items-center mx-4 mt-3 mb-6">
+    <div class="bg-no-repeat bg-center bg-cover" style="background-image: url(src/assets/images/Grafik/Pattern_yellow.svg);"> 
+    <section class=" flex flex-col items-center mx-4 mt-3 mb-6 md:mx-20 md:mt-5 :mb-[60]">
         <h1 class="pb-6">Profile</h1>
-        <div class="flex flex-col items-start self-stretch">
-            <h2>Username</h2>
+        <div class="flex flex-col items-start self-stretch ">
+            <h2 class="md:text-[28px]">Username</h2>
             <p class="pt-2 pb-3">Anders Anderson</p>
             <Button variant="tertiary"><p>Settings</p></Button>
         </div>
-<div class="flex flex-col items-start self-stretch pt-10">
-    <h3 class="pb-3">My donations</h3>
+<div class="flex flex-col items-start  self-stretch pt-10">
+    <h3 class="pb-3">Donations</h3>
     <div class="flex flex-col gap-4">
 <VerificationElement variant="cause">
     <div class="flex items-center">
-        <Image src={myImage} alt="" class="object-cover h-20 w-auto md:h-28 mr-2" />
+        <Image src={myImage} alt="" class="object-cover rounded-l-lg h-[74px] w-[74px] md:h-[84px] md:w-[84px] mr-2" />
         <div class="mr-auto">
-            <h4 class="text-black-500">Navn</h4>
+            <h4 class="text-black-500 md:text-xl md:font-semibold">Navn</h4>
             <p class="text-black-300 text-sm md:text-base">Donation</p>
-            <p class="text-black-300 text-sm md:text-base">Beløb</p>
+            <p class="text-black-300 text-sm font-semibold md:text-base">Beløb</p>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 md:w-12 md:h-12 stroke-black-300">
             <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
@@ -37,11 +38,11 @@ import VerificationElement from "../components/VerificationElement.astro";
 
 <VerificationElement variant="cause">
     <div class="flex items-center">
-        <Image src={myImage} alt="" class="object-cover h-20 w-auto md:h-28 mr-2" />
+        <Image src={myImage} alt="" class="object-cover rounded-l-lg h-[74px] w-[74px] md:h-[84px] md:w-[84px] mr-2" />
         <div class="mr-auto">
-            <h4 class="text-black-500">Navn</h4>
+            <h4 class="text-black-500 md:text-xl md:font-semibold">Navn</h4>
             <p class="text-black-300 text-sm md:text-base">Donation</p>
-            <p class="text-black-300 text-sm md:text-base">Beløb</p>
+            <p class="text-black-300 text-sm font-semibold md:text-base">Beløb</p>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 md:w-12 md:h-12 stroke-black-300">
             <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
@@ -52,7 +53,7 @@ import VerificationElement from "../components/VerificationElement.astro";
 </div>
 <div class="flex flex-col items-center content-center pt-[60px] md:pt-[60px] gap-3">
     <Button variant="cta">
-      <p>Donate here</p>
+      <p>Donate now</p>
       <svg 
         xmlns="http://www.w3.org/2000/svg" 
         viewBox="0 0 16 16" 
@@ -61,7 +62,8 @@ import VerificationElement from "../components/VerificationElement.astro";
         <path d="M2 6.342a3.375 3.375 0 0 1 6-2.088 3.375 3.375 0 0 1 5.997 2.26c-.063 2.134-1.618 3.76-2.955 4.784a14.437 14.437 0 0 1-2.676 1.61c-.02.01-.038.017-.05.022l-.014.006-.004.002h-.002a.75.75 0 0 1-.592.001h-.002l-.004-.003-.015-.006a5.528 5.528 0 0 1-.232-.107 14.395 14.395 0 0 1-2.535-1.557C3.564 10.22 1.999 8.558 1.999 6.38L2 6.342Z" />
       </svg>
     </Button>
-    <Button variant="tertiary"><p>Cancel</p></Button>
+    <Button variant="tertiary"><p>Log out</p></Button>
   </div>
 </section>
+    </div>
 </MainLayout>
