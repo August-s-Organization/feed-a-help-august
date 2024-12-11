@@ -7,7 +7,10 @@ coverimage: "/gorkha-nepal.jpg"
 coveralt: "Cause in Gorkha District, Nepal"
 description: "We are living in a community in Nepal, struggling to survive after a disaster."
 amount: "200 DKK"
-amountgoal: "250.000 DKK"
+amountgoal: "Of 250.000 DKK"
+donors: "120"
+time: "6 weeks"
+status: "Active"
 ---
 
 My family and I are living in a community in the aftermath of a devastating earthquake in Nepal. We urgently need your help. We lack access to food, clean water, medical care, and shelter. With your generous donation, We can receive the aid necessary to survive and begin rebuilding our life after this catastrophe.

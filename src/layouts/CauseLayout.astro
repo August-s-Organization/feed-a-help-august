@@ -6,27 +6,46 @@ import myImage2 from "../assets/images/hjerte.svg";
 const {frontmatter} = Astro.props;
 ---
 <MainLayout title="Titel">
-    <img src={frontmatter.coverimage} alt={frontmatter.coveralt} class="w-full h-[287px] lg:h-[914px] object-cover"/>
-    <section class="mx-4 mt-3 mb-6">
-        <Button variant="tertiary">Back</Button>
-        <div class="text-black-400 flex justify-between mt-5 mb-4">
-            <p>{frontmatter.date}</p>
-            <p>{frontmatter.type}</p>
-        </div>
-        <h1 class="mb-6">{frontmatter.title}</h1>
-        <p class="mb-3 lg:mb-6">{frontmatter.description}</p>
-        <slot />
-        <div class="flex justify-center gap-[60px] mt-6">
-            <p>{frontmatter.amount}</p>
-            <p>{frontmatter.amountgoal}</p>
-        </div>
-        <div class="grid justify-items-center">
-            <Button variant="cta">
-                <p>Donate</p>
-                <Image src={myImage2} class="w-[13.33px] h-[12.23px] lg:w-[20px] lg:h-[18.35px]" alt=""></Image>
-            </Button>
-        </div>
-    </section>
+    <div class="lg:grid lg:grid-cols-2">
+        <img src={frontmatter.coverimage} alt={frontmatter.coveralt} class="w-full h-[287px] lg:h-[914px] object-cover"/>
+        <section class="mx-4 lg:mx-[80px] mt-3 lg:mt-10 mb-6 lg:mb-[60px]">
+            <div class="flex items-center">
+                <Button variant="tertiary">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 lg:w-5 lg:h-5">
+                        <path fill-rule="evenodd" d="M14 8a.75.75 0 0 1-.75.75H4.56l3.22 3.22a.75.75 0 1 1-1.06 1.06l-4.5-4.5a.75.75 0 0 1 0-1.06l4.5-4.5a.75.75 0 0 1 1.06 1.06L4.56 7.25h8.69A.75.75 0 0 1 14 8Z" clip-rule="evenodd" />
+                    </svg>
+                    <a href="/kategorier"><p>Back</p></a>
+                </Button>
+            </div>
+            <div class="text-black-400 flex justify-between mt-5 lg:mt-10 mb-4 lg:mb-5">
+                <p class="text-xs lg:text-base">{frontmatter.date}</p>
+                <p class="text-xs lg:text-base">{frontmatter.type}</p>
+            </div>
+            <h1 class="mb-6 lg:mb-[60px]">{frontmatter.title}</h1>
+            <p class="mb-3 lg:mb-6">{frontmatter.description}</p>
+            <slot />
+            <div class="flex justify-center gap-[60px] lg:gap-[100px] mt-6 mb-10 lg:mt-[60px] lg:mb-20">
+                <div class="justify-items-center">
+                    <p class="font-semibold">{frontmatter.amount}</p>
+                    <p class="text-xs lg:text-base">{frontmatter.amountgoal}</p>
+                </div>
+                <div class="justify-items-center">
+                    <p class="font-semibold">{frontmatter.donors}</p>
+                    <p class="text-xs lg:text-base">Donors</p>
+                </div>
+                <div class="justify-items-center">
+                    <p class="font-semibold">{frontmatter.time}</p>
+                    <p class="text-xs lg:text-base">{frontmatter.status}</p>
+                </div>
+            </div>
+            <div class="grid justify-items-center">
+                <Button variant="cta">
+                    <p>Donate</p>
+                    <Image src={myImage2} class="w-[13.33px] h-[12.23px] lg:w-[20px] lg:h-[18.35px]" alt=""></Image>
+                </Button>
+            </div>
+        </section>
+    </div>
 </MainLayout>
 <style>
 </style>
