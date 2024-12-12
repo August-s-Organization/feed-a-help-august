@@ -21,26 +21,17 @@ import IndexHeader from "../components/IndexHeader.astro";
 <h2 class="text-base md:text-4xl">Contact information</h2>
     <!-- FORMEN -->
    <form class="flex flex-col items-start md:items-center gap-4 self-stretch">
-            <div class="flex flex-col items-start gap-1 md:gap-2">
-                <p>Name</p>
-              <input class="w-[343px] md:w-[420px] h-[38px] md:h-[43px] bg-white-cream border placeholder-black-100 border-black-200 focus-within:border-black-200 focus-within:border-2 focus-within:ring-0 outline-none rounded-lg md:rounded-x text-xs md:text-sm font-manrope" required type="text" id="Name" name="Name" placeholder="Anders Anderson" />
-            </div>
-            <div class="flex flex-col items-start gap-1 md:gap-2">
-                <p>E-mail</p>
-              <input class="w-[343px] md:w-[420px] h-[38px] md:h-[43px] bg-white-cream border placeholder-black-100 border-black-200 focus-within:border-black-200 focus-within:border-2 focus-within:ring-0 outline-none rounded-lg md:rounded-x text-xs md:text-sm font-manrope" required type="text" id="email" name="email" placeholder="andersanderson@hotmail.com" />
-            </div>
-            <div class="flex flex-col items-start gap-1 md:gap-2">
-                <p>CPR number</p>
-              <input class="w-[343px] md:w-[420px] h-[38px] md:h-[43px] bg-white-cream border placeholder-black-100 border-black-200 focus-within:border-black-200 focus-within:border-2 focus-within:ring-0 outline-none rounded-lg md:rounded-x text-xs md:text-sm font-manrope" required type="text" id="cprnr" name="cprnr" placeholder="**********" />
-            </div>
-            <div class="flex flex-col items-start gap-1 md:gap-2">
-                <p>Username</p>
-              <input class="w-[343px] md:w-[420px] h-[38px] md:h-[43px] bg-white-cream border placeholder-black-100 border-black-200 focus-within:border-black-200 focus-within:border-2 focus-within:ring-0 outline-none rounded-lg md:rounded-x text-xs md:text-sm font-manrope" required type="text" id="username" name="username" placeholder="AndersAnd" />
-            </div>
-            <div class="flex flex-col items-start gap-1 md:gap-2">
-                <p>Password</p>
-              <input class="w-[343px] md:w-[420px] h-[38px] md:h-[43px] bg-white-cream border placeholder-black-100 border-black-200 focus-within:border-black-200 focus-within:border-2 focus-within:ring-0 outline-none rounded-lg md:rounded-x text-xs md:text-sm font-manrope" required type="text" id="password" name="password" placeholder="*******" />
-            </div>
+    <div class="flex flex-col items-start gap-1 md:gap-2">
+      <p>Card number</p>
+    <input class="w-[343px] md:w-[420px] h-[38px] md:h-[43px] bg-white-cream border placeholder-black-100 border-black-200 focus-within:border-black-200 focus-within:border-2 focus-within:ring-0 outline-none rounded-lg md:rounded-x text-xs md:text-sm font-manrope" type="text" id="card" name="card" placeholder="**** **** **** ****" />
+  </div>
+  <div class="flex flex-col items-start gap-1 md:gap-2">
+      <p>Expiration date</p>
+    <input class="w-[343px] md:w-[420px] h-[38px] md:h-[43px] bg-white-cream border placeholder-black-100 border-black-200 focus-within:border-black-200 focus-within:border-2 focus-within:ring-0 outline-none rounded-lg md:rounded-x text-xs md:text-sm font-manrope" type="text" id="date" name="date" placeholder="MM / YY" />
+  </div>
+  <div class="flex flex-col items-start gap-1 md:gap-2">
+      <p>CVV / CVD</p>
+    <input class="w-[343px] md:w-[420px] h-[38px] md:h-[43px] bg-white-cream border placeholder-black-100 border-black-200 focus-within:border-black-200 focus-within:border-2 focus-within:ring-0 outline-none rounded-lg md:rounded-x text-xs md:text-sm font-manrope" type="text" id="cvv" name="cvv" placeholder="***" />
             <div class="flex flex-col items-center content-center pt-10 gap-3">
              <Button variant="submit"><p><a href="/opretflow2">Continue</a></p></Button>
               <Button variant="tertiary"><p>Cancel</p></Button>
