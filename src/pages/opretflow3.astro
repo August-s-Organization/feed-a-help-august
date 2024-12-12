@@ -11,27 +11,27 @@ import IndexHeader from "../components/IndexHeader.astro";
     <div class="flex flex-col items-center gap-2 md:gap-4 md:w-[633px] self-stretch bg-none md:bg-[url('src/assets/images/Grafik/love.svg')] md:bg-no-repeat md:bg-contain md:bg-center">
         
         <h1>Create a profile</h1>
-<p class="font-semibold"> 1 Of 3</p>
+<p class="font-semibold"> 3 Of 3</p>
 <p class="text-center md:w-[358px]">Please enter your contact information to proceed.</p>
     </div>
     
     
     <div class="flex flex-col items-start md:items-center gap-5 self-stretch md:gap-10 md:pt-10 md:pb-10 md:w-[633px]">
         <div class="flex flex-col items-start gap-5 md:gap-7">
-<h2 class="text-base md:text-4xl">Contact information</h2>
+<h2 class="text-base md:text-4xl">Payment details</h2>
     <!-- FORMEN -->
    <form class="flex flex-col items-start md:items-center gap-4 self-stretch">
     <div class="flex flex-col items-start gap-1 md:gap-2">
       <p>Card number</p>
-    <input class="w-[343px] md:w-[420px] h-[38px] md:h-[43px] bg-white-cream border placeholder-black-100 border-black-200 focus-within:border-black-200 focus-within:border-2 focus-within:ring-0 outline-none rounded-lg md:rounded-x text-xs md:text-sm font-manrope" type="text" id="card" name="card" placeholder="**** **** **** ****" />
+    <input class="w-[343px] md:w-[420px] h-[38px] md:h-[43px] bg-white-cream border placeholder-black-100 border-black-200 focus-within:border-black-200 focus-within:border-2 focus-within:ring-0 outline-none rounded-lg md:rounded-x text-xs md:text-sm font-manrope" required type="text" id="card" name="card" placeholder="**** **** **** ****" />
   </div>
   <div class="flex flex-col items-start gap-1 md:gap-2">
       <p>Expiration date</p>
-    <input class="w-[343px] md:w-[420px] h-[38px] md:h-[43px] bg-white-cream border placeholder-black-100 border-black-200 focus-within:border-black-200 focus-within:border-2 focus-within:ring-0 outline-none rounded-lg md:rounded-x text-xs md:text-sm font-manrope" type="text" id="date" name="date" placeholder="MM / YY" />
+    <input class="w-[343px] md:w-[420px] h-[38px] md:h-[43px] bg-white-cream border placeholder-black-100 border-black-200 focus-within:border-black-200 focus-within:border-2 focus-within:ring-0 outline-none rounded-lg md:rounded-x text-xs md:text-sm font-manrope" required type="text" id="date" name="date" placeholder="MM / YY" />
   </div>
   <div class="flex flex-col items-start gap-1 md:gap-2">
       <p>CVV / CVD</p>
-    <input class="w-[343px] md:w-[420px] h-[38px] md:h-[43px] bg-white-cream border placeholder-black-100 border-black-200 focus-within:border-black-200 focus-within:border-2 focus-within:ring-0 outline-none rounded-lg md:rounded-x text-xs md:text-sm font-manrope" type="text" id="cvv" name="cvv" placeholder="***" />
+    <input class="w-[343px] md:w-[420px] h-[38px] md:h-[43px] bg-white-cream border placeholder-black-100 border-black-200 focus-within:border-black-200 focus-within:border-2 focus-within:ring-0 outline-none rounded-lg md:rounded-x text-xs md:text-sm font-manrope" required type="text" id="cvv" name="cvv" placeholder="***" />
             <div class="flex flex-col items-center content-center pt-10 gap-3">
              <Button variant="submit"><p><a href="/opretflow2">Continue</a></p></Button>
               <Button variant="tertiary"><p>Cancel</p></Button>
