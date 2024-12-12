@@ -4,3 +4,26 @@ import Button from "../components/Button.astro";
 import { Image } from 'astro:assets';
 import myImage from "../assets/images/hero-unit.jpg";
 ---
+
+<MainLayout>
+
+    <section class="flex items-center justify-center mt-3 md:mt-5 mb-6 md:mb-6 mx-4 md:mx-20">
+        <div class="flex flex-col items-center h-[518px] md:w-[633px] self-stretch bg-[url('src/assets/images/Grafik/love.svg')] bg-no-repeat bg-contain bg-center">
+          <h1 class="pb-14">Thank you</h1>
+          <p class="pb-2">You can now start donating.</p>
+          <p class="text-center pb-28 md:w-[400px]">To get started, explore our various causes to learn more about your options.</p>
+          <Button variant="cta">
+            <p><a href="/kategorier">Donate now</a></p>
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              viewBox="0 0 16 16" 
+              fill="currentColor" 
+              class="w-5 h-5 lg:w-6 lg:h-6">
+              <path d="M2 6.342a3.375 3.375 0 0 1 6-2.088 3.375 3.375 0 0 1 5.997 2.26c-.063 2.134-1.618 3.76-2.955 4.784a14.437 14.437 0 0 1-2.676 1.61c-.02.01-.038.017-.05.022l-.014.006-.004.002h-.002a.75.75 0 0 1-.592.001h-.002l-.004-.003-.015-.006a5.528 5.528 0 0 1-.232-.107 14.395 14.395 0 0 1-2.535-1.557C3.564 10.22 1.999 8.558 1.999 6.38L2 6.342Z" />
+            </svg>
+          </Button>
+        </div>
+      </section>
+      
+
+</MainLayout>
