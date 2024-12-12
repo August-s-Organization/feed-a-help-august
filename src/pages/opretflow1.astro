@@ -6,7 +6,7 @@ import Button from "../components/Button.astro";
 <MainLayout >
   <Header slot="main-header"></Header>
 
-   <section slot="main" class="flex flex-col md:flex-row items-start md:items-center md:justify-between gap-8 mt-3 md:mt-5 mb-6 md:mb-6 mx-4 md:mx-20">
+   <section class="flex flex-col md:flex-row items-start md:items-center md:justify-between gap-8 mt-3 md:mt-5 mb-6 md:mb-6 mx-4 md:mx-20">
     <div class="flex flex-col items-center gap-2 md:gap-4 md:w-[633px] self-stretch bg-none md:bg-[url('src/assets/images/Grafik/love.svg')] md:bg-no-repeat md:bg-contain md:bg-center">
         
         <h1>Create a profile</h1>
@@ -40,16 +40,12 @@ import Button from "../components/Button.astro";
                 <p>Password</p>
               <input class="w-[343px] md:w-[420px] h-[38px] md:h-[43px] bg-white-cream border placeholder-black-100 border-black-200 focus-within:border-black-200 focus-within:border-2 focus-within:ring-0 outline-none rounded-lg md:rounded-x text-xs md:text-sm font-manrope" required type="text" id="password" name="password" placeholder="*******" />
             </div>
-            <div class="flex flex-col items-center content-center gap-3">
+            <div class="flex flex-col items-center content-center pt-10 gap-3">
               <Button variant="submit"><p>Continue</p></Button>
               <Button variant="tertiary"><p>Cancel</p></Button>
               </div>
     </form>
 </div>
-    <div class="flex flex-col items-center content-center gap-3">
-        <Button variant="default"><p>Continue</p></Button>
-        <Button variant="tertiary"><p>Cancel</p></Button>
-        </div>
 </div>
 </div>
 </section> 
