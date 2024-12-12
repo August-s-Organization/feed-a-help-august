@@ -12,10 +12,10 @@ import myImage5 from "../assets/images/grafik/letter.svg";
 <MainLayout title="Forside">
     <section class="relative">
         <IndexHeader></IndexHeader>
-        <Image src={myImage} alt="A woman farming in Turkana County, Kenya." class="h-[28rem] md:h-[36rem] w-full object-cover"></Image>
+        <Image src={myImage} alt="A woman farming in Turkana County, Kenya." class="h-[28rem] md:h-[480px] w-full object-cover"></Image>
         <div class="absolute bottom-7 left-7 md:bottom-12 md:left-12 lg:bottom-20 lg:left-20">
             <Button variant="cta">
-                <p>Donate</p>
+                <p>Join our cause</p>
                 <Image src={myImage2} class="w-[13.33px] h-[12.23px] md:w-[16.67px] md:h-[15.29px] lg:w-[20px] lg:h-[18.35px]" alt=""></Image>
             </Button>
         </div>
@@ -23,16 +23,16 @@ import myImage5 from "../assets/images/grafik/letter.svg";
     <section class="bg-blue-200 px-4 pt-8 pb-10 lg:px-20 lg:pt-10 lg:pb-12">
         <article class="grid justify-items-center">
             <h2 class="text-center mb-6 lg:mb-10">How does Feed A Help work?</h2>
-            <div class="grid grid-cols-3 gap-5 text-sm lg:text-base text-center">
-                <div class="place-items-center">
+            <div class="flex justify-between items-end self-stretch  lg:text-base text-center">
+                <div class="flex flex-col justify-end items-center">
                     <Image src={myImage3} alt="" class="h-14 md:h-20 lg:h-24 mb-2 md:mb-4"></Image>
                     <p class="w-[114px] lg:w-[178px]">Create a profile as a donor or receiver</p>
                 </div>
-                <div class="place-items-center">
+                <div class="flex flex-col justify-end items-center">
                     <Image src={myImage4} alt="" class="h-14 md:h-20 lg:h-24 mb-2 md:mb-4"></Image>
                     <p class="w-[85px] lg:w-[168px]">Set up your donation or cause</p>
                 </div>
-                <div class="place-items-center">
+                <div class="flex flex-col justify-end items-center">
                     <Image src={myImage5} alt="" class="h-14 md:h-20 lg:h-24 mb-2 md:mb-4"></Image>
                     <p class="w-[80px] lg:w-[150px]">And share the impact together</p>
                 </div>
@@ -42,9 +42,9 @@ import myImage5 from "../assets/images/grafik/letter.svg";
     <section x-data="{ allecauses: [] }" x-init="allecauses = await (await fetch('causes.json')).json(); allecauses.reverse();" class="pl-4 py-6 lg:pb-[60px] relative">
         <div class="absolute inset-0 bg-[url('../assets/images/grafik/Pattern_yellow.svg')] bg-cover bg-center bg-no-repeat opacity-75 z-0"></div>
         <div class="relative z-10 grid justify-items-center text-center">
-            <h2 class="mb-6 lg:mb-10">Causes</h2>
-            <p class="w-1/2 lg:w-1/4 justify-self-center mb-6 lg:mb-20">Explore our variety of categories and validated causes.</p>
-            <div class="flex justify-self-end mb-1 lg:mb-5">
+            <h2 class="mb-4 md:text-[64px]">Our causes</h2>
+            <p class="w-1/2 lg:w-1/4 justify-self-center mb-6 lg:mb-10">Explore our variety of categories and validated causes.</p>
+            <div class="flex justify-self-end pr-4 md:pr-20 mb-1 lg:mb-5">
                 <Button variant="action" class="flex self-end">
                     <p><a href="/kategorier">See all</a></p>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-5 lg:w-6">
@@ -53,7 +53,7 @@ import myImage5 from "../assets/images/grafik/letter.svg";
                 </Button>
             </div>
         </div>
-        <section class="relative z-10 flex flex-row gap-2 lg:gap-4 py-[10px] overflow-x-auto cursor-grab">
+        <section class="relative z-10 flex flex-row gap-2 lg:gap-4 py-[10px] pl-4 md:pl-20 overflow-x-auto cursor-grab">
             <template x-for="causes in allecauses" :key="causes.id">
                 <article>
                     <div class="bg-yellow-200 hover:bg-yellow-100 active:bg-yellow-300 rounded-lg flex-none w-[160px] lg:w-[340px]">
