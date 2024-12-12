@@ -20,7 +20,7 @@ import myImage5 from "../assets/images/grafik/letter.svg";
             </Button>
         </div>
     </section>
-    <section class="bg-blue-200 px-4 pt-8 pb-10 lg:px-20 lg:pt-10 lg:pb-12" slot="main">
+    <section class="bg-blue-200 px-4 pt-8 pb-10 lg:px-20 lg:pt-10 lg:pb-12">
         <article class="grid justify-items-center">
             <h2 class="text-center mb-6 lg:mb-10">How does Feed A Help work?</h2>
             <div class="grid grid-cols-3 gap-5 text-sm lg:text-base text-center">
@@ -39,12 +39,13 @@ import myImage5 from "../assets/images/grafik/letter.svg";
             </div>
         </article>
     </section>
-    <section x-data="{ allecauses: [] }" x-init="allecauses = await (await fetch('causes.json')).json(); allecauses.reverse();" class="pl-4 py-6 lg:pb-[60px]">
-        <div class="grid justify-items-center text-center">
+    <section x-data="{ allecauses: [] }" x-init="allecauses = await (await fetch('causes.json')).json(); allecauses.reverse();" class="pl-4 py-6 lg:pb-[60px] relative">
+        <div class="absolute inset-0 bg-[url('../assets/images/grafik/Pattern_yellow.svg')] bg-cover bg-center bg-no-repeat opacity-75 z-0"></div>
+        <div class="relative z-10 grid justify-items-center text-center">
             <h2 class="mb-6 lg:mb-10">Causes</h2>
             <p class="w-1/2 lg:w-1/4 justify-self-center mb-6 lg:mb-20">Explore our variety of categories and validated causes.</p>
             <div class="flex justify-self-end mb-1 lg:mb-5">
-                <Button variant="tertiary" class="flex self-end">
+                <Button variant="action" class="flex self-end">
                     <p><a href="/kategorier">See all</a></p>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-5 lg:w-6">
                         <path fill-rule="evenodd" d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
@@ -52,7 +53,7 @@ import myImage5 from "../assets/images/grafik/letter.svg";
                 </Button>
             </div>
         </div>
-        <section class="flex flex-row gap-2 lg:gap-4 py-[10px] overflow-x-auto cursor-grab">
+        <section class="relative z-10 flex flex-row gap-2 lg:gap-4 py-[10px] overflow-x-auto cursor-grab">
             <template x-for="causes in allecauses" :key="causes.id">
                 <article>
                     <div class="bg-yellow-200 hover:bg-yellow-100 active:bg-yellow-300 rounded-lg flex-none w-[160px] lg:w-[340px]">
