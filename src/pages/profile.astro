@@ -5,11 +5,14 @@ import Button from "../components/Button.astro";
 import { Image } from 'astro:assets';
 import myImage from "../assets/images/hero-unit.jpg";
 import VerificationElement from "../components/VerificationElement.astro";
+import MainHeader2 from "../components/MainHeader2.astro";
+
 ---
 
+<MainHeader2></MainHeader2>
 <MainLayout>
     <div class="bg-no-repeat bg-center bg-cover flex items-center justify-center" style="background-image: url(src/assets/images/Grafik/Pattern_yellow.svg);"> 
-      <section class="flex flex-col items-center mx-4 mt-3 mb-6 md:mx-20 md:mt-5 :mb-[60]">
+      <section class="flex flex-col items-center mx-4 mt-3 mb-6 md:mx-20 md:mt-5 md:mb-[60px]">
         <h1 class="pb-6">Profile</h1>
         <div class="flex flex-col items-start self-stretch">
           <h2 class="md:text-[28px]">Username</h2>
@@ -29,9 +32,9 @@ import VerificationElement from "../components/VerificationElement.astro";
               <div class="flex items-center">
                 <Image src={myImage} alt="" class="object-cover rounded-l-lg h-[74px] w-[74px] md:h-[84px] md:w-[84px] mr-2" />
                 <div class="mr-auto">
-                  <h4 class="text-black-500 md:text-xl md:font-semibold">Navn</h4>
-                  <p class="text-black-300 text-sm md:text-base">Donation</p>
-                  <p class="text-black-300 text-sm font-semibold md:text-base">Beløb</p>
+                  <h4 class="text-black-500 pb-1 md:text-xl md:font-bold">Maragoli Farmers</h4>
+                  <p class="text-black-300 text-xs md:text-base">Monthly donation</p>
+                  <p class="text-black-300 text-sm font-semibold md:text-base">100 Kr.</p>
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 md:w-12 md:h-12 stroke-black-300">
                   <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
@@ -43,9 +46,9 @@ import VerificationElement from "../components/VerificationElement.astro";
               <div class="flex items-center">
                 <Image src={myImage} alt="" class="object-cover rounded-l-lg h-[74px] w-[74px] md:h-[84px] md:w-[84px] mr-2" />
                 <div class="mr-auto">
-                  <h4 class="text-black-500 md:text-xl md:font-semibold">Navn</h4>
-                  <p class="text-black-300 text-sm md:text-base">Donation</p>
-                  <p class="text-black-300 text-sm font-semibold md:text-base">Beløb</p>
+                  <h4 class="text-black-500 pb-1 md:text-xl md:font-bold">Sichuan's Earthquake</h4>
+                  <p class="text-black-300 text-sm md:text-base">Single donation</p>
+                  <p class="text-black-300 text-sm font-semibold md:text-base">50 Kr.</p>
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 md:w-12 md:h-12 stroke-black-300">
                   <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />

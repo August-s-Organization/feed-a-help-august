@@ -2,7 +2,7 @@
 const indexheaderStyling = "text-red-800 text-2xl lg:text-4xl font-medium p-5 md:p-8 lg:p-10 absolute w-full z-10";
 import { Image } from 'astro:assets';
 import myImageLogo from "../assets/images/logo.svg";
-import myImageLogo2 from "../assets/images/grafik/logo.svg";
+import myImageLogo2 from "../assets/images/logo.svg";
 ---
 <div class="relative">
     <div x-data="{showmenu: false, activeHeader: false }" :class="{'bg-yellow-100': activeHeader}" @click="activeHeader = !activeHeader" @click.outside="activeHeader = false" class:list={[indexheaderStyling]}>
