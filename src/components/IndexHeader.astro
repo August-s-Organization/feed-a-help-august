@@ -1,11 +1,11 @@
 ---
-const headerStyling = "text-red-800 text-2xl lg:text-4xl font-medium p-5 md:p-8 lg:p-10 absolute w-full z-10";
+const indexheaderStyling = "text-red-800 text-2xl lg:text-4xl font-medium p-5 md:p-8 lg:p-10 absolute w-full z-10";
 import { Image } from 'astro:assets';
 import myImageLogo from "../assets/images/logo.svg";
 import myImageLogo2 from "../assets/images/grafik/logo.svg";
 ---
 <div class="relative">
-    <div x-data="{showmenu: false, activeHeader: false }" :class="{'bg-yellow-100': activeHeader}" @click="activeHeader = !activeHeader" @click.outside="activeHeader = false" class:list={[headerStyling]}>
+    <div x-data="{showmenu: false, activeHeader: false }" :class="{'bg-yellow-100': activeHeader}" @click="activeHeader = !activeHeader" @click.outside="activeHeader = false" class:list={[indexheaderStyling]}>
         <div class="flex justify-between">
             <a href="/"><Image src={myImageLogo} alt="" class="w-52 md:w-64 lg:w-96"></Image></a>
             <button id="burgermenu" x-on:click="showmenu = ! showmenu"><Image src={myImageLogo2} alt="" class="w-9 md:w-12 lg:w-16"></Image></button>

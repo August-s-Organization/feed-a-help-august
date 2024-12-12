@@ -1,5 +1,6 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import IndexHeader from "../components/IndexHeader.astro";
 import Button from "../components/Button.astro";
 import { Image } from 'astro:assets';
 import myImage from "../assets/images/hero-unit.jpg";
@@ -10,6 +11,7 @@ import myImage5 from "../assets/images/grafik/letter.svg";
 ---
 <MainLayout title="Forside">
     <section class="relative">
+        <IndexHeader></IndexHeader>
         <Image src={myImage} alt="A woman farming in Turkana County, Kenya." class="h-[28rem] md:h-[36rem] w-full object-cover"></Image>
         <div class="absolute bottom-7 left-7 md:bottom-12 md:left-12 lg:bottom-20 lg:left-20">
             <Button variant="cta">
@@ -18,7 +20,7 @@ import myImage5 from "../assets/images/grafik/letter.svg";
             </Button>
         </div>
     </section>
-    <section class="bg-blue-200 px-4 pt-8 pb-10 lg:px-20 lg:pt-10 lg:pb-12">
+    <section class="bg-blue-200 px-4 pt-8 pb-10 lg:px-20 lg:pt-10 lg:pb-12" slot="main">
         <article class="grid justify-items-center">
             <h2 class="text-center mb-6 lg:mb-10">How does Feed A Help work?</h2>
             <div class="grid grid-cols-3 gap-5 text-sm lg:text-base text-center">
