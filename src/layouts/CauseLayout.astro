@@ -25,20 +25,20 @@ const {frontmatter} = Astro.props;
             <p class="mb-3 lg:mb-6">{frontmatter.description}</p>
             <slot />
             <div class="flex justify-center gap-[60px] lg:gap-[100px] mt-6 mb-10 lg:mt-[60px] lg:mb-20">
-                <div class="flex flex-col items-center gap-1">
+                <div class="justify-items-center">
                     <p class="font-semibold">{frontmatter.amount}</p>
                     <p class="text-xs lg:text-base">{frontmatter.amountgoal}</p>
                 </div>
-                <div class="flex flex-col items-center gap-1">
+                <div class="justify-items-center">
                     <p class="font-semibold">{frontmatter.donors}</p>
                     <p class="text-xs lg:text-base">Donors</p>
                 </div>
-                <div class="flex flex-col items-center gap-1">
+                <div class="justify-items-center">
                     <p class="font-semibold">{frontmatter.time}</p>
                     <p class="text-xs lg:text-base">{frontmatter.status}</p>
                 </div>
             </div>
-            <div class="flex flex-col items-center gap-1">
+            <div class="grid justify-items-center">
                 <Button variant="cta">
                     <p>Donate</p>
                     <Image src={myImage2} class="w-[13.33px] h-[12.23px] lg:w-[20px] lg:h-[18.35px]" alt=""></Image>
