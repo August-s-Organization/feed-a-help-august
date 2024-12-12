@@ -6,7 +6,7 @@ import myImageLogo2 from "../assets/images/grafik/logo.svg";
 ---
 <div x-data="{showmenu: false, activeHeader: false }" :class="{'bg-yellow-100': activeHeader}" @click="activeHeader = !activeHeader" @click.outside="activeHeader = false" class:list={[mainheaderStyling]}>
     <div class="flex justify-between">
-        <a href="/"><Image src={myImageLogo} alt="" class="w-52 md:w-64 lg:w-96"></Image></a>
+        <a href="/"><Image src={myImageLogo2} alt="" class="w-9 md:w-12 lg:w-16"></Image></a>
         <button id="burgermenu" x-on:click="showmenu = ! showmenu"><Image src={myImageLogo2} alt="" class="w-9 md:w-12 lg:w-16"></Image></button>
     </div>
     <nav x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false" class="sticky top-0 my-[15rem]">
