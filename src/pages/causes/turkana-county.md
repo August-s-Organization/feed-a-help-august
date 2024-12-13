@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/CauseLayout.astro
-title: "Turkana County, Kenya"
+title: "Turkana, Kenya"
 type: "Monthly"
 date: "2024-11-10"
 coverimage: "/turkana-county-kenya.jpg"

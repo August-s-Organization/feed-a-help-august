@@ -4,17 +4,15 @@
         "causeoverskrift": "Gorkha, Nepal",
         "causebeskrivelse": "Emergencies",
         "causebillede": "gorkha-nepal.jpg",
-        "causebilledealt": "Cause in Gorkha, Nepal" ,
-        "causelink": "/causes/gorkha"
+        "causebilledealt": "Cause in Gorkha, Nepal"
     },
 
     {
         "id": 2,
-        "causeoverskrift": "Turkana County, Kenya",
+        "causeoverskrift": "Turkana, Kenya",
         "causebeskrivelse": "Climate",
         "causebillede": "turkana-county-kenya.jpg",
-        "causebilledealt": "Cause in Turkana County, Kenya" ,
-        "causelink": "/causes/turkana-county"
+        "causebilledealt": "Cause in Turkana County, Kenya"
     },
 
     {
@@ -22,25 +20,22 @@
         "causeoverskrift": "Aleppo, Syria",
         "causebeskrivelse": "Refugees",
         "causebillede": "aleppo-syria.jpg",
-        "causebilledealt": "Cause in Aleppo, Syria" ,
-        "causelink": "/causes/aleppo"
+        "causebilledealt": "Cause in Aleppo, Syria"
     },
 
     {
         "id": 4,
-        "causeoverskrift": "Tete, Mozambique",
+        "causeoverskrift": "Huambo, Angola",
         "causebeskrivelse": "Development",
-        "causebillede": "tete-mozambique.jpg",
-        "causebilledealt": "Cause in Tete, Mozambique" ,
-        "causelink": "/causes/tete"
+        "causebillede": "huambo-angola.jpg",
+        "causebilledealt": "Cause in Huambo, Angola"
     },
 
     {
         "id": 5,
-        "causeoverskrift": "Uttar Pradesh, India",
+        "causeoverskrift": "Bihar, India",
         "causebeskrivelse": "Education",
-        "causebillede": "uttar-pradesh-india.jpg",
-        "causebilledealt": "Cause in Uttar Pradesh, India" ,
-        "causelink": "/causes/uttar-pradesh"
+        "causebillede": "bihar-india.jpg",
+        "causebilledealt": "Cause in Bihar, India"
     }
 ]
