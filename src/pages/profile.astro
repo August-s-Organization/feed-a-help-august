@@ -4,7 +4,7 @@ import Header from "../components/IndexHeader.astro";
 import Button from "../components/Button.astro";
 import { Image } from 'astro:assets';
 import myImage from "../assets/images/hero-unit.jpg";
-import VerificationElement from "../components/VerificationElement.astro";
+import VerificationElement from "../components/ListElement.astro";
 import MainHeader2 from "../components/MainHeader2.astro";
 ---
 
@@ -27,7 +27,7 @@ import MainHeader2 from "../components/MainHeader2.astro";
         <div class="flex flex-col items-start self-stretch pt-10">
           <h3 class="pb-3">Donations</h3>
           <div class="flex flex-col gap-4">
-            <VerificationElement variant="cause">
+            <VerificationElement>
               <div class="flex items-center">
                 <Image src={myImage} alt="" class="object-cover rounded-l-lg h-[74px] w-[74px] md:h-[84px] md:w-[84px] mr-2" />
                 <div class="mr-auto">
@@ -41,7 +41,7 @@ import MainHeader2 from "../components/MainHeader2.astro";
               </div>
             </VerificationElement>
   
-            <VerificationElement variant="cause">
+            <VerificationElement>
               <div class="flex items-center">
                 <Image src={myImage} alt="" class="object-cover rounded-l-lg h-[74px] w-[74px] md:h-[84px] md:w-[84px] mr-2" />
                 <div class="mr-auto">

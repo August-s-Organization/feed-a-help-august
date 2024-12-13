@@ -2,44 +2,61 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import MainHeader from "../components/IndexHeader.astro";
 import Button from "../components/Button.astro";
-import AmountElement from "../components/AmountElement.astro"
+import ListElement from "../components/ListElement.astro"
 import { Image } from 'astro:assets';
 import myImageCause from "../assets/images/turkana-county-kenya.jpg";
-import myImageContent from "../assets/images/hjerte.svg";
+import myImageContent from "../assets/images/content.jpg";
+import myImageContent2 from "../assets/images/content2.jpg";
+import myImageContent3 from "../assets/images/content3.jpg";
+import myImageContent4 from "../assets/images/content4.jpg";
+import myImageContent5 from "../assets/images/content5.jpg";
+import myImageContent6 from "../assets/images/content6.jpg";
+import myImage2 from "../assets/images/hjerte.svg";
 ---
 <MainHeader></MainHeader>
 <MainLayout>
-    <section class="lg:grid lg:grid-cols-2 mb-6 sm:mb-[33px] md:mb-[42px] lg:mb-[60px]">
-        <Image src={myImageCause} alt="" class="w-full h-[287px] lg:h-[914px] object-cover"></Image>
-        <h1>Turkana County, Kenya</h1>
-        <div class="relative mx-4 sm:mx-[32px] md:mx-[48px] lg:mx-[80px] mt-3 sm:mt-[19px] md:mt-[26px] lg:mt-10">
-            <Button variant="action">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-5 lg:w-6">
-                    <path fill-rule="evenodd" d="M9.78 4.22a.75.75 0 0 1 0 1.06L7.06 8l2.72 2.72a.75.75 0 1 1-1.06 1.06L5.47 8.53a.75.75 0 0 1 0-1.06l3.25-3.25a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
-                </svg>
-                <p><a href="/kategorier">Back</a></p>
-            </Button>
-            <div class="mt-5 lg:mt-10 mb-4 lg:mb-5">
-                <h2 class="">Latest update</h2>
-                <p class="">2024</p>
-                <AmountElement variant="cause"></AmountElement>
-            </div>
-            <h2 class="mb-3 lg:mb-6">Gallery</h2>
-            <div class="mb-10 lg:mb-20">
-                <div class="justify-items-center">
-                    <Image src={myImageContent} alt="" class=""></Image>
-                </div>
-                <div class="flex items-center justify-items-center">
-                    <Button variant="action"><p>Show more</p></Button>
+    <section class="lg:grid lg:grid-cols-2 mb-6">
+        <div class="mb-8 lg:mb-[60px]">
+            <Image src={myImageCause} alt="" class="w-full h-[287px] lg:h-[914px] object-cover"></Image>
+            <h1 class="p-4 sm:p-[32px] md:p-[48px] lg:text-center">Turkana County, Kenya</h1>
+        </div>
+        <div class="grid justify-items-center mx-4 sm:mx-[32px] md:mx-[48px] lg:mx-[80px]">
+            <div class="hidden lg:block place-self-start mb-10">
+                <Button variant="action">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-5 lg:w-6">
-                        <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                        <path fill-rule="evenodd" d="M9.78 4.22a.75.75 0 0 1 0 1.06L7.06 8l2.72 2.72a.75.75 0 1 1-1.06 1.06L5.47 8.53a.75.75 0 0 1 0-1.06l3.25-3.25a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
                     </svg>
-                </div>
-            </div>
-            <div class="grid justify-items-center">
-                <Button variant="cta">
-                    <p>Manage donation</p>
+                    <p><a href="/kategorier">Back</a></p>
                 </Button>
+            </div>
+            <div class="grid justify-self-start mb-8 lg:mb-[60px]">
+                <h2 class="mb-4 lg:mb-8">Latest update</h2>
+                <p class="">2024</p>
+                <ListElement variant="cause"></ListElement>
+                <ListElement variant="cause"></ListElement>
+            </div>
+            <div>
+                <h2 class="mb-4 lg:mb-8">Gallery</h2>
+                <div class="grid grid-cols-3 gap-2 mb-3">
+                    <Image src={myImageContent} alt="" class="rounded-lg w-full h-[100px] lg:w-[200px] lg:h-[200px] object-cover lg:mb-2"></Image>
+                    <Image src={myImageContent2} alt="" class="rounded-lg w-full h-[100px] lg:w-[200px] lg:h-[200px] object-cover lg:mb-2"></Image>
+                    <Image src={myImageContent3} alt="" class="rounded-lg w-full h-[100px] lg:w-[200px] lg:h-[200px] object-cover lg:mb-2"></Image>
+                    <Image src={myImageContent4} alt="" class="rounded-lg w-full h-[100px] lg:w-[200px] lg:h-[200px] object-cover lg:mb-2"></Image>
+                    <Image src={myImageContent5} alt="" class="rounded-lg w-full h-[100px] lg:w-[200px] lg:h-[200px] object-cover lg:mb-2"></Image>
+                    <Image src={myImageContent6} alt="" class="rounded-lg w-full h-[100px] lg:w-[200px] lg:h-[200px] object-cover lg:mb-2"></Image>
+                </div>
+                <div class="flex self-end justify-end mb-8 lg:mb-[60px]">
+                    <Button variant="action"><p>Show more</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-5 lg:w-6">
+                            <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                        </svg>
+                    </Button>
+                </div>
+                <div class="grid place-items-center">
+                    <Button variant="secondary">
+                        <p>Manage donation</p>
+                    </Button>
+                </div>
             </div>
         </div>
     </section>
