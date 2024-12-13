@@ -1,6 +1,6 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Header from "../components/IndexHeader.astro";
+import MainHeader from "../components/MainHeader.astro";
 import Button from "../components/Button.astro";
 import { Image } from 'astro:assets';
 import myImage from "../assets/images/turkana-county-kenya.jpg";
@@ -8,7 +8,7 @@ import AmountElement from "../components/AmountElement.astro";
 const {frontmatter} = Astro.props;
 ---
 
-
+<MainHeader></MainHeader>
 <MainLayout title="lav donation">
 
     <section class="flex flex-col items-center gap-10 mt-3 md:mt-0 mb-6 md:mb-0 mx-4 md:mx-0">

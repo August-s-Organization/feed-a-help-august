@@ -1,6 +1,6 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import MainHeader2 from "../components/MainHeader2.astro";
+import MainHeader from "../components/MainHeader.astro";
 import Card from "../components/Card.astro";
 import { Image } from "astro:assets";
 import myImageCause from "../assets/images/grafik/emergencies.svg";
@@ -9,9 +9,10 @@ import myImageCause3 from "../assets/images/grafik/refugees.svg";
 import myImageCause4 from "../assets/images/grafik/development.svg";
 import myImageCause5 from "../assets/images/grafik/education.svg";
 ---
-<MainHeader2></MainHeader2>
-<MainLayout>
-    <div class="bg-no-repeat bg-center bg-cover" style="background-image: url(src/assets/images/Grafik/Pattern_yellow.svg);">
+<MainLayout title="kategorier">
+    <div class="bg-no-repeat bg-center bg-cover " style="background-image: url(src/assets/images/Grafik/Pattern_yellow.svg);">
+
+        <MainHeader></MainHeader>
     <section class="relative z-10 mx-4 sm:mx-auto">
         <div class="relative z-10 grid justify-items-center text-center mb-10 lg:mb-[60px] mt-3 lg:mt-5">
             <h1 class="mb-6 lg:mb-10">Our causes</h1>
