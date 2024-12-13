@@ -7,13 +7,12 @@ import myImage2 from "../assets/images/hjerte.svg";
 const {frontmatter} = Astro.props;
 ---
 
-<MainLayout title="donations formål">
+<MainLayout title="Causes">
     <MainHeader></MainHeader>
     <section class="lg:grid lg:grid-cols-2 mb-6 sm:mb-[33px] md:mb-[42px] lg:mb-[60px]">
-        <img src={frontmatter.coverimage} alt={frontmatter.coveralt} class="w-[655px] h-[287px] lg:h-[914px] object-cover"/>
-        <div class="md:w-[633px] bg-contain bg-no-repeat bg-[url('/src/assets/images/Grafik/love.svg')]">
-
-        <div class="mx-4 sm:mx-[32px] md:mx-[48px] lg:mx-[10px] mt-3 sm:mt-[19px] md:mt-[26px] lg:mt-10">
+        <img src={frontmatter.coverimage} alt={frontmatter.coveralt} class="w-full h-[287px] lg:h-[914px] object-cover"/>
+        <div class="bg-center bg-contain bg-no-repeat bg-[url('/src/assets/images/Grafik/love.svg')]">
+            <div class="px-4 sm:px-[32px] md:px-[48px] lg:px-20 pt-3 sm:pt-[19px] md:pt-[26px] lg:pt-10">
                 <Button variant="tertiary">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-5 lg:w-6">
                         <path fill-rule="evenodd" d="M9.78 4.22a.75.75 0 0 1 0 1.06L7.06 8l2.72 2.72a.75.75 0 1 1-1.06 1.06L5.47 8.53a.75.75 0 0 1 0-1.06l3.25-3.25a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
