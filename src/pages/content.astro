@@ -2,15 +2,10 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import MainHeader from "../components/IndexHeader.astro";
 import Button from "../components/Button.astro";
-import VerificationElement from "../components/VerificationElement.astro"
+import AmountElement from "../components/AmountElement.astro"
 import { Image } from 'astro:assets';
 import myImageCause from "../assets/images/turkana-county-kenya.jpg";
 import myImageContent from "../assets/images/hjerte.svg";
-import myImageContent2 from "../assets/images/.svg";
-import myImageContent3 from "../assets/images/.svg";
-import myImageContent4 from "../assets/images/.svg";
-import myImageContent5 from "../assets/images/.svg";
-import myImageContent6 from "../assets/images/.jpg";
 ---
 <MainHeader></MainHeader>
 <MainLayout>
@@ -27,18 +22,12 @@ import myImageContent6 from "../assets/images/.jpg";
             <div class="mt-5 lg:mt-10 mb-4 lg:mb-5">
                 <h2 class="">Latest update</h2>
                 <p class="">2024</p>
-                <VerificationElement variant="cause"></VerificationElement>
-                <VerificationElement variant="cause"></VerificationElement>
+                <AmountElement variant="cause"></AmountElement>
             </div>
             <h2 class="mb-3 lg:mb-6">Gallery</h2>
             <div class="mb-10 lg:mb-20">
                 <div class="justify-items-center">
                     <Image src={myImageContent} alt="" class=""></Image>
-                    <Image src={myImageContent2} alt="" class=""></Image>
-                    <Image src={myImageContent3} alt="" class=""></Image>
-                    <Image src={myImageContent4} alt="" class=""></Image>
-                    <Image src={myImageContent5} alt="" class=""></Image>
-                    <Image src={myImageContent6} alt="" class=""></Image>
                 </div>
                 <div class="flex items-center justify-items-center">
                     <Button variant="action"><p>Show more</p></Button>
