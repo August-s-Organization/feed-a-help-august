@@ -1,0 +1,62 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import MainHeader from "../components/IndexHeader.astro";
+import Button from "../components/Button.astro";
+import VerificationElement from "../components/VerificationElement.astro"
+import { Image } from 'astro:assets';
+import myImageCause from "../assets/images/turkana-county-kenya.jpg";
+import myImageContent from "../assets/images/hjerte.svg";
+import myImageContent2 from "../assets/images/.svg";
+import myImageContent3 from "../assets/images/.svg";
+import myImageContent4 from "../assets/images/.svg";
+import myImageContent5 from "../assets/images/.svg";
+import myImageContent6 from "../assets/images/.jpg";
+---
+<MainHeader></MainHeader>
+<MainLayout>
+    <section class="lg:grid lg:grid-cols-2 mb-6 sm:mb-[33px] md:mb-[42px] lg:mb-[60px]">
+        <Image src={myImageCause} alt="" class="w-full h-[287px] lg:h-[914px] object-cover"></Image>
+        <h1>Turkana County, Kenya</h1>
+        <div class="relative mx-4 sm:mx-[32px] md:mx-[48px] lg:mx-[80px] mt-3 sm:mt-[19px] md:mt-[26px] lg:mt-10">
+            <Button variant="action">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-5 lg:w-6">
+                    <path fill-rule="evenodd" d="M9.78 4.22a.75.75 0 0 1 0 1.06L7.06 8l2.72 2.72a.75.75 0 1 1-1.06 1.06L5.47 8.53a.75.75 0 0 1 0-1.06l3.25-3.25a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
+                </svg>
+                <p><a href="/kategorier">Back</a></p>
+            </Button>
+            <div class="mt-5 lg:mt-10 mb-4 lg:mb-5">
+                <h2 class="">Latest update</h2>
+                <p class="">2024</p>
+                <VerificationElement variant="cause"></VerificationElement>
+                <VerificationElement variant="cause"></VerificationElement>
+            </div>
+            <h2 class="mb-3 lg:mb-6">Gallery</h2>
+            <div class="mb-10 lg:mb-20">
+                <div class="justify-items-center">
+                    <Image src={myImageContent} alt="" class=""></Image>
+                    <Image src={myImageContent2} alt="" class=""></Image>
+                    <Image src={myImageContent3} alt="" class=""></Image>
+                    <Image src={myImageContent4} alt="" class=""></Image>
+                    <Image src={myImageContent5} alt="" class=""></Image>
+                    <Image src={myImageContent6} alt="" class=""></Image>
+                </div>
+                <div class="flex items-center justify-items-center">
+                    <Button variant="action"><p>Show more</p></Button>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-5 lg:w-6">
+                        <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+            </div>
+            <div class="grid justify-items-center">
+                <Button variant="cta">
+                    <p>Manage donation</p>
+                </Button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="flex justify-center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2040033.0999848088!2d34.03187589845442!3d2.975413982011268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x17835ec9930e52c1%3A0x61edf66a08eab395!2sTurkana%20County%2C%20Kenya!5e0!3m2!1sda!2sdk!4v1734000210978!5m2!1sda!2sdk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-[200px] sm:h-[265.5px] md:h-[331px] lg:h-[462px]"></iframe>
+        </div>
+    </section>
+</MainLayout>
