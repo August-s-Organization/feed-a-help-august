@@ -4,7 +4,7 @@ import Button from "../components/Button.astro";
 import { Image } from 'astro:assets';
 import myImage from "../assets/images/hero-unit.jpg";
 import VerificationElement from "../components/ListElement.astro";
-import MainHeader2 from "../components/MainHeader2.astro";
+import MainHeader from "../components/MainHeader.astro";
 ---
 
 
@@ -12,7 +12,7 @@ import MainHeader2 from "../components/MainHeader2.astro";
   
       <div class="bg-no-repeat bg-center bg-cover " style="background-image: url(src/assets/images/Grafik/Pattern_yellow.svg);">
 
-<MainHeader2></MainHeader2>
+<MainHeader></MainHeader>
       <section class="flex flex-col items-center justify-center mx-4 mt-3 pb-6 md:mx-20 md:mt-4 md:pb-[60px]">
         <h1 class="pb-6">Profile</h1>
         <div class="flex flex-col items-start w-[343px] md:w-[420px]">
@@ -27,13 +27,13 @@ import MainHeader2 from "../components/MainHeader2.astro";
         </div>
   
         <div class="flex flex-col items-start pt-10">
-          <h3 class="pb-3">Donations</h3>
+          <h3 class="pb-3">Administrate Donations</h3>
           <div class="flex flex-col gap-4">
             <VerificationElement>
               <div class="flex items-center">
                 <Image src={myImage} alt="" class="object-cover rounded-l-lg h-[74px] w-[74px] md:h-[84px] md:w-[84px] mr-2" />
                 <div class="mr-auto">
-                  <h4 class="text-black-500 pb-1 md:text-xl md:font-bold">Maragoli Farmers</h4>
+                  <h4 class="text-black-500 pb-1 md:text-xl md:font-bold">Turkana, Kenya</h4>
                   <p class="text-black-300 text-xs md:text-base">Monthly donation</p>
                   <p class="text-black-300 text-sm font-semibold md:text-base">100 Kr.</p>
                 </div>
@@ -47,7 +47,7 @@ import MainHeader2 from "../components/MainHeader2.astro";
               <div class="flex items-center">
                 <Image src={myImage} alt="" class="object-cover rounded-l-lg h-[74px] w-[74px] md:h-[84px] md:w-[84px] mr-2" />
                 <div class="mr-auto">
-                  <h4 class="text-black-500 pb-1 md:text-xl md:font-bold">Sichuan's Earthquake</h4>
+                  <h4 class="text-black-500 pb-1 md:text-xl md:font-bold">Dhaka, Bangladesh</h4>
                   <p class="text-black-300 text-sm md:text-base">Single donation</p>
                   <p class="text-black-300 text-sm font-semibold md:text-base">50 Kr.</p>
                 </div>
