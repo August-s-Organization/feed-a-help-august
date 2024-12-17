@@ -21,7 +21,7 @@ import myImage5 from "../assets/images/grafik/letter.svg";
         </div>
     </section>
     <section class="bg-blue-200 px-4 pt-8 pb-10 md:px-[48px] md:pt-[36px] md:pb-[44px] lg:px-20 lg:pt-10 lg:pb-12">
-        <article class="grid justify-items-center">
+        <article class="grid justify-items-center infografikinview">
             <h2 class="text-center mb-6 lg:mb-10">How does Feed A Help work?</h2>
             <div class="flex justify-between items-end self-stretch  lg:text-base text-center">
                 <div class="flex flex-col justify-end items-center">
@@ -68,3 +68,12 @@ import myImage5 from "../assets/images/grafik/letter.svg";
         </section>
     </section>
 </MainLayout>
+<script>
+    import { animate, stagger, inView, scroll, timeline } from "motion";
+
+inView( ".infografikinview" , ({ target }) =>{
+  animate( target.querySelectorAll("div") , { x: [-2000, 0 ] },
+  { duration: 2, opacity: [0, 1], delay: stagger(1, { start: 0.25 }) 
+  })
+})
+</script>
