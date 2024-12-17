@@ -3,8 +3,8 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
 import { Image } from 'astro:assets';
 import myImage from "../assets/images/hero-unit.jpg";
-import VerificationElement from "../components/ListElement.astro";
 import MainHeader from "../components/MainHeader.astro";
+import ListElement from "../components/ListElement.astro";
 ---
 
 
@@ -29,7 +29,7 @@ import MainHeader from "../components/MainHeader.astro";
         <div class="flex flex-col items-start pt-10">
           <h3 class="pb-3">Administrate Donations</h3>
           <div class="flex flex-col gap-4">
-            <VerificationElement>
+            <ListElement>
               <div class="flex items-center">
                 <Image src={myImage} alt="" class="object-cover rounded-l-lg h-[74px] w-[74px] md:h-[84px] md:w-[84px] mr-2" />
                 <div class="mr-auto">
@@ -41,9 +41,9 @@ import MainHeader from "../components/MainHeader.astro";
                   <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                 </svg>
               </div>
-            </VerificationElement>
+            </ListElement>
   
-            <VerificationElement>
+            <ListElement>
               <div class="flex items-center">
                 <Image src={myImage} alt="" class="object-cover rounded-l-lg h-[74px] w-[74px] md:h-[84px] md:w-[84px] mr-2" />
                 <div class="mr-auto">
@@ -55,7 +55,7 @@ import MainHeader from "../components/MainHeader.astro";
                   <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                 </svg>
               </div>
-            </VerificationElement>
+            </ListElement>
           </div>
         </div>
   
