@@ -6,7 +6,7 @@ import MainHeader from "../components/MainHeader.astro";
 <MainLayout title="opret profil flow, contact information" >
   <MainHeader></MainHeader>
 
-   <section class="flex flex-col md:flex-row items-start md:items-center md:justify-between gap-8 mt-3 md:mt-0 mb-6 md:mb-6 mx-4 md:mx-20">
+   <section class="flex flex-col md:flex-row items-start max-w-[375px] md:max-w-[1512px] md:items-center md:justify-between gap-8 mt-3 md:mt-0 mb-6 md:mb-6 mx-4 md:mx-20">
     <div class="flex flex-col items-center gap-2 md:gap-4 md:w-[633px] self-stretch bg-none md:bg-[url('src/assets/images/Grafik/love.svg')] md:bg-no-repeat md:bg-contain md:bg-center">
         
         <h1>Create a profile</h1>
@@ -15,7 +15,7 @@ import MainHeader from "../components/MainHeader.astro";
     </div>
     
     
-    <div class="flex flex-col items-start md:items-center gap-5 self-stretch md:gap-10 md:pt-10 md:pb-10 md:w-[633px]">
+    <div class="flex flex-col items-start md:items-center gap-5 self-stretch md:gap-10 md:pt-8 md:pb-10 md:w-[633px]">
         <div class="flex flex-col items-start gap-5 md:gap-7">
 <h2 class="text-base md:text-4xl">Contact information</h2>
     <!-- FORMEN -->
@@ -41,8 +41,8 @@ import MainHeader from "../components/MainHeader.astro";
               <input class="w-[343px] md:w-[420px] h-[38px] md:h-[43px] bg-white-cream border placeholder-black-100 border-black-200 focus-within:border-black-200 focus-within:border-2 focus-within:ring-0 outline-none rounded-lg md:rounded-x text-xs md:text-sm font-manrope" required type="text" id="password" name="password" placeholder="*******" />
             </div>
             <div class="flex flex-col items-center content-center pt-10 gap-3">
-             <Button variant="submit" id="continue"><p>Continue</p></Button>
-              <Button variant="tertiary" id="cancel"><p>Cancel</p></Button>
+             <Button variant="submit" id="continue"><a href="/opretflow2">Continue</a></Button>
+              <Button variant="tertiary" id="cancel"><a href="/">Cancel</a></Button>
               </div>
     </form>
 </div>

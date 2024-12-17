@@ -1,6 +1,6 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import MainHeader from "../components/MainHeader.astro";
+import MainHeader2 from "../components/MainHeader2.astro";
 import Button from "../components/Button.astro";
 import { Image } from 'astro:assets';
 import myImage from "../assets/images/turkana-county-kenya.jpg";
@@ -8,9 +8,10 @@ import AmountElement from "../components/AmountElement.astro";
 const {frontmatter} = Astro.props;
 ---
 
-<MainHeader></MainHeader>
-<MainLayout title="lav donation">
 
+
+<MainLayout title="lav donation">
+  <MainHeader2></MainHeader2>
     <section class="flex flex-col items-center gap-10 mt-3 md:mt-0 mb-6 md:mb-0 mx-4 md:mx-0">
         <div class="flex flex-col items-center gap-6">
           <h1 class="md:hidden">Your donation</h1>
@@ -56,7 +57,7 @@ const {frontmatter} = Astro.props;
                     <path d="M2 6.342a3.375 3.375 0 0 1 6-2.088 3.375 3.375 0 0 1 5.997 2.26c-.063 2.134-1.618 3.76-2.955 4.784a14.437 14.437 0 0 1-2.676 1.61c-.02.01-.038.017-.05.022l-.014.006-.004.002h-.002a.75.75 0 0 1-.592.001h-.002l-.004-.003-.015-.006a5.528 5.528 0 0 1-.232-.107 14.395 14.395 0 0 1-2.535-1.557C3.564 10.22 1.999 8.558 1.999 6.38L2 6.342Z" />
                   </svg>
                 </Button>
-                <Button variant="tertiary" id="Cancel"><p>Cancel</p></Button>
+                <Button variant="tertiary" id="Cancel"><a href="/kategorier">Cancel</a></Button>
               </div>
             </div>
           </div>

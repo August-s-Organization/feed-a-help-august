@@ -11,7 +11,7 @@ import MainHeader from "../components/MainHeader.astro";
 ---
 
 <MainLayout title="iformation">
-    <div class="bg-no-repeat bg-center bg-cover " style="background-image: url(src/assets/images/Grafik/Pattern_yellow.svg);">
+    <div class="bg-no-repeat bg-center bg-cover" style="background-image: url(src/assets/images/Grafik/Pattern_yellow.svg);">
 
 <MainHeader></MainHeader>
  <section class="flex flex-col items-center self-stretch gap-6 md:gap-14 mt-3 md:pt-0 mb-6 md:mb-14 mx-4 md:mx-20">
@@ -22,10 +22,11 @@ import MainHeader from "../components/MainHeader.astro";
     <p>With Feed A Help, you can trust that your kindness reaches the right hands, creating real change in the world—one person at a time.</p>
 </div>
 </section> 
-<Image src={myImage} alt="picture of the team who started Feed A Help" class="max-w-full h-auto"></Image>
+
+<Image src={myImage} alt="picture of the team who started Feed A Help" class="w-screen object-cover h-auto"></Image>
 
 <section class="flex flex-col items-center gap-6 md:gap-14 mx-4 mt-3 pb-6 md:mx-20 md:mt-5 md:pb-[60px]">
-    <h2 class="text-[64px]">Our values</h2>
+    <h2 class="text-[28px] md:text-[64px]">Our values</h2>
 
     <!-- Direct impact section -->
     <div class="flex flex-col items-start gap-12 md:gap-36 self-stretch">
@@ -54,7 +55,7 @@ import MainHeader from "../components/MainHeader.astro";
     
     <!-- Empowerment section -->
         <div class="flex flex-row justify-center items-center self-stretch gap-[29px] md:gap-[120px]">
-            <Image src={myImage5} alt="a fist" class="w-[79.778px] md:w-[170.193px] h-[120px] md:h-[256px] max-w-full"></Image>
+            <Image src={myImage5} alt="A clenched fist for empowerment" class="w-[79.778px] md:w-[170.193px] h-[120px] md:h-[256px] max-w-full"></Image>
     <div class="flex flex-col justify-center items-start gap-2 md:gap-4 w-full md:w-[362px]">
     <h3>Empowerment</h3>
     <div class="flex flex-col items-start gap-2 md:gap-3 self-stretch">
