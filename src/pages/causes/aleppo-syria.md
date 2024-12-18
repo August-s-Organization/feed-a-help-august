@@ -3,7 +3,7 @@ layout: ../../layouts/CauseLayout.astro
 title: "Post-War Safety"
 type: "Single"
 date: "2024-01-25"
-coverimage: "./images/aleppo-syria.webp"
+coverimage: "/images/aleppo-syria.webp"
 coveralt: "Cause in Aleppo, Syria."
 description: "Fleeing Syria, my family and I seek safety and support in a refugee camp in Jordan."
 amount: "100 DKK"

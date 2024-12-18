@@ -3,7 +3,7 @@ layout: ../../layouts/CauseLayout.astro
 title: "Education and Opportunity"
 type: "Single"
 date: "2024-06-30"
-coverimage: "./images/kathmandu-nepal.webp"
+coverimage: "/images/kathmandu-nepal.webp"
 coveralt: "Cause in Kathmandu, Nepal."
 description: "As a young girl in Kathmandu, I dream of an education despite many challenges."
 amount: "50 DKK"

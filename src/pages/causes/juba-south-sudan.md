@@ -3,7 +3,7 @@ layout: ../../layouts/CauseLayout.astro
 title: "Refugee Support"
 type: "Monthly"
 date: "2024-11-10"
-coverimage: "./images/juba-south-sudan.webp"
+coverimage: "/images/juba-south-sudan.webp"
 coveralt: "Cause in Juba, South Sudan."
 description: "Fleeing conflict in Juba, South Sudan, my family and I seek refuge in a safer place."
 amount: "50 DKK"

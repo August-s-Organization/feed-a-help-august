@@ -3,7 +3,7 @@ layout: ../../layouts/CauseLayout.astro
 title: "Access to Clean Water"
 type: "Monthly"
 date: "2024-07-15"
-coverimage: "./images/niamey-niger.webp"
+coverimage: "/images/niamey-niger.webp"
 coveralt: "Cause in Niamey, Niger."
 description: "In Niamey, Niger, we face poverty and lack access to basic services like water and healthcare."
 amount: "75 DKK"

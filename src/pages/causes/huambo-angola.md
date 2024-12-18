@@ -3,7 +3,7 @@ layout: ../../layouts/CauseLayout.astro
 title: "Water and Sanitation"
 type: "Single"
 date: "2024-02-05"
-coverimage: "./images/huambo-angola.webp"
+coverimage: "/images/huambo-angola.webp"
 coveralt: "Cause in Huambo, Angola."
 description: "In Angola, we face poverty and lack of resources, hoping for a better future."
 amount: "150 DKK"
