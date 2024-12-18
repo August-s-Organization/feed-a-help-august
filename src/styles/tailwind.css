@@ -11,6 +11,10 @@
         font-weight: 400, 600, 700, 800;
         src: url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
     }
+
+    img {
+        width: 100%;
+    }
     h1 {
         font-family: "Manrope", sans-serif;
         color: #602105;
