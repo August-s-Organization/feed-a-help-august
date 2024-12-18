@@ -3,12 +3,6 @@ import MainLayout from "../layouts/MainLayout.astro";
 import MainHeader from "../components/MainHeader.astro";
 import Card from "../components/Card.astro";
 import Button from "../components/Button.astro";
-import { Image } from "astro:assets";
-import myImageCause from "../assets/images/grafik/emergencies.svg";
-import myImageCause2 from "../assets/images/grafik/climate.svg";
-import myImageCause3 from "../assets/images/grafik/refugees.svg";
-import myImageCause4 from "../assets/images/grafik/development.svg";
-import myImageCause5 from "../assets/images/grafik/education.svg";
 ---
 <MainLayout title="vores donationer">
     <div class="bg-no-repeat bg-center bg-cover" style="background-image: url(src/assets/images/Grafik/Pattern_yellow.svg);">
@@ -21,11 +15,11 @@ import myImageCause5 from "../assets/images/grafik/education.svg";
             <div class="mb-10 lg:mb-[80px] cursor-grab overflow-x-auto">
                 <nav>
                     <ul class="flex items-center sm:justify-center gap-6 lg:gap-20 font-semibold text-red-800">
-                        <li class="grid justify-items-center"><Image src={myImageCause} alt="Emergency kit icon." class="w-[35px] lg:w-[45px] mb-1 lg:mb-2"></Image><p class="hover:font-extrabold hover:text-red-700">Emergencies</p></li>
-                        <li class="grid justify-items-center"><Image src={myImageCause2} alt="Plant icon." class="w-[35px] lg:w-[45px] mb-1 lg:mb-2"></Image><p class="hover:font-extrabold hover:text-red-700">Climate</p></li>
-                        <li class="grid justify-items-center"><Image src={myImageCause3} alt="Road icon." class="w-[35px] lg:w-[45px] mb-1 lg:mb-2"></Image><p class="hover:font-extrabold hover:text-red-700">Refugees</p></li>
-                        <li class="grid justify-items-center"><Image src={myImageCause4} alt="Planet icon." class="w-[35px] lg:w-[45px] mb-1 lg:mb-2"></Image><p class="hover:font-extrabold hover:text-red-700">Development</p></li>
-                        <li class="grid justify-items-center"><Image src={myImageCause5} alt="Graduation hat icon." class="w-[35px] lg:w-[45px] mb-1 lg:mb-2"></Image><p class="hover:font-extrabold hover:text-red-700">Education</p></li>
+                        <li class="grid justify-items-center"><img src="/emergencies.svg" alt="Emergency kit icon." class="w-[35px] lg:w-[45px] mb-1 lg:mb-2"></img><p class="hover:font-extrabold hover:text-red-700">Emergencies</p></li>
+                        <li class="grid justify-items-center"><img src="/climate.svg" alt="Plant icon." class="w-[35px] lg:w-[45px] mb-1 lg:mb-2"></img><p class="hover:font-extrabold hover:text-red-700">Climate</p></li>
+                        <li class="grid justify-items-center"><img src="/refugees.svg" alt="Road icon." class="w-[35px] lg:w-[45px] mb-1 lg:mb-2"></img><p class="hover:font-extrabold hover:text-red-700">Refugees</p></li>
+                        <li class="grid justify-items-center"><img src="/development.svg" alt="Planet icon." class="w-[35px] lg:w-[45px] mb-1 lg:mb-2"></img><p class="hover:font-extrabold hover:text-red-700">Development</p></li>
+                        <li class="grid justify-items-center"><img src="/education.svg" alt="Graduation hat icon." class="w-[35px] lg:w-[45px] mb-1 lg:mb-2"></img><p class="hover:font-extrabold hover:text-red-700">Education</p></li>
                     </ul>
                 </nav>
             </div>

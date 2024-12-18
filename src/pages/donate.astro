@@ -2,8 +2,6 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import MainHeader2 from "../components/MainHeader2.astro";
 import Button from "../components/Button.astro";
-import { Image } from 'astro:assets';
-import myImage from "../assets/images/turkana-county-kenya.jpg";
 import AmountElement from "../components/AmountElement.astro";
 const {frontmatter} = Astro.props;
 ---
@@ -16,8 +14,7 @@ const {frontmatter} = Astro.props;
         <div class="flex flex-col items-center gap-6">
           <h1 class="md:hidden">Your donation</h1>
           <div class="flex flex-col md:flex-row items-center gap-4">
-            <Image 
-              src={myImage} 
+            <img src="/turkana-county-kenya.jpg" 
               alt="picture of the team who started Feed A Help" 
               class="w-[220px] h-[200px] md:w-[655px] md:h-[924px] object-cover rounded-lg md:rounded-none "
             />

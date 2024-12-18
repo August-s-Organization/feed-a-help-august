@@ -2,21 +2,13 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import MainHeader2 from "../components/MainHeader2.astro";
 import Button from "../components/Button.astro";
-import ListElement from "../components/ListElement.astro"
-import { Image } from 'astro:assets';
-import myImageCause from "../assets/images/turkana-county-kenya.jpg";
-import myImageContent from "../assets/images/content.jpg";
-import myImageContent2 from "../assets/images/content2.jpg";
-import myImageContent3 from "../assets/images/content3.jpg";
-import myImageContent4 from "../assets/images/content4.jpg";
-import myImageContent5 from "../assets/images/content5.jpg";
-import myImageContent6 from "../assets/images/content6.jpg";
+import ListElement from "../components/ListElement.astro";
 ---
 <MainLayout>
     <MainHeader2></MainHeader2>
     <section class="xl:grid xl:grid-cols-2 pb-6 sm:pb-[32px] md:pb-[40px] lg:pb-[60px]">
         <div class="mb-8 xl:mb-[60px]">
-            <Image src={myImageCause} alt="Man from Turkana County, Kenya." class="w-full h-[287px] xl:w-[655px] xl:h-[914px] object-cover"></Image>
+            <img src="/turkana-county-kenya.jpg" alt="Man from Turkana County, Kenya." class="w-full h-[287px] xl:w-[655px] xl:h-[914px] object-cover"></img>
             <h1 class="pt-3 px-4 sm:pt-4 sm:px-[32px] md:pt-5 md:px-[48px] lg:px-20">Turkana, Kenya</h1>
         </div>
         <article class="flex flex-col items-center pt-3 px-4 sm:pt-4 sm:px-[32px] md:pt-5 md:px-[48px] lg:pt-6 lg:pr-20">
@@ -64,12 +56,12 @@ import myImageContent6 from "../assets/images/content6.jpg";
                 <div>
                     <h2 class="mb-4 lg:mb-8">Gallery</h2>
                     <div class="grid grid-cols-3 gap-2 mb-3">
-                        <Image src={myImageContent} alt="Woman farming in Turkana County." class="rounded-lg w-full h-[100px] lg:w-[200px] lg:h-[200px] object-cover lg:mb-2"></Image>
-                        <Image src={myImageContent2} alt="School kids in Turkana County." class="rounded-lg w-full h-[100px] lg:w-[200px] lg:h-[200px] object-cover lg:mb-2"></Image>
-                        <Image src={myImageContent3} alt="A cow in Turkana County." class="rounded-lg w-full h-[100px] lg:w-[200px] lg:h-[200px] object-cover lg:mb-2"></Image>
-                        <Image src={myImageContent4} alt="Animals in the field in Turkana County." class="rounded-lg w-full h-[100px] lg:w-[200px] lg:h-[200px] object-cover lg:mb-2"></Image>
-                        <Image src={myImageContent5} alt="Kids running outside in Turkana County." class="rounded-lg w-full h-[100px] lg:w-[200px] lg:h-[200px] object-cover lg:mb-2"></Image>
-                        <Image src={myImageContent6} alt="Children with books in Turkana County." class="rounded-lg w-full h-[100px] lg:w-[200px] lg:h-[200px] object-cover lg:mb-2"></Image>
+                        <img src="/content.jpg" alt="Woman farming in Turkana County." class="rounded-lg w-full h-[100px] lg:w-[200px] lg:h-[200px] object-cover lg:mb-2"></img>
+                        <img src="/content2.jpg" alt="School kids in Turkana County." class="rounded-lg w-full h-[100px] lg:w-[200px] lg:h-[200px] object-cover lg:mb-2"></img>
+                        <img src="/content3.jpg" alt="A cow in Turkana County." class="rounded-lg w-full h-[100px] lg:w-[200px] lg:h-[200px] object-cover lg:mb-2"></img>
+                        <img src="/content4.jpg" alt="Animals in the field in Turkana County." class="rounded-lg w-full h-[100px] lg:w-[200px] lg:h-[200px] object-cover lg:mb-2"></img>
+                        <img src="/content5.jpg" alt="Kids running outside in Turkana County." class="rounded-lg w-full h-[100px] lg:w-[200px] lg:h-[200px] object-cover lg:mb-2"></img>
+                        <img src="/content6.jpg" alt="Children with books in Turkana County." class="rounded-lg w-full h-[100px] lg:w-[200px] lg:h-[200px] object-cover lg:mb-2"></img>
                     </div>
                     <div class="flex self-end justify-end mb-8 lg:mb-[60px]">
                         <Button variant="action" id="show-more2"><p>Show more</p>
