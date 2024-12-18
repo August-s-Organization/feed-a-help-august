@@ -2,7 +2,8 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
 import { Image } from 'astro:assets';
-import myImage from "/public/images/hero-unit.jpg";
+import profileImage from "/public/images/huambo-angola.jpg";
+import profileImage2 from "/public/images/niamey-niger.jpg";
 import MainHeader from "../components/MainHeader.astro";
 import ListElement from "../components/ListElement.astro";
 ---
@@ -20,7 +21,7 @@ import ListElement from "../components/ListElement.astro";
           <p class="pt-2 pb-3">Anders Anderson</p>
           <Button variant="tertiary" id="settings">
             <div class="flex items-center gap-2">
-              <img src="/tandhjul.svg" alt="Settings Icon" class="w-4 h-4" />
+              <img src="/public/grafik/tandhjul.svg" alt="Settings Icon" class="w-4 h-4" />
               <p>Settings</p>
             </div>
           </Button>
@@ -31,9 +32,9 @@ import ListElement from "../components/ListElement.astro";
           <div class="flex flex-col gap-4">
             <ListElement>
               <div class="flex items-center w-[343px] md:w-[420px]">
-                <Image src={myImage} alt="" class="object-cover rounded-l-lg h-[74px] w-[74px] md:h-[84px] md:w-[84px] mr-2" />
+                <Image src={profileImage} alt="" class="object-cover rounded-l-lg h-[74px] w-[74px] md:h-[84px] md:w-[84px] mr-2" />
                 <div class="mr-auto">
-                  <h4 class="text-black-500 pb-1 md:text-xl md:font-bold">Turkana, Kenya</h4>
+                  <h4 class="text-black-500 pb-1 md:text-xl md:font-bold">Water and Sanitation</h4>
                   <p class="text-black-300 text-xs md:text-base">Monthly donation</p>
                   <p class="text-black-300 text-sm font-semibold md:text-base">100 Kr.</p>
                 </div>
@@ -47,9 +48,9 @@ import ListElement from "../components/ListElement.astro";
   
             <ListElement>
               <div class="flex items-center">
-                <Image src={myImage} alt="" class="object-cover rounded-l-lg h-[74px] w-[74px] md:h-[84px] md:w-[84px] mr-2" />
+                <Image src={profileImage2} alt="" class="object-cover rounded-l-lg h-[74px] w-[74px] md:h-[84px] md:w-[84px] mr-2" />
                 <div class="mr-auto">
-                  <h4 class="text-black-500 pb-1 md:text-xl md:font-bold">Dhaka, Bangladesh</h4>
+                  <h4 class="text-black-500 pb-1 md:text-xl md:font-bold">Access to Clean Water</h4>
                   <p class="text-black-300 text-sm md:text-base">Single donation</p>
                   <p class="text-black-300 text-sm font-semibold md:text-base">50 Kr.</p>
                 </div>
