@@ -3,7 +3,7 @@ layout: ../../layouts/CauseLayout.astro
 title: "Huambo, Angola"
 type: "Single"
 date: "2024-02-05"
-coverimage: "/public/images/huambo-angola.jpg"
+coverimage: "public/images/huambo-angola.jpg"
 coveralt: "Cause in Huambo, Angola."
 description: "In Angola, we face poverty and lack of resources, hoping for a better future."
 amount: "150 DKK"
