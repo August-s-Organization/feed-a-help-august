@@ -3,7 +3,7 @@ layout: ../../layouts/CauseLayout.astro
 title: "Niamey, Niger"
 type: "Monthly"
 date: "2024-07-15"
-coverimage: "images/niamey-niger.jpg"
+coverimage: "public/images/niamey-niger.jpg"
 coveralt: "Cause in Niamey, Niger."
 description: "In Niamey, Niger, we face poverty and lack access to basic services like water and healthcare."
 amount: "75 DKK"
