@@ -3,7 +3,7 @@ layout: ../../layouts/CauseLayout.astro
 title: "Shelter and Needs"
 type: "Monthly"
 date: "2024-11-10"
-coverimage: "/images/turkana-county-kenya.webp"
+coverimage: "./images/turkana-county-kenya.webp"
 coveralt: "Cause in Turkana County, Kenya."
 description: "In Kenya, our community is battling the harsh effects of climate change."
 amount: "100 DKK"

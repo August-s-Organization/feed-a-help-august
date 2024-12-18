@@ -3,7 +3,7 @@ layout: ../../layouts/CauseLayout.astro
 title: "Basic Needs"
 type: "Monthly"
 date: "2024-08-12"
-coverimage: "/images/leogane-haiti.webp"
+coverimage: "./images/leogane-haiti.webp"
 coveralt: "Cause in Leogane, Haiti."
 description: "In Leogane, Haiti, we struggle to survive after a devastating earthquake destroyed our community."
 amount: "100 DKK"
