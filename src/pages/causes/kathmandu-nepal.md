@@ -3,7 +3,7 @@ layout: ../../layouts/CauseLayout.astro
 title: "Kathmandu, Nepal"
 type: "Single"
 date: "2024-06-30"
-coverimage: "/images/kathmandu-nepal.jpg"
+coverimage: "/public/images/kathmandu-nepal.jpg"
 coveralt: "Cause in Kathmandu, Nepal."
 description: "As a young girl in Kathmandu, I dream of an education despite many challenges."
 amount: "50 DKK"

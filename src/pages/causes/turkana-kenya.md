@@ -3,7 +3,7 @@ layout: ../../layouts/CauseLayout.astro
 title: "Turkana, Kenya"
 type: "Monthly"
 date: "2024-11-10"
-coverimage: "/images/turkana-county-kenya.jpg"
+coverimage: "/public/images/turkana-county-kenya.jpg"
 coveralt: "Cause in Turkana County, Kenya."
 description: "In Kenya, our community is battling the harsh effects of climate change."
 amount: "100 DKK"
