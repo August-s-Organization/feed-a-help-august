@@ -12,7 +12,7 @@ const udvalgtecauses = sorteredecauses.slice(0, 6);
 ---
 {udvalgtecauses.map(post =>
 <div class:list={[cardStyling, sizeClasses[size]]}>
-    <img src={post.frontmatter.coverimage} alt={post.frontmatter.coveralt} class="object-cover w-full h-[116px] lg:h-[145px] nrounded-t-lg" loading="lazy">
+    <img src={post.frontmatter.coverimage} alt={post.frontmatter.coveralt} class="object-cover w-full h-[116px] lg:h-[145px] nrounded-t-lg">
     <div class="px-3 py-2 lg:py-3">
         <div class="flex items-center justify-between space-mb-1 lg:mb-3">
             <h4 class="text-red-700"><a href={post.url}>{post.frontmatter.title}</a></h4>
