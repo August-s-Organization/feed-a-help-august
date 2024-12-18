@@ -7,8 +7,8 @@ import myImageLogo3 from "../assets/images/burgermenu-ikon.svg";
 
     <div x-data="{showmenu: false, activeHeader: false }" :class="{'bg-yellow-100': activeHeader}" @click="activeHeader = !activeHeader" @click.outside="activeHeader = false" class:list={[mainheader2Styling]}>
         <div class="flex justify-between">
-            <a href="/"><Image src={myImageLogo} alt="Feed A Help logo." class="w-[45px] h-[45px] md:w-[62.5px] md:h-[62.5px] lg:w-20 lg:h-20"></Image></a>
-            <button id="burgermenu" x-on:click="showmenu = ! showmenu"><Image src={myImageLogo3} alt="Feed A Help icon." class="w-[35px] h-[16px] md:w-[45px] md:h-[28px] lg:w-[55px] lg:h-[32px]"></Image></button>
+            <a href="/"><Image src={myImageLogo} alt="Feed A Help logo." class="w-[45px] h-[45px] md:w-[62.5px] md:h-[62.5px] lg:w-20 lg:h-20" /></a>
+            <button id="burgermenu" x-on:click="showmenu = ! showmenu"><Image src={myImageLogo3} alt="Feed A Help icon." class="w-[35px] h-[16px] md:w-[45px] md:h-[28px] lg:w-[55px] lg:h-[32px]" /></button>
         </div>
         <nav x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false" class="sticky top-0 my-[15rem]">
             <ul>

@@ -2,15 +2,21 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import IndexHeader from "../components/IndexHeader.astro";
 import Button from "../components/Button.astro";
+import { Image } from 'astro:assets';
+import myImage from "../assets/images/hero-unit.jpg";
+import myImage2 from "../assets/images/hjerte.svg";
+import myImage3 from "../assets/images/grafik/profil.svg";
+import myImage4 from "../assets/images/grafik/blue_hands.svg";
+import myImage5 from "../assets/images/grafik/letter.svg";
 ---
 <MainLayout title="Forside">
     <section class="relative">
         <IndexHeader></IndexHeader>
-        <img src="hero-unit" alt="A woman in a field in Turkana County, Kenya." class="h-[448px] md:h-[480px] w-full object-cover"></img>
+        <Image src={myImage} alt="A woman in a field in Turkana County, Kenya." class="h-[448px] md:h-[480px] w-full object-cover" />
         <div class="absolute bottom-7 left-7 md:bottom-12 md:left-12 lg:bottom-20 lg:left-20">
             <Button variant="cta" id="join">
                 <p><a href="/opretProfil">Join our cause</a></p>
-                <img src="hjerte.svg" alt="Small heart icon." class="w-[13.33px] h-[12.23px] md:w-[16.67px] md:h-[15.29px] lg:w-[20px] lg:h-[18.35px]"></img>
+                <Image src={myImage2} alt="Small heart icon." class="w-[13.33px] h-[12.23px] md:w-[16.67px] md:h-[15.29px] lg:w-[20px] lg:h-[18.35px]" />
             </Button>
         </div>
     </section>
@@ -19,15 +25,15 @@ import Button from "../components/Button.astro";
             <h2 class="text-center mb-6 lg:mb-10">How does Feed A Help work?</h2>
             <div class="flex justify-between items-end self-stretch  lg:text-base text-center">
                 <div class="flex flex-col justify-end items-center">
-                    <img src="profil.svg" alt="Illustration of a profile icon." class="h-14 md:h-20 lg:h-24 mb-2 md:mb-4"></img>
+                    <Image src={myImage3} alt="Illustration of a profile icon." class="h-14 md:h-20 lg:h-24 mb-2 md:mb-4" />
                     <p class="w-[114px] lg:w-[178px]">Create a profile as a donor or receiver</p>
                 </div>
                 <div class="flex flex-col justify-end items-center">
-                    <img src="blue_hands.svg" alt="Illustration of one hand giving a heart to another hand." class="h-14 md:h-20 lg:h-24 mb-2 md:mb-4"></img>
+                    <Image src={myImage4} alt="Illustration of one hand giving a heart to another hand." class="h-14 md:h-20 lg:h-24 mb-2 md:mb-4" />
                     <p class="w-[85px] lg:w-[168px]">Set up your donation or cause</p>
                 </div>
                 <div class="flex flex-col justify-end items-center">
-                    <img src="letter.svg" alt="Illustration of a flying letter with a heart." class="h-14 md:h-20 lg:h-24 mb-2 md:mb-4"></img>
+                    <Image src={myImage5} alt="Illustration of a flying letter with a heart." class="h-14 md:h-20 lg:h-24 mb-2 md:mb-4" />
                     <p class="w-[80px] lg:w-[150px]">And share the impact together</p>
                 </div>
             </div>
