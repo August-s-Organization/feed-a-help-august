@@ -3,7 +3,7 @@ layout: ../../layouts/CauseLayout.astro
 title: "Bihar, India"
 type: "Single"
 date: "2024-03-24"
-coverimage: "/public/images/bihar-india.jpg"
+coverimage: "/images/bihar-india.jpg"
 coveralt: "Cause in Bihar, India."
 description: "As a young girl in rural India, I dream of education despite many barriers."
 amount: "25 DKK"

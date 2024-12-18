@@ -3,7 +3,7 @@ layout: ../../layouts/CauseLayout.astro
 title: "Aleppo, Syria"
 type: "Single"
 date: "2024-01-25"
-coverimage: "/public/images/aleppo-syria.jpg"
+coverimage: "/images/aleppo-syria.jpg"
 coveralt: "Cause in Aleppo, Syria."
 description: "Fleeing Syria, my family and I seek safety and support in a refugee camp in Jordan."
 amount: "100 DKK"
