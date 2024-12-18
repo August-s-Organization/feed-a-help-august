@@ -3,7 +3,7 @@ layout: ../../layouts/CauseLayout.astro
 title: "Gorkha District, Nepal"
 type: "Single"
 date: "2024-11-10"
-coverimage: "/gorkha-nepal.jpg"
+coverimage: "/images/gorkha-nepal.jpg"
 coveralt: "Cause in Gorkha District, Nepal."
 description: "We are living in a community in Nepal, struggling to survive after a disaster."
 amount: "200 DKK"

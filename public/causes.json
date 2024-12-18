@@ -3,7 +3,7 @@
         "id": 1,
         "causeoverskrift": "Gorkha, Nepal",
         "causebeskrivelse": "Emergencies",
-        "causebillede": "gorkha-nepal.jpg",
+        "causebillede": "/images/gorkha-nepal.jpg",
         "causebilledealt": "Cause in Gorkha, Nepal."
     },
 
@@ -11,7 +11,7 @@
         "id": 2,
         "causeoverskrift": "Turkana, Kenya",
         "causebeskrivelse": "Climate",
-        "causebillede": "turkana-county-kenya.jpg",
+        "causebillede": "/images/turkana-county-kenya.jpg",
         "causebilledealt": "Cause in Turkana County, Kenya."
     },
 
@@ -19,7 +19,7 @@
         "id": 3,
         "causeoverskrift": "Aleppo, Syria",
         "causebeskrivelse": "Refugees",
-        "causebillede": "aleppo-syria.jpg",
+        "causebillede": "/images/aleppo-syria.jpg",
         "causebilledealt": "Cause in Aleppo, Syria."
     },
 
@@ -27,7 +27,7 @@
         "id": 4,
         "causeoverskrift": "Huambo, Angola",
         "causebeskrivelse": "Development",
-        "causebillede": "huambo-angola.jpg",
+        "causebillede": "/images/huambo-angola.jpg",
         "causebilledealt": "Cause in Huambo, Angola."
     },
 
@@ -35,7 +35,7 @@
         "id": 5,
         "causeoverskrift": "Bihar, India",
         "causebeskrivelse": "Education",
-        "causebillede": "bihar-india.jpg",
+        "causebillede": "/images/bihar-india.jpg",
         "causebilledealt": "Cause in Bihar, India."
     }
 ]
