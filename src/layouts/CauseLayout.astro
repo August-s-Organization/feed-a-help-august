@@ -10,7 +10,7 @@ const {frontmatter} = Astro.props;
     <MainHeader2></MainHeader2>
     <section class="lg:flex lg:flex-row lg:items-center lg:justify-between">
         <div>
-            <Image src={frontmatter.coverimage} alt={frontmatter.coveralt} class="w-full h-[287px] lg:w-[655px] lg:h-[914px] object-cover" />
+            <Image src={frontmatter.coverimage} alt={frontmatter.coveralt} class="w-full h-[287px] lg:w-[655px] lg:h-[914px] object-cover" loading="lazy" />
         </div>
         <article class="flex flex-col items-center lg:w-[857px] lg:h-[771px] pt-3 px-4 pb-6 sm:px-[32px] sm:pb-[32px] md:pt-4 md:px-[48px] md:pb-[40px] lg:pt-5 lg:px-20 lg:pb-[60px] bg-center bg-contain bg-no-repeat bg-[url('/grafik/love.svg')]">
             <div class="pt-3 md:pt-[18px] lg:pt-5 lg:w-[700px]">
