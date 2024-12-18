@@ -1,8 +1,8 @@
 ---
 const mainheaderStyling = "text-red-800 text-3xl lg:text-2xl p-5 md:p-8 lg:p-10 w-full z-20 sticky top-0";
 import { Image } from 'astro:assets';
-import myImageLogo2 from "./public/images/logo.svg";
-import myImageLogo3 from "./public/images/burgermenu-ikon.svg";
+import myImageLogo2 from "/public/images/logo.svg";
+import myImageLogo3 from "/public/images/burgermenu-ikon.svg";
 ---
 
 <div x-data="{showmenu: false, activeHeader: false }" :class="{'bg-yellow-100': activeHeader}" @click="activeHeader = !activeHeader" @click.outside="activeHeader = false" class:list={[mainheaderStyling]}>
