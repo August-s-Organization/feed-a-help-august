@@ -3,7 +3,7 @@ layout: ../../layouts/CauseLayout.astro
 title: "Dhaka, Bangladesh"
 type: "Monthly"
 date: "2024-10-05"
-coverimage: "/images/dhaka-bangladesh.jpg"
+coverimage: "images/dhaka-bangladesh.jpg"
 coveralt: "Cause in Dhaka, Bangladesh."
 description: "In Dhaka, Bangladesh, our community faces floods and rising seas, threatening our homes."
 amount: "150 DKK"
