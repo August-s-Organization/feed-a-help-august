@@ -8,7 +8,7 @@ const sizeClasses = {
 };
 const causes = await Astro.glob('../pages/causes/*.md');
 const sorteredecauses = causes.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date));
-const udvalgtecauses = sorteredecauses.slice(0, 10);
+const udvalgtecauses = sorteredecauses.slice(0, 6);
 ---
 {udvalgtecauses.map(post =>
 <div class:list={[cardStyling, sizeClasses[size]]}>

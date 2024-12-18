@@ -1,5 +1,5 @@
 ---
-const indexheaderStyling = "text-red-800 text-2xl lg:text-4xl font-medium p-5 md:p-8 lg:p-10 absolute w-full z-10";
+const indexheaderStyling = "text-red-800 text-3xl lg:text-2xl p-5 md:p-8 lg:p-10 absolute w-full z-10";
 import { Image } from 'astro:assets';
 import myImageLogo from "../assets/images/logo-tekst.svg";
 import myImageLogo3 from "../assets/images/burgermenu-ikon.svg";
@@ -7,14 +7,14 @@ import myImageLogo3 from "../assets/images/burgermenu-ikon.svg";
 <div class="relative">
     <div x-data="{showmenu: false, activeHeader: false }" :class="{'bg-yellow-100': activeHeader}" @click="activeHeader = !activeHeader" @click.outside="activeHeader = false" class:list={[indexheaderStyling]}>
         <div class="flex justify-between">
-            <a href="/"><Image src={myImageLogo} alt="" class="w-[215px] h-[45px] sm:w-[275.75px] sm:h-[53.75px] md:w-[336.5px] md:h-[62.5px] lg:w-[458px] lg:h-20"></Image></a>
-            <button id="burgermenu" x-on:click="showmenu = ! showmenu"><Image src={myImageLogo3} alt="" class="w-[35px] h-[16px] sm:w-10 sm:h-[24px] md:w-[45px] md:h-[28px] lg:w-[55px] lg:h-[32px]"></Image></button>
+            <a href="/"><Image src={myImageLogo} alt="Feed A Help logo." class="w-[215px] h-[45px] md:w-[336.5px] md:h-[62.5px] lg:w-[458px] lg:h-20"></Image></a>
+            <button id="burgermenu" x-on:click="showmenu = ! showmenu"><Image src={myImageLogo3} alt="Feed A Help icon." class="w-[35px] h-[16px] md:w-[45px] md:h-[28px] lg:w-[55px] lg:h-[32px]"></Image></button>
         </div>
         <nav x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false" class="sticky top-0 my-[15rem]">
             <ul>
-                <li class="text-center py-6 lg:pt-0 lg:pb-9"><a href="/info"><p class="text-2xl lg:text-3xl font-normal hover:font-semibold">About</p></a></li>
-                <li class="text-center py-6 lg:py-9"><a href="/kategorier"><p class="text-2xl lg:text-3xl font-normal hover:font-semibold">Causes</p></a></li>
-                <li class="text-center py-6 lg:pt-9 lg:pb-0"><a href="/profile"><p class="text-2xl lg:text-3xl font-normal hover:font-semibold">Profile</p></a></li>
+                <li class="text-center py-6 lg:pt-0 lg:pb-9"><a href="info"><p class="font-normal hover:font-semibold">About</p></a></li>
+                <li class="text-center py-6 lg:py-9"><a href="causes"><p class="font-normal hover:font-semibold">Causes</p></a></li>
+                <li class="text-center py-6 lg:pt-9 lg:pb-0"><a href="profile"><p class="font-normal hover:font-semibold">Profile</p></a></li>
             </ul>
         </nav>
     </div>

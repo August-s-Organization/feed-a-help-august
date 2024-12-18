@@ -1,0 +1,47 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import MainHeader from "../components/MainHeader.astro";
+import Card from "../components/Card.astro";
+import Button from "../components/Button.astro";
+import { Image } from "astro:assets";
+import myImageCause from "../assets/images/grafik/emergencies.svg";
+import myImageCause2 from "../assets/images/grafik/climate.svg";
+import myImageCause3 from "../assets/images/grafik/refugees.svg";
+import myImageCause4 from "../assets/images/grafik/development.svg";
+import myImageCause5 from "../assets/images/grafik/education.svg";
+---
+<MainLayout title="vores donationer">
+    <div class="bg-no-repeat bg-center bg-cover" style="background-image: url(src/assets/images/Grafik/Pattern_yellow.svg);">
+        <MainHeader></MainHeader>
+        <section class="relative z-10 px-4 pt-3 sm:px-auto md:pt-[18px] lg:pt-6">
+            <div class="relative z-10 grid justify-items-center text-center mb-10 lg:mb-[60px]">
+                <h1 class="mb-5 lg:mb-10">Our causes</h1>
+                <p class="w-1/2 lg:w-1/4 justify-self-center">Please select one of our five donation categories below.</p>
+            </div>
+            <div class="mb-10 lg:mb-[80px] cursor-grab overflow-x-auto">
+                <nav>
+                    <ul class="flex items-center sm:justify-center gap-6 lg:gap-20 font-semibold text-red-800">
+                        <li class="grid justify-items-center"><Image src={myImageCause} alt="Emergency kit icon." class="w-[35px] lg:w-[45px] mb-1 lg:mb-2"></Image><p class="hover:font-extrabold hover:text-red-700">Emergencies</p></li>
+                        <li class="grid justify-items-center"><Image src={myImageCause2} alt="Plant icon." class="w-[35px] lg:w-[45px] mb-1 lg:mb-2"></Image><p class="hover:font-extrabold hover:text-red-700">Climate</p></li>
+                        <li class="grid justify-items-center"><Image src={myImageCause3} alt="Road icon." class="w-[35px] lg:w-[45px] mb-1 lg:mb-2"></Image><p class="hover:font-extrabold hover:text-red-700">Refugees</p></li>
+                        <li class="grid justify-items-center"><Image src={myImageCause4} alt="Planet icon." class="w-[35px] lg:w-[45px] mb-1 lg:mb-2"></Image><p class="hover:font-extrabold hover:text-red-700">Development</p></li>
+                        <li class="grid justify-items-center"><Image src={myImageCause5} alt="Graduation hat icon." class="w-[35px] lg:w-[45px] mb-1 lg:mb-2"></Image><p class="hover:font-extrabold hover:text-red-700">Education</p></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section class="relative z-10 px-4 mt-10 pb-6 md:px-[12px] md:pb-[42px] lg:px-20 lg:pb-[60px]">
+            <div class="grid gap-x-4 gap-y-5 md:gap-x-auto md:gap-y-14 place-items-center md:grid-cols-2 lg:grid-cols-3 mb-4 md:mb-5 lg:mb-6">
+                <Card size="large"></Card>
+            </div>
+            <div class="flex justify-center md:justify-end">
+                <Button variant="action" id="show-more">
+                    <p>Show more</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-5 lg:w-6">
+                        <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                    </svg>
+                </Button>
+            </div>
+        </section>
+    </div>
+</MainLayout>
