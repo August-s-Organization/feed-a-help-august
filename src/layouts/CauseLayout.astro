@@ -3,7 +3,7 @@ import MainLayout from "./MainLayout.astro";
 import MainHeader2 from "../components/MainHeader2.astro";
 import Button from "../components/Button.astro";
 import { Image } from 'astro:assets';
-import myImage2 from "../assets/images/hjerte.svg";
+import myImage2 from "../grafik/hjerte.svg";
 const {frontmatter} = Astro.props;
 ---
 <MainLayout title="Causes">
@@ -12,7 +12,7 @@ const {frontmatter} = Astro.props;
         <div>
             <img src={frontmatter.coverimage} alt={frontmatter.coveralt} class="w-full h-[287px] lg:w-[655px] lg:h-[914px] object-cover"/>
         </div>
-        <article class="flex flex-col items-center lg:w-[857px] lg:h-[771px] pt-3 px-4 pb-6 sm:px-[32px] sm:pb-[32px] md:pt-4 md:px-[48px] md:pb-[40px] lg:pt-5 lg:px-20 lg:pb-[60px] bg-center bg-contain bg-no-repeat bg-[url('/love.svg')]">
+        <article class="flex flex-col items-center lg:w-[857px] lg:h-[771px] pt-3 px-4 pb-6 sm:px-[32px] sm:pb-[32px] md:pt-4 md:px-[48px] md:pb-[40px] lg:pt-5 lg:px-20 lg:pb-[60px] bg-center bg-contain bg-no-repeat bg-[url('/grafik/love.svg')]">
             <div class="pt-3 md:pt-[18px] lg:pt-5 lg:w-[700px]">
                 <Button variant="tertiary">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-5 lg:w-6">
