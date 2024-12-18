@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/CauseLayout.astro
-title: "Dhaka, Bangladesh"
+title: "Flood Protection"
 type: "Monthly"
 date: "2024-10-05"
 coverimage: "/images/dhaka-bangladesh.jpg"

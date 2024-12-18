@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/CauseLayout.astro
-title: "Kathmandu, Nepal"
+title: "Education and Opportunity"
 type: "Single"
 date: "2024-06-30"
 coverimage: "/images/kathmandu-nepal.jpg"

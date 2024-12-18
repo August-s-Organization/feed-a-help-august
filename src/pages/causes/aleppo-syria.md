@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/CauseLayout.astro
-title: "Aleppo, Syria"
+title: "Post-War Safety"
 type: "Single"
 date: "2024-01-25"
 coverimage: "/images/aleppo-syria.jpg"

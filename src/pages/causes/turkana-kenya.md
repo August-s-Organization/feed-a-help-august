@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/CauseLayout.astro
-title: "Turkana, Kenya"
+title: "Shelter and Needs"
 type: "Monthly"
 date: "2024-11-10"
 coverimage: "/images/turkana-county-kenya.jpg"

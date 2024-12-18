@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/CauseLayout.astro
-title: "Gorkha District, Nepal"
+title: "Disaster Relief"
 type: "Single"
 date: "2024-11-10"
 coverimage: "/images/gorkha-nepal.jpg"

@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/CauseLayout.astro
-title: "Bihar, India"
+title: "Girls' Education"
 type: "Single"
 date: "2024-03-24"
 coverimage: "/images/bihar-india.jpg"

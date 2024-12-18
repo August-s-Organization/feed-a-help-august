@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/CauseLayout.astro
-title: "Niamey, Niger"
+title: "Access to Clean Water"
 type: "Monthly"
 date: "2024-07-15"
 coverimage: "/images/niamey-niger.jpg"

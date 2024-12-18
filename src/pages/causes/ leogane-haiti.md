@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/CauseLayout.astro
-title: "Leogane, Haiti"
+title: "Basic Needs"
 type: "Monthly"
 date: "2024-08-12"
 coverimage: "/images/leogane-haiti.jpg"

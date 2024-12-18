@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/CauseLayout.astro
-title: "Juba, South Sudan"
+title: "Refugee Support"
 type: "Monthly"
 date: "2024-11-10"
 coverimage: "/images/juba-south-sudan.jpg"

@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/CauseLayout.astro
-title: "Huambo, Angola"
+title: "Water and Sanitation"
 type: "Single"
 date: "2024-02-05"
 coverimage: "/images/huambo-angola.jpg"
