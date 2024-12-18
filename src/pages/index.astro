@@ -57,7 +57,7 @@ import myImage5 from "/public/grafik/letter.svg";
             <template x-for="causes in allecauses" :key="causes.id">
                 <article>
                     <div class="bg-yellow-200 hover:bg-yellow-100 active:bg-yellow-300 rounded-lg flex-none w-[160px] lg:w-[340px]">
-                        <img :src="causes.causebillede" :alt="causes.causebilledealt" class="object-cover h-20 lg:h-40 w-full rounded-t-lg" loading="lazy">
+                        <img :src="causes.causebillede" :alt="causes.causebilledealt" class="object-cover w-full h-20 lg:h-40 rounded-t-lg" loading="lazy">
                         <div class="px-3 py-2 lg:py-3">
                             <h4 x-text="causes.causeoverskrift" class="text-red-700 mb-1 lg:mb-3"></h4>
                             <p x-text="causes.causebeskrivelse" class="text-xs md:text-sm lg:text-base mb-2 lg:mb-6"></p>
