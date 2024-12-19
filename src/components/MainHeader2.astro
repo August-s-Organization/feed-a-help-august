@@ -1,5 +1,5 @@
 ---
-const mainheader2Styling = "text-red-800 text-[28px] lg:text-2xl p-5 md:p-8 lg:p-10 absolute w-full z-10";
+const mainheader2Styling = "text-red-800 p-5 md:p-8 lg:p-10 absolute w-full z-10";
 import { Image } from 'astro:assets';
 import myImageLogo from "/public/grafik/logo.svg";
 import myImageLogo3 from "/public/grafik/burgermenu-ikon.svg";
@@ -14,11 +14,11 @@ import myImageLogo4 from "/public/grafik/kryds.svg";
                 <Image src={myImageLogo4} alt="Cross icon." x-show="showmenu" class="w-[35px] h-[16px] md:w-[45px] md:h-[28px] lg:w-[55px] lg:h-[32px]"/>
             </button>
         </div>
-        <nav x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false" class="sticky top-0 my-[15rem]">
+        <nav x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false" class="sticky top-0 pt-[250px] lg:py-[100px]">
             <ul>
-                <li class="text-center py-7 lg:py-[80px]"><a href="/info"><p class="font-normal hover:font-semibold">About</p></a></li>
-                <li class="text-center py-7 lg:py-[80px]"><a href="/causes"><p class="font-normal hover:font-semibold">Causes</p></a></li>
-                <li class="text-center py-7 lg:py-[80px]"><a href="/profile"><p class="font-normal hover:font-semibold">Profile</p></a></li>
+                <li class="text-center py-7 lg:py-[80px]"><a href="/info"><p class="text-[28px] md:text-[34px] lg:text-[40px] font-normal hover:font-semibold">About</p></a></li>
+                <li class="text-center pb-7 lg:pb-[80px]"><a href="/causes"><p class="text-[28px] md:text-[34px] lg:text-[40px] font-normal hover:font-semibold">Causes</p></a></li>
+                <li class="text-center pb-[250px] lg:pb-[80px]"><a href="/profile"><p class="text-[28px] md:text-[34px] lg:text-[40px] font-normal hover:font-semibold">Profile</p></a></li>
             </ul>
         </nav>
     </div>
