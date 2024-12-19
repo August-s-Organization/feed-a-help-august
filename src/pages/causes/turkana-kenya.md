@@ -1,3 +1,4 @@
+<!--
 ---
 layout: ../../layouts/CauseLayout.astro
 title: "Shelter and Needs"
@@ -17,3 +18,4 @@ height: "116"
 ---
 
 We live in a small village in rural Kenya, where the effects of climate change are destroying our environment and way of life. Rising temperatures, droughts, and flooding are making it harder for us to survive. Your donation can help us protect the land and resources we depend on, and create a more sustainable future for our community.
+-->

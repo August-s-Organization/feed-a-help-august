@@ -1,3 +1,4 @@
+<!--
 ---
 layout: ../../layouts/CauseLayout.astro
 title: "Access to Clean Water"
@@ -16,3 +17,4 @@ height: "116"
 ---
 
 In Niamey, Niger, we lack access to clean water, healthcare, and education. Your support can help improve our living conditions and provide the resources needed for a better, more sustainable future.
+-->

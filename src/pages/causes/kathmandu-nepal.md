@@ -1,3 +1,4 @@
+<!--
 ---
 layout: ../../layouts/CauseLayout.astro
 title: "Education and Opportunity"
@@ -16,3 +17,4 @@ height: "116"
 ---
 
 As a young girl in Kathmandu, Nepal, I dream of an education despite rural challenges. With your help, I can overcome the barriers of poverty and achieve my dreams of learning and a brighter future.
+-->
