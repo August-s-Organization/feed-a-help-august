@@ -1,12 +1,11 @@
 ---
-const mainheader2Styling = "text-red-800 p-5 md:p-8 lg:p-10 absolute w-full z-10";
+const secondaryheaderStyling = "text-red-800 pt-5 px-5 md:pt-8 md:px-8 lg:pt-10 lg:px-10 absolute w-full z-10";
 import { Image } from 'astro:assets';
 import myImageLogo from "/public/grafik/logo.svg";
 import myImageLogo3 from "/public/grafik/burgermenu-ikon.svg";
 import myImageLogo4 from "/public/grafik/kryds.svg";
 ---
-
-    <div x-data="{showmenu: false, activeHeader: false }" :class="{'bg-yellow-100': activeHeader}" @click="activeHeader = !activeHeader" @click.outside="activeHeader = false" class:list={[mainheader2Styling]}>
+    <div x-data="{showmenu: false, activeHeader: false }" :class="{'bg-yellow-100': activeHeader}" @click="activeHeader = !activeHeader" @click.outside="activeHeader = false" class:list={[secondaryheaderStyling]}>
         <div class="flex justify-between">
             <a href="/"><Image src={myImageLogo} alt="Feed A Help logo." class="w-[45px] h-[45px] md:w-[62.5px] md:h-[62.5px] lg:w-20 lg:h-20" /></a>
             <button id="burgermenu" x-on:click="showmenu = ! showmenu">
@@ -14,7 +13,7 @@ import myImageLogo4 from "/public/grafik/kryds.svg";
                 <Image src={myImageLogo4} alt="Cross icon." x-show="showmenu" class="w-[35px] h-[16px] md:w-[45px] md:h-[28px] lg:w-[55px] lg:h-[32px]"/>
             </button>
         </div>
-        <nav x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false" class="sticky top-0 pt-[250px] lg:py-[100px]">
+        <nav x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false" class="sticky top-0 pt-[250px] lg:py-[108px]">
             <ul>
                 <li class="text-center py-7 lg:py-[80px]"><a href="/info"><p class="text-[28px] md:text-[34px] lg:text-[40px] font-normal hover:font-semibold">About</p></a></li>
                 <li class="text-center pb-7 lg:pb-[80px]"><a href="/causes"><p class="text-[28px] md:text-[34px] lg:text-[40px] font-normal hover:font-semibold">Causes</p></a></li>
@@ -22,4 +21,3 @@ import myImageLogo4 from "/public/grafik/kryds.svg";
             </ul>
         </nav>
     </div>
-

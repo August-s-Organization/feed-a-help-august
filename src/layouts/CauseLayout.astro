@@ -1,13 +1,13 @@
 ---
 import MainLayout from "./MainLayout.astro";
-import MainHeader2 from "../components/MainHeader2.astro";
+import SecondaryHeader from "../components/SecondaryHeader.astro";
 import Button from "../components/Button.astro";
 import { Image } from 'astro:assets';
 import myImage2 from "/public/grafik/hjerte.svg";
 const {frontmatter} = Astro.props;
 ---
 <MainLayout title="Causes">
-    <MainHeader2></MainHeader2>
+    <SecondaryHeader></SecondaryHeader>
     <section class="lg:flex lg:flex-row lg:items-center lg:justify-between">
         <div>
             <Image src={frontmatter.coverimage} alt={frontmatter.coveralt} class="h-[287px] lg:w-[655px] lg:h-[914px] object-cover" width={frontmatter.width} height={frontmatter.height} />

@@ -1,6 +1,6 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import MainHeader2 from "../components/MainHeader2.astro";
+import SecondaryHeader from "../components/SecondaryHeader.astro";
 import Button from "../components/Button.astro";
 import ListElement from "../components/ListElement.astro"
 import { Image } from 'astro:assets';
@@ -13,13 +13,13 @@ import myImageContent5 from "/public/images/content5.jpg";
 import myImageContent6 from "/public/images/content6.jpg";
 ---
 <MainLayout>
-    <MainHeader2></MainHeader2>
+    <SecondaryHeader></SecondaryHeader>
     <section class="xl:flex xl:flex-row xl:justify-between pb-6 lg:pb-8">
         <div class="mb-8 xl:mb-[60px]">
             <Image src={profileImage} alt="People from Huambo, Angola." class="h-[287px] xl:w-[655px] xl:h-[914px] object-cover" />
-            <h1 class="pt-3 px-4 sm:pt-4 sm:px-[32px] md:pt-5 md:px-[48px] lg:px-20 lg:text-center">Water and Sanitation</h1>
+            <h1 class="pt-3 px-4 sm:pt-4 sm:px-[32px] md:pt-5 md:px-[48px] lg:px-20 xl:text-center">Water and Sanitation</h1>
         </div>
-        <article class="flex flex-col items-center xl:w-[857px] xl:h-[771px] pt-3 px-4 sm:pt-4 sm:px-[32px] md:pt-5 md:px-[48px] lg:pt-6 lg:px-20 xl:pt-28">
+        <article class="flex flex-col items-center pt-3 px-4 sm:pt-4 sm:px-[32px] md:pt-5 md:px-[48px] lg:pt-6 lg:px-20 xl:pt-28">
             <div class="xl:w-[700px]">
                 <div class="place-self-start mb-10">
                     <Button variant="action" id="back">
@@ -65,7 +65,7 @@ import myImageContent6 from "/public/images/content6.jpg";
                     <h2 class="mb-4 lg:mb-8">Gallery</h2>
                     <div class="grid grid-cols-3 gap-2 mb-3">
                         <Image src={myImageContent} alt="Woman farming in Turkana County." class="rounded-lg h-[100px] lg:w-[200px] lg:h-[200px] object-cover lg:mb-2" />
-                        <Image src={myImageContent2} alt="School kids in Turkana County." class="rounded-lg h-[100px] lg:w-[200px] lg:h-[200px] object-cover lg:mb-2"></Image>
+                        <Image src={myImageContent2} alt="School kids in Turkana County." class="rounded-lg h-[100px] lg:w-[200px] lg:h-[200px] object-cover lg:mb-2" />
                         <Image src={myImageContent3} alt="A cow in Turkana County." class="rounded-lg w-full h-[100px] lg:w-[200px] lg:h-[200px] object-cover lg:mb-2" />
                         <Image src={myImageContent4} alt="Animals in the field in Turkana County." class="rounded-lg h-[100px] lg:w-[200px] lg:h-[200px] object-cover lg:mb-2" />
                         <Image src={myImageContent5} alt="Kids running outside in Turkana County." class="rounded-lg h-[100px] lg:w-[200px] lg:h-[200px] object-cover lg:mb-2" />
@@ -89,7 +89,7 @@ import myImageContent6 from "/public/images/content6.jpg";
     </section>
     <section>
         <div class="flex justify-center">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2040033.0999848088!2d34.03187589845442!3d2.975413982011268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x17835ec9930e52c1%3A0x61edf66a08eab395!2sTurkana%20County%2C%20Kenya!5e0!3m2!1sda!2sdk!4v1734000210978!5m2!1sda!2sdk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-[200px] sm:h-[265.5px] md:h-[331px] lg:h-[462px]"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124139.89996327825!2d2.0366311561047956!3d13.512755387864443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11d0756cc0ddfc65%3A0x81ce4bafda77b74e!2sNiamey%2C%20Niger!5e0!3m2!1sda!2sdk!4v1734000143529!5m2!1sda!2sdk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-[200px] md:h-[331px] lg:h-[462px]"></iframe>
         </div>
     </section>
 </MainLayout>

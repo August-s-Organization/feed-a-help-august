@@ -1,6 +1,6 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import MainHeader2 from "../components/MainHeader2.astro";
+import SecondaryHeader from "../components/SecondaryHeader.astro";
 import Button from "../components/Button.astro";
 import ListElement from "../components/ListElement.astro"
 import { Image } from 'astro:assets';
@@ -13,13 +13,13 @@ import myImageContent5 from "/public/images/content5.jpg";
 import myImageContent6 from "/public/images/content6.jpg";
 ---
 <MainLayout>
-    <MainHeader2></MainHeader2>
+    <SecondaryHeader></SecondaryHeader>
     <section class="xl:flex xl:flex-row xl:justify-between pb-6 lg:pb-8">
         <div class="mb-8 xl:mb-[60px]">
             <Image src={profileImage2} alt="People from Nimamey, Niger." class="h-[287px] xl:w-[655px] xl:h-[914px] object-cover" />
             <h1 class="pt-3 px-4 sm:pt-4 sm:px-[32px] md:pt-5 md:px-[48px] lg:px-20 lg:text-center">Access to Clean Water</h1>
         </div>
-        <article class="flex flex-col items-center xl:w-[857px] xl:h-[771px] pt-3 px-4 sm:pt-4 sm:px-[32px] md:pt-5 md:px-[48px] lg:pt-6 lg:px-20 xl:pt-28">
+        <article class="flex flex-col items-center pt-3 px-4 sm:pt-4 sm:px-[32px] md:pt-5 md:px-[48px] lg:pt-6 lg:px-20 xl:pt-28">
             <div class="xl:w-[700px]">
                 <div class="place-self-start mb-10">
                     <Button variant="action" id="back">
