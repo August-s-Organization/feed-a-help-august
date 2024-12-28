@@ -1,12 +1,14 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from "../components/Button.astro";
+import LinkButton from "../components/LinkButton.astro";
 import { Image } from 'astro:assets';
 import profileImage from "/public/images/huambo-angola.webp";
 import profileImage2 from "/public/images/niamey-niger.webp";
 import MainHeader from "../components/MainHeader.astro";
 import ListElement from "../components/ListElement.astro";
 ---
+<!-- Importerer genanvendelige komponenter ovenfor med Astro -->
+
 <MainLayout title="profil">
   <div class="bg-no-repeat bg-center bg-cover " style="background-image: url('/grafik/pattern_yellow.svg');">
     <MainHeader></MainHeader>
@@ -15,7 +17,7 @@ import ListElement from "../components/ListElement.astro";
       <div class="flex flex-col items-start w-[343px] md:w-[420px]">
         <h2 class="md:text-[28px]">Username</h2>
         <p class="pt-2 pb-3">Anders Anderson</p>
-        <Button variant="tertiary" id="settings">
+        <LinkButton variant="tertiary" id="settings">
           <div class="flex items-center gap-1">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[20px] lg:w-[24px]">
               <path stroke-linecap="round" stroke-linejoin="round" d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 0 1 1.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.559.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.894.149c-.424.07-.764.383-.929.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 0 1-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.398.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 0 1-.12-1.45l.527-.737c.25-.35.272-.806.108-1.204-.165-.397-.506-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.108-1.204l-.526-.738a1.125 1.125 0 0 1 .12-1.45l.773-.773a1.125 1.125 0 0 1 1.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894Z" />
@@ -23,7 +25,7 @@ import ListElement from "../components/ListElement.astro";
             </svg>
             <p>Settings</p>
           </div>
-        </Button>
+        </LinkButton>
       </div>
       <div class="flex flex-col items-start pt-10">
         <h3 class="pb-3">Administrate Donations</h3>
@@ -61,13 +63,15 @@ import ListElement from "../components/ListElement.astro";
         </div>
       </div>
       <div class="flex flex-col items-center content-center pt-[60px] md:pt-[60px] gap-3">
-        <Button variant="cta" id="donate">
-          <p><a href="/kategorier">Donate now</a></p>
+        <LinkButton variant="cta" id="donate" href="/causes">
+          <p>Donate now</p>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-5 h-5 lg:w-6 lg:h-6">
             <path d="M2 6.342a3.375 3.375 0 0 1 6-2.088 3.375 3.375 0 0 1 5.997 2.26c-.063 2.134-1.618 3.76-2.955 4.784a14.437 14.437 0 0 1-2.676 1.61c-.02.01-.038.017-.05.022l-.014.006-.004.002h-.002a.75.75 0 0 1-.592.001h-.002l-.004-.003-.015-.006a5.528 5.528 0 0 1-.232-.107 14.395 14.395 0 0 1-2.535-1.557C3.564 10.22 1.999 8.558 1.999 6.38L2 6.342Z" />
           </svg>
-        </Button>
-        <Button variant="tertiary" id="log-out"><a href="/">Log out</a></Button>
+        </LinkButton>
+        <LinkButton variant="tertiary" id="log-out" href="/">
+          <p>Log out</p>
+        </LinkButton>
       </div>
     </section>
   </div>

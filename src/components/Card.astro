@@ -1,5 +1,5 @@
 ---
-import Button from "./Button.astro";
+import LinkButton from "./LinkButton.astro";
 const { size } = Astro.props;
 const cardStyling = "bg-yellow-200 hover:bg-yellow-100 active:bg-yellow-300 rounded-lg flex-none cursor-pointer";
 const sizeClasses = {
@@ -10,6 +10,10 @@ const causes = await Astro.glob('../pages/causes/*.md');
 const sorteredecauses = causes.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date));
 const udvalgtecauses = sorteredecauses.slice(0, 6);
 ---
+<!-- Opretter unikke variabler ovenfor til styling og tillader import samt brug som attributter på andre sider -->
+<!-- Funktionen under henter Markdown-filer, sorterer dem efter den nyeste dato og udvælger de 6 første objekter -->
+
+<!-- Komponentet itererer over data-listen og gengiver hvert Markdown-element. Indholdet vises via frontmatter. -->
 {udvalgtecauses.map(post =>
 <div class:list={[cardStyling, sizeClasses[size]]}>
     <img src={post.frontmatter.coverimage} alt={post.frontmatter.coveralt} class="object-cover h-[116px] lg:h-[145px] rounded-t-lg">
@@ -19,11 +23,11 @@ const udvalgtecauses = sorteredecauses.slice(0, 6);
             <p class="text-black-400 text-xs lg:text-base mb-2">{post.frontmatter.type}</p>
             </div>
             <p class="text-black-500 mb-2 lg:mb-6">{post.frontmatter.description}</p>
-            <Button variant="action" class="mb-2 lg:mb-6" id="read-more"><p class="text-xs md:text-sm lg:text-base"><a href={post.url}>Read more</a></p>
+            <LinkButton variant="action" class="mb-2 lg:mb-6" id="read-more"><p class="text-xs md:text-sm lg:text-base"><a href={post.url}>Read more</a></p>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-5 lg:w-6">
                     <path fill-rule="evenodd" d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
                 </svg>
-                </Button>
-                </div>
-                </div>
-                )}
+            </LinkButton>
+        </div>
+    </div>
+)}

@@ -1,8 +1,10 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from "../components/Button.astro";
+import LinkButton from "../components/LinkButton.astro";
 import MainHeader from "../components/MainHeader.astro";
 ---
+<!-- Importerer genanvendelige komponenter ovenfor med Astro -->
+
 <MainLayout title="opret profil flow, betaling">
   <MainHeader></MainHeader>
 
@@ -32,8 +34,12 @@ import MainHeader from "../components/MainHeader.astro";
       <p>CVV / CVD</p>
     <input class="w-[343px] md:w-[420px] h-[38px] md:h-[43px] bg-white-cream border placeholder-black-100 border-black-200 focus-within:border-black-200 focus-within:border-2 focus-within:ring-0 outline-none rounded-lg md:rounded-x text-xs md:text-sm font-manrope" required type="text" id="cvv" name="cvv" placeholder="***" />
             <div class="flex flex-col items-center content-center pt-10 gap-3">
-             <Button variant="submit" id="continue3"><p><a href="/takside">Continue</a></p></Button>
-             <Button variant="tertiary" id="cancel"><a href="/">Cancel</a></Button>
+             <LinkButton variant="submit" id="continue3" href="/takside">
+              <p>Continue</p>
+            </LinkButton>
+            <LinkButton variant="tertiary" id="cancel" href="/">
+              <p>Cancel</p>
+            </LinkButton>
               </div>
     </form>
 </div>

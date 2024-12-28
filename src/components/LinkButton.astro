@@ -1,5 +1,5 @@
 ---
-const { variant } = Astro.props;
+const { variant, href } = Astro.props;
 const buttonStyling = "flex items-center justify-center space-x-1 rounded-lg";
 const variantClasses = {
 "default": "bg-black-200 text-white-cream px-4 py-3 md:px-5 md:py-4 w-[343px] md:w-[420px]",
@@ -10,6 +10,7 @@ const variantClasses = {
 "action": "text-yellow-900 text-sm md:text-base font-semibold hover:font-extrabold"
 };
 ---
+<!-- Opretter unikke variabler ovenfor til styling og tillader import samt brug som attributter på andre sider -->
 <div>
-    <button class:list={[buttonStyling, variantClasses[variant]]}><slot /></button>
+    <a href={href}><button class:list={[buttonStyling, variantClasses[variant]]}><slot /></button></a>
 </div>

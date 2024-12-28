@@ -1,14 +1,12 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import MainHeader2 from "../components/SecondaryHeader.astro";
-import Button from "../components/Button.astro";
+import LinkButton from "../components/LinkButton.astro";
 import { Image } from 'astro:assets';
 import myImage from "/public/images/turkana-county-kenya.webp";
 import AmountElement from "../components/AmountElement.astro";
-const {frontmatter} = Astro.props;
 ---
-
-
+<!-- Importerer genanvendelige komponenter ovenfor med Astro -->
 
 <MainLayout title="lav donation">
   <MainHeader2></MainHeader2>
@@ -47,8 +45,8 @@ const {frontmatter} = Astro.props;
               </div>
       
               <div class="flex flex-col items-center content-center pt-10 md:pt-[60px] gap-3">
-                <Button variant="cta" id="Donate">
-                  <a href="/takdonation"><p>Donate here</p></a>
+                <LinkButton variant="cta" id="Donate" href="/takdonation">
+                  <p>Donate here</p>
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     viewBox="0 0 16 16" 
@@ -56,8 +54,10 @@ const {frontmatter} = Astro.props;
                     class="w-5 h-5 lg:w-6 lg:h-6">
                     <path d="M2 6.342a3.375 3.375 0 0 1 6-2.088 3.375 3.375 0 0 1 5.997 2.26c-.063 2.134-1.618 3.76-2.955 4.784a14.437 14.437 0 0 1-2.676 1.61c-.02.01-.038.017-.05.022l-.014.006-.004.002h-.002a.75.75 0 0 1-.592.001h-.002l-.004-.003-.015-.006a5.528 5.528 0 0 1-.232-.107 14.395 14.395 0 0 1-2.535-1.557C3.564 10.22 1.999 8.558 1.999 6.38L2 6.342Z" />
                   </svg>
-                </Button>
-                <Button variant="tertiary" id="Cancel"><a href="/kategorier">Cancel</a></Button>
+                </LinkButton>
+                <LinkButton variant="tertiary" id="Cancel" href="/causes">
+                  <p>Cancel</p>
+                </LinkButton>
               </div>
             </div>
           </div>

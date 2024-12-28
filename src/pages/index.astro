@@ -1,7 +1,7 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import IndexHeader from "../components/IndexHeader.astro";
-import Button from "../components/Button.astro";
+import LinkButton from "../components/LinkButton.astro";
 import { Image } from 'astro:assets';
 import myImage from "/public/images/hero-unit.jpg";
 import myImage2 from "/public/grafik/hjerte.svg";
@@ -9,15 +9,18 @@ import myImage3 from "/public/grafik/profile.svg";
 import myImage4 from "/public/grafik/blue_hands.svg";
 import myImage5 from "/public/grafik/letter.svg";
 ---
+<!-- Importerer genanvendelige komponenter ovenfor med Astro -->
+
 <MainLayout title="Forside">
     <section class="relative">
         <IndexHeader></IndexHeader>
         <Image src={myImage} alt="A woman in a field in Turkana County, Kenya." class="h-[448px] md:h-[480px] object-cover object-center sm:object-[0_40%]" />
+        <!-- Absolute tillader placering af knappen oven på billedet i den relative forældrecontainer -->
         <div class="absolute bottom-7 left-7 md:bottom-12 md:left-12 lg:bottom-20 lg:left-20">
-            <Button variant="cta" id="join">
-                <p><a href="/opretProfil">Join our cause</a></p>
+            <LinkButton variant="cta" id="join" href="/opretProfil">
+                <p>Join our cause</p>
                 <Image src={myImage2} alt="Small heart icon." class="w-[13.33px] h-[12.23px] md:w-[16.67px] md:h-[15.29px] lg:w-[20px] lg:h-[18.35px]" />
-            </Button>
+            </LinkButton>
         </div>
     </section>
     <section class="bg-blue-200 px-4 pt-8 pb-10 md:px-[48px] md:pt-[36px] md:pb-[44px] lg:px-20 lg:pt-10 lg:pb-12">
@@ -26,11 +29,11 @@ import myImage5 from "/public/grafik/letter.svg";
             <div class="flex justify-between gap-[45px] lg:gap-[139px] items-end self-stretch lg:text-base text-center">
                 <div class="flex flex-col justify-end items-center">
                     <Image src={myImage3} alt="Illustration of a profile icon." class="h-14 md:h-20 lg:h-24 mb-2 md:mb-4" />
-                    <p class="w-[114px] lg:w-[178px]">Create a profile as a donor or receiver</p>
+                    <p class="w-[114px] lg:w-[178px]">You sign up as a donor or receiver</p>
                 </div>
                 <div class="flex flex-col justify-end items-center">
                     <Image src={myImage4} alt="Illustration of one hand giving a heart to another hand." class="h-14 md:h-20 lg:h-24 mb-2 md:mb-4" />
-                    <p class="w-[85px] lg:w-[168px]">Set up your donation or cause</p>
+                    <p class="w-[85px] lg:w-[168px]">You set up your donation or cause</p>
                 </div>
                 <div class="flex flex-col justify-end items-center">
                     <Image src={myImage5} alt="Illustration of a flying letter with a heart." class="h-14 md:h-20 lg:h-24 mb-2 md:mb-4" />
@@ -39,21 +42,25 @@ import myImage5 from "/public/grafik/letter.svg";
             </div>
         </article>
     </section>
+    <!-- x-data initialiserer dataobjektet allecauses, x-init indlæser datalisten fra 'causes.json', og reverse vender rækkefølen på listen, så de nyeste causes vises først -->
     <section x-data="{ allecauses: [] }" x-init="allecauses = await (await fetch('causes.json')).json(); allecauses.reverse();" class="pl-4 pt-3 pb-6 md:pt-[18px] md:pb-[42px] lg:pt-6 lg:pb-[60px] relative">
+        <!-- Placerer baggrunden over hele sektionens område i den relative container -->
         <div class="absolute inset-0 bg-[url('/grafik/pattern_yellow.svg')] bg-cover bg-center bg-no-repeat opacity-75 z-0"></div>
         <div class="relative z-10 grid justify-items-center text-center">
             <h2 class="mb-4 md:text-[64px]">Our causes</h2>
             <p class="w-1/2 lg:w-1/4 justify-self-center mb-6 lg:mb-10">Explore our variety of categories and validated causes.</p>
             <div class="flex justify-self-end pr-4 md:pr-20 mb-1 lg:mb-5">
-                <Button variant="action" class="flex self-end" id="see-all">
-                    <p><a href="/causes">See all</a></p>
+                <LinkButton variant="action" href="/causes" id="see-all" class="flex self-end">
+                    <p>See all</p>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-5 lg:w-6">
                         <path fill-rule="evenodd" d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
                     </svg>
-                </Button>
+                </LinkButton>
             </div>
         </div>
+        <!-- Arrangerer indholdet horisontalt, tillader en horisontal scrollbar og indikerer, at brugeren kan trække med musen -->
         <section class="relative flex flex-row gap-2 lg:gap-4 pl-4 py-[10px] md:pl-20 overflow-x-auto cursor-grab">
+            <!-- x-for itererer over listen i dataobjektet allecauses og gengiver en individuel artikel for hver -->
             <template x-for="causes in allecauses" :key="causes.id">
                 <article>
                     <div class="bg-yellow-200 hover:bg-yellow-100 active:bg-yellow-300 rounded-lg flex-none w-[160px] lg:w-[340px]">
@@ -68,6 +75,7 @@ import myImage5 from "/public/grafik/letter.svg";
         </section>
     </section>
 </MainLayout>
+<!-- Implementerer en stagger-animation med Motion One, som bliver synlig, når elementerne er i viewporten -->
 <script>
     import { animate, stagger, inView } from "motion";
 

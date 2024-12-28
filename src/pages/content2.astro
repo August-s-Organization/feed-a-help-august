@@ -1,7 +1,7 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import SecondaryHeader from "../components/SecondaryHeader.astro";
-import Button from "../components/Button.astro";
+import LinkButton from "../components/LinkButton.astro";
 import ListElement from "../components/ListElement.astro"
 import { Image } from 'astro:assets';
 import profileImage2 from "/public/images/niamey-niger.webp";
@@ -12,22 +12,26 @@ import myImageContent4 from "/public/images/content4.jpg";
 import myImageContent5 from "/public/images/content5.jpg";
 import myImageContent6 from "/public/images/content6.jpg";
 ---
+<!-- Importerer genanvendelige komponenter ovenfor med Astro -->
+
 <MainLayout>
     <SecondaryHeader></SecondaryHeader>
+    <!-- Ændrer layoutet til at være horisontalt (en række) ved xl-skærmbredde -->
     <section class="xl:flex xl:flex-row xl:justify-between pb-6 lg:pb-8">
         <div class="mb-8 xl:mb-[60px]">
             <Image src={profileImage2} alt="People from Nimamey, Niger." class="h-[287px] xl:w-[655px] xl:h-[914px] object-cover" />
             <h1 class="pt-3 px-4 sm:pt-4 sm:px-[32px] md:pt-5 md:px-[48px] lg:px-20 lg:text-center">Access to Clean Water</h1>
         </div>
+        <!-- Layoutet er vertikalt (en kolonne) indtil xl-skærmbredde -->
         <article class="flex flex-col items-center pt-3 px-4 sm:pt-4 sm:px-[32px] md:pt-5 md:px-[48px] lg:pt-6 lg:px-20 xl:pt-28">
             <div class="xl:w-[700px]">
                 <div class="place-self-start mb-10">
-                    <Button variant="action" id="back">
+                    <LinkButton variant="action" id="back" href="/profile">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-5 lg:w-6">
                             <path fill-rule="evenodd" d="M9.78 4.22a.75.75 0 0 1 0 1.06L7.06 8l2.72 2.72a.75.75 0 1 1-1.06 1.06L5.47 8.53a.75.75 0 0 1 0-1.06l3.25-3.25a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
                         </svg>
-                        <p><a href="/profile">Back</a></p>
-                    </Button>
+                        <p>Back</p>
+                    </LinkButton>
                 </div>
                 <div class="mb-8 lg:mb-[60px]">
                     <h2 class="mb-4 lg:mb-8">Latest updates</h2>
@@ -53,12 +57,12 @@ import myImageContent6 from "/public/images/content6.jpg";
                         </ListElement>
                     </div>
                     <div class="flex self-end justify-end">
-                        <Button variant="action" id="show-more">
+                        <LinkButton variant="action" id="show-more">
                             <p>Show more</p>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-5 lg:w-6">
                                 <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
                             </svg>
-                        </Button>
+                        </LinkButton>
                     </div>
                 </div>
                 <div>
@@ -72,16 +76,17 @@ import myImageContent6 from "/public/images/content6.jpg";
                         <Image src={myImageContent6} alt="Children with books in Turkana County." class="rounded-lg h-[100px] lg:w-[200px] lg:h-[200px] object-cover lg:mb-2" />
                     </div>
                     <div class="flex self-end justify-end mb-8 lg:mb-[60px]">
-                        <Button variant="action" id="show-more2"><p>Show more</p>
+                        <LinkButton variant="action" id="show-more2">
+                            <p>Show more</p>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-5 lg:w-6">
                                 <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
                             </svg>
-                        </Button>
+                        </LinkButton>
                     </div>
                     <div class="grid place-items-center">
-                        <Button variant="secondary" id="manage-donation">
+                        <LinkButton variant="secondary" id="manage-donation">
                             <p>Manage donation</p>
-                        </Button>
+                        </LinkButton>
                     </div>
                 </div>
             </div>

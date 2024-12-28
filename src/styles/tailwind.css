@@ -5,6 +5,8 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+/* Tilføjer tilpasset styling og responsivitet til typografi og elementer, baseret på token-baserede Figma-variabler */
 @layer base {
     @font-face {
         font-family: "Manrope", sans-serif;

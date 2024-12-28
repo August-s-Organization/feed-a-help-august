@@ -2,7 +2,7 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import MainHeader from "../components/MainHeader.astro";
 import Card from "../components/Card.astro";
-import Button from "../components/Button.astro";
+import LinkButton from "../components/LinkButton.astro";
 import { Image } from "astro:assets";
 import myImageCause from "/public/grafik/emergencies.svg";
 import myImageCause2 from "/public/grafik/plant.svg";
@@ -10,7 +10,10 @@ import myImageCause3 from "/public/grafik/refugees.svg";
 import myImageCause4 from "/public/grafik/development.svg";
 import myImageCause5 from "/public/grafik/education.svg";
 ---
+<!-- Importerer genanvendelige komponenter ovenfor med Astro -->
+
 <MainLayout title="vores donationer">
+    <!-- Baggrundsbilledet centreres og dækker hele containeren -->
     <div class="bg-no-repeat bg-center bg-cover" style="background-image: url('/grafik/pattern_yellow.svg');">
         <MainHeader />
         <section class="relative z-10 px-4 pt-3 sm:px-auto md:pt-[18px] lg:pt-6">
@@ -35,12 +38,12 @@ import myImageCause5 from "/public/grafik/education.svg";
                 <Card size="large" loading="lazy"></Card>
             </div>
             <div class="flex justify-end">
-                <Button variant="action" id="show-more">
+                <LinkButton variant="action" id="show-more">
                     <p>Show more</p>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-5 lg:w-6">
                         <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
                     </svg>
-                </Button>
+                </LinkButton>
             </div>
         </section>
     </div>

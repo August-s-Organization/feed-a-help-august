@@ -7,6 +7,8 @@ module.exports = {
         require('@tailwindcss/aspect-ratio'),
         require('@tailwindcss/container-queries'),
     ],
+
+    /* Konfigurerer Tailwind med tilføjet typografi og farver baseret på primitive Figma-variabler */
     theme: {
         extend: {
             fontFamily: {

@@ -1,8 +1,9 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import MainHeader from "../components/MainHeader.astro";
-import Button from "../components/Button.astro";
+import LinkButton from "../components/LinkButton.astro";
 ---
+<!-- Importerer genanvendelige komponenter ovenfor med Astro -->
 
 <MainLayout title="tak for donation">
     <MainHeader></MainHeader>
@@ -11,11 +12,9 @@ import Button from "../components/Button.astro";
           <h1 class="pb-14 text-center">Thank you <br> your donation</h1>
           <p class="pb-2">Your donation has now been added to your profile.</p>
           <p class="text-center pb-28 md:w-[400px]">Going forward, you will receive notifications, updates, and information regarding the cause itself.</p>
-          <Button variant="secondary" id="profile">
-            <p><a href="/profile">Go to profile</a></p>
-          </Button>
+          <LinkButton variant="secondary" id="profile" href="/profile">
+            <p>Go to profile</p>
+          </LinkButton>
         </div>
       </section>
-      
-
 </MainLayout>

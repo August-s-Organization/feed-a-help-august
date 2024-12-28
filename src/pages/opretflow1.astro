@@ -1,8 +1,10 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from "../components/Button.astro";
+import LinkButton from "../components/LinkButton.astro";
 import MainHeader from "../components/MainHeader.astro";
 ---
+<!-- Importerer genanvendelige komponenter ovenfor med Astro -->
+
 <MainLayout title="opret profil flow, contact information" >
   <MainHeader></MainHeader>
 
@@ -41,8 +43,12 @@ import MainHeader from "../components/MainHeader.astro";
               <input class="w-[343px] md:w-[420px] h-[38px] md:h-[43px] bg-white-cream border placeholder-black-100 border-black-200 focus-within:border-black-200 focus-within:border-2 focus-within:ring-0 outline-none rounded-lg md:rounded-x text-xs md:text-sm font-manrope" required type="text" id="password" name="password" placeholder="*******" />
             </div>
             <div class="flex flex-col items-center content-center pt-10 gap-3">
-             <Button variant="submit" id="continue"><a href="/opretflow2">Continue</a></Button>
-              <Button variant="tertiary" id="cancel"><a href="/">Cancel</a></Button>
+            <LinkButton variant="submit" href="/opretflow2" id="continue">
+              <p>Continue</p>
+            </LinkButton>
+            <LinkButton variant="tertiary" href="/" id="cancel">
+              <p>Cancel</p>
+            </LinkButton>
               </div>
     </form>
 </div>
