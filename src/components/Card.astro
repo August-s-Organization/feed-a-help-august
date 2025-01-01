@@ -11,9 +11,9 @@ const sorteredecauses = causes.sort((a, b) => Date.parse(b.frontmatter.date) - D
 const udvalgtecauses = sorteredecauses.slice(0, 6);
 ---
 <!-- Opretter unikke variabler ovenfor til styling og tillader import samt brug som attributter på andre sider -->
-<!-- Funktionen under henter Markdown-filer, sorterer dem efter den nyeste dato og udvælger de 6 første objekter -->
+<!-- Variablen henter Markdown-objekter fra array'et causes via funktionen Astro.glob. Objekterne sorteres efter den nyeste dato, og de 6 første udvælges -->
 
-<!-- Komponentet itererer over data-listen og gengiver hvert Markdown-element. Indholdet vises via frontmatter. -->
+<!-- Komponentet itererer over data-listen med .map() og gengiver hvert Markdown-element via post. Indholdet vises via frontmatter. -->
 {udvalgtecauses.map(post =>
 <div class:list={[cardStyling, sizeClasses[size]]}>
     <img src={post.frontmatter.coverimage} alt={post.frontmatter.coveralt} class="object-cover h-[116px] lg:h-[145px] rounded-t-lg">
