@@ -8,7 +8,7 @@ module.exports = {
         require('@tailwindcss/container-queries'),
     ],
 
-    /* Konfigurerer Tailwind med tilføjet typografi og farver baseret på primitive Figma-variabler */
+    /* Konfigurerer (tilpasser) Tailwind med tilføjet typografi og farver baseret på primitive Figma-variabler */
     theme: {
         extend: {
             fontFamily: {

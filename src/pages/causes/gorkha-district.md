@@ -15,6 +15,6 @@ map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56368.538717847776!2
 width: "340"
 height: "116"
 ---
-<!-- Definerer metadata med Frontmatter til dynamisk integrering i 'CauseLayout.astro' -->
+<!-- Definerer metadata ovenfor med Frontmatter til dynamisk integrering i 'CauseLayout.astro'. Teksten nedenfor er brødteksten. -->
 
 My family and I are living in a community in the aftermath of a devastating earthquake in Nepal. We urgently need your help. We lack access to food, clean water, medical care, and shelter. With your generous donation, We can receive the aid necessary to survive and begin rebuilding our life after this catastrophe.

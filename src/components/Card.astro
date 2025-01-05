@@ -1,19 +1,19 @@
 ---
 import LinkButton from "./LinkButton.astro";
 const { size } = Astro.props;
-const cardStyling = "bg-yellow-200 hover:bg-yellow-100 active:bg-yellow-300 rounded-lg flex-none cursor-pointer";
+const cardStyling = "bg-yellow-200 active:bg-yellow-300 rounded-lg flex-none";
 const sizeClasses = {
     "small": "w-[160px] lg:w-[340px]",
-    "large": "w-[340px] lg:w-[420px]",
+    "large": "w-[340px] lg:w-[420px] hover:bg-yellow-100 cursor-pointer",
 };
 const causes = await Astro.glob('../pages/causes/*.md');
 const sorteredecauses = causes.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date));
 const udvalgtecauses = sorteredecauses.slice(0, 6);
 ---
-<!-- Opretter unikke variabler ovenfor til styling og tillader import samt brug som attributter på andre sider -->
+<!-- Opretter unikke variabler ovenfor med probs til styling og tillader import samt brug som attributter på andre sider -->
 <!-- Variablen henter Markdown-objekter fra array'et causes via funktionen Astro.glob. Objekterne sorteres efter den nyeste dato, og de 6 første udvælges -->
 
-<!-- Komponentet itererer over data-listen med .map() og gengiver hvert Markdown-element via post. Indholdet vises via frontmatter. -->
+<!-- Komponentet itererer over data-listen med .map() og gengiver hvert Markdown-objekt via post. Indholdet vises via frontmatter. -->
 {udvalgtecauses.map(post =>
 <div class:list={[cardStyling, sizeClasses[size]]}>
     <img src={post.frontmatter.coverimage} alt={post.frontmatter.coveralt} class="object-cover h-[116px] lg:h-[145px] rounded-t-lg">

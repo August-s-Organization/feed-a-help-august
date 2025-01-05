@@ -15,6 +15,6 @@ map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63607.513557773316!2
 width: "340"
 height: "116"
 ---
-<!-- Definerer metadata med Frontmatter til dynamisk integrering i 'CauseLayout.astro' -->
+<!-- Definerer metadata ovenfor med Frontmatter til dynamisk integrering i 'CauseLayout.astro'. Teksten nedenfor er brødteksten. -->
 
 Fleeing conflict in Juba, South Sudan, my family and I are seeking refuge in Kampala, Uganda. We need shelter, safety, and the chance to rebuild. Your donation will provide essential aid to help us start over.

@@ -7,7 +7,7 @@ import MainHeader from "../components/MainHeader.astro";
 
 <MainLayout title="opret profil flow, adresse">
   <MainHeader></MainHeader>
-
+   <!-- Layoutet er vertikalt (en kolonne) indtil md-skærmbredde, hvor det bliver horisontalt (en række) -->
    <section class="flex flex-col md:flex-row items-start md:items-center max-w-[375px] md:max-w-[1512px] md:justify-between gap-8 mt-3 md:mt-0 mb-6 md:mb-6 mx-4 md:mx-20">
     <div class="flex flex-col items-center gap-2 md:gap-4 md:w-[633px] self-stretch bg-none md:bg-[url('/grafik/love.svg')] md:bg-no-repeat md:bg-contain md:bg-center">
         
@@ -16,7 +16,7 @@ import MainHeader from "../components/MainHeader.astro";
 <p class="text-center w-[343px] md:w-[358px]">Please fill in your address information below to proceed.</p>
     </div>
     
-    
+    <!-- Layoutet er vertikalt (én kolonne), og indholdet er strukket -->
     <div class="flex flex-col items-start md:items-center gap-5 self-stretch md:gap-10 md:pt-10 md:pb-10 md:w-[633px]">
         <div class="flex flex-col items-start gap-5 md:gap-7">
 <h2 class="text-base md:text-4xl">Address</h2>

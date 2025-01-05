@@ -13,9 +13,9 @@ import myImage5 from "/public/grafik/letter.svg";
 
 <MainLayout title="Forside">
     <section class="relative">
-        <IndexHeader></IndexHeader>
+        <IndexHeader/>
         <Image src={myImage} alt="A woman in a field in Turkana County, Kenya." class="h-[448px] md:h-[480px] object-cover object-center sm:object-[0_40%]" />
-        <!-- Absolute tillader placering af knappen oven på billedet i den relative forældrecontainer -->
+        <!-- Absolute tillader placering af knappen oven på billedet i den relative forældre-sektion -->
         <div class="absolute bottom-7 left-7 md:bottom-12 md:left-12 lg:bottom-20 lg:left-20">
             <LinkButton variant="cta" id="join" href="/opretProfil">
                 <p>Join our cause</p>
@@ -42,7 +42,7 @@ import myImage5 from "/public/grafik/letter.svg";
             </div>
         </article>
     </section>
-    <!-- x-data initialiserer dataobjektet allecauses, x-init indlæser datalisten fra 'causes.json', og reverse vender rækkefølen på listen, så de nyeste causes vises først -->
+    <!-- x-data initialiserer (fastsætter) dataobjektet allecauses, x-init indlæser datalisten fra 'causes.json', og reverse vender rækkefølen på listen, så de nyeste causes vises først -->
     <section x-data="{ allecauses: [] }" x-init="allecauses = await (await fetch('causes.json')).json(); allecauses.reverse();" class="pl-4 pt-3 pb-6 md:pt-[18px] md:pb-[42px] lg:pt-6 lg:pb-[60px] relative">
         <!-- Placerer baggrunden over hele sektionens område i den relative container -->
         <div class="absolute inset-0 bg-[url('/grafik/pattern_yellow.svg')] bg-cover bg-center bg-no-repeat opacity-75 z-0"></div>
@@ -58,12 +58,12 @@ import myImage5 from "/public/grafik/letter.svg";
                 </LinkButton>
             </div>
         </div>
-        <!-- Arrangerer indholdet horisontalt, tillader en horisontal scrollbar og indikerer, at brugeren kan trække med musen -->
+        <!-- Arrangerer indholdet horisontalt, tillader en horisontal scrollbar der indikerer, at brugeren kan trække med musen -->
         <section class="relative flex flex-row gap-2 lg:gap-4 pl-4 py-[10px] md:pl-20 overflow-x-auto cursor-grab">
-            <!-- x-for itererer over listen i dataobjektet allecauses og gengiver en individuel artikel for hver -->
+            <!-- x-for itererer over listen i dataobjektet allecauses, hvorefter der gengives en individuel artikel for hvert objekt via dynamiske klasser -->
             <template x-for="causes in allecauses" :key="causes.id">
                 <article>
-                    <div class="bg-yellow-200 hover:bg-yellow-100 active:bg-yellow-300 rounded-lg flex-none w-[160px] lg:w-[340px]">
+                    <div class="bg-yellow-200 rounded-lg flex-none w-[160px] lg:w-[340px]">
                         <img :src="causes.causebillede" :alt="causes.causebilledealt" class="object-cover rounded-t-lg w-[160px] h-20 lg:w-[340px] lg:h-40" :width="causes.width" :height="causes.height" loading="lazy">
                         <div class="px-3 py-2 lg:py-3">
                             <h4 x-text="causes.causeoverskrift" class="text-red-700 mb-1 lg:mb-3"></h4>

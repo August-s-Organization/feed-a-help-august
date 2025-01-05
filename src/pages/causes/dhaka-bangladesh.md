@@ -15,6 +15,6 @@ map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116833.9730354466!2d
 width: "340"
 height: "116"
 ---
-<!-- Definerer metadata med Frontmatter til dynamisk integrering i 'CauseLayout.astro' -->
+<!-- Definerer metadata ovenfor med Frontmatter til dynamisk integrering i 'CauseLayout.astro'. Teksten nedenfor er brødteksten. -->
 
 In Bangladesh, our community faces floods and the impact of rising seas. The land is sinking, and our homes are destroyed. Your support can help us protect our environment and build a sustainable future.

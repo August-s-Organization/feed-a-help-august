@@ -15,6 +15,6 @@ map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15133.644405589543!2
 width: "340"
 height: "116"
 ---
-<!-- Definerer metadata med Frontmatter til dynamisk integrering i 'CauseLayout.astro' -->
+<!-- Definerer metadata ovenfor med Frontmatter til dynamisk integrering i 'CauseLayout.astro'. Teksten nedenfor er brødteksten. -->
 
 We are living in Leogane, Haiti, struggling to survive after a devastating earthquake. We need food, clean water, medical care, and shelter. Your donation will help us rebuild our lives and survive this disaster.

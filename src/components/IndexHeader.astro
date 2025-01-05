@@ -5,10 +5,10 @@ import myImageLogo from "/public/grafik/logo-tekst.svg";
 import myImageLogo3 from "/public/grafik/burgermenu-ikon.svg";
 import myImageLogo4 from "/public/grafik/kryds.svg";
 ---
-<!-- Opretter en unik variabel ovenfor til styling og importerer øvrige komponenter -->
+<!-- Opretter en unik variabel ovenfor med en prob til styling og importerer øvrige komponenter -->
 
 <div class="relative">
-    <!-- Baggrunden bliver gul når headeren klikkes, og deaktiveres igen, hvis der klikkes uden for den -->
+    <!-- showmenu styrer visning af menuen, som starter med at være inaktiv. Baggrunden bliver gul når headeren klikkes, og deaktiveres igen, hvis der klikkes uden for den -->
     <div x-data="{showmenu: false, activeHeader: false }" :class="{'bg-yellow-100': activeHeader}" @click="activeHeader = !activeHeader" @click.outside="activeHeader = false" class:list={[indexheaderStyling]}>
         <div class="flex justify-between">
             <a href="/"><Image src={myImageLogo} alt="Feed A Help logo." class="w-[215px] h-[45px] md:w-[336.5px] md:h-[62.5px] lg:w-[458px] lg:h-20" /></a>
@@ -18,7 +18,7 @@ import myImageLogo4 from "/public/grafik/kryds.svg";
                 <Image src={myImageLogo4} alt="Cross icon." x-show="showmenu" class="w-[35px] h-[16px] md:w-[45px] md:h-[28px] lg:w-[55px] lg:h-[32px]"/>
             </button>
         </div>
-        <!-- x-show viser menuen, hvis værdien af showmenu er sand -->
+        <!-- x-show viser navigationsmenuen, hvis værdien af showmenu er sand. Den skjules igen ved klik på menuen eller udenfor den. -->
         <nav x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false" class="sticky top-0 pt-[250px] lg:py-[100px]">
             <ul>
                 <li class="text-center py-7 lg:py-[80px]"><a href="/info"><p class="text-[28px] md:text-[34px] lg:text-[40px] font-normal hover:font-semibold">About</p></a></li>

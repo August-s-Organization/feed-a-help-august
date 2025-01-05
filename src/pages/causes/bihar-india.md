@@ -15,6 +15,6 @@ map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675832.517261599!2d
 width: "340"
 height: "116"
 ---
-<!-- Definerer metadata med Frontmatter til dynamisk integrering i 'CauseLayout.astro' -->
+<!-- Definerer metadata ovenfor med Frontmatter til dynamisk integrering i 'CauseLayout.astro'. Teksten nedenfor er brødteksten. -->
 
 I am a young girl living in a rural area of India, with a dream to learn. However, poverty, gender inequality, and lack of school infrastructure are holding me back. With your donation, I can receive the education I need to escape the cycle of poverty and build a better future for myself and my community.

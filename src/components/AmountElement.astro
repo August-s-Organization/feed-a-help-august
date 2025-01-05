@@ -1,11 +1,11 @@
 ---
 const elementStyling = "flex justify-center text-sm md:text-base";
 ---
-<!-- Opretter en unik variabel ovenfor som en prop til styling -->
+<!-- Opretter en unik variabel ovenfor med en prop til styling -->
 
 <!-- Valgte knappers værdier tilføjes til array'et selectedButtons og fjernes ved fravalg -->
 <div x-data="{ selectedButtons: [] }" class:list={[elementStyling]}>
-    <!-- Er beløbet allerede valgt, fjernes det med filter - er det ikke, tilføjes det med push og får en ny styling -->
+    <!-- Er beløbet allerede valgt, fjernes det med filter - er det ikke, tilføjes det med push og får en ny styling med en dynamisk klasse -->
     <button @click="selectedButtons.includes(50) ? selectedButtons = selectedButtons.filter(v => v !== 50) : selectedButtons.push(50)"  :class="selectedButtons.includes(50) ? 'bg-yellow-300 font-semibold' : 'bg-white-cream'" class="outline outline-[1px] outline-black-200 bg-white-cream hover:bg-yellow-300 hover:font-semibold px-5 py-4 rounded-l-lg w-28 md:w-36" id="amount">50 kr.</button>
     <button @click="selectedButtons.includes(75) ? selectedButtons = selectedButtons.filter(v => v !== 75) : selectedButtons.push(75)"  :class="selectedButtons.includes(75) ? 'bg-yellow-300 font-semibold' : 'bg-white-cream'" class="outline outline-[1px] outline-black-200 bg-white-cream hover:bg-yellow-300 hover:font-semibold px-5 py-4 w-28 md:w-36" id="amount2">75 kr.</button>
     <button @click="selectedButtons.includes(100) ? selectedButtons = selectedButtons.filter(v => v !== 100) : selectedButtons.push(100)"  :class="selectedButtons.includes(100) ? 'bg-yellow-300 font-semibold' : 'bg-white-cream'" class="outline outline-[1px] outline-black-200 bg-white-cream hover:bg-yellow-300 hover:font-semibold px-5 py-4 rounded-r-lg w-28 md:w-36" id="amount3">100 kr.</button>

@@ -15,6 +15,6 @@ map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103019.5692817396!2d
 width: "340"
 height: "116"
 ---
-<!-- Definerer metadata med Frontmatter til dynamisk integrering i 'CauseLayout.astro' -->
+<!-- Definerer metadata ovenfor med Frontmatter til dynamisk integrering i 'CauseLayout.astro'. Teksten nedenfor er brødteksten. -->
 
 I fled my home in Syria due to violence and persecution, and now I am living in a refugee camp in Jordan. I need shelter, legal help, and support to rebuild my life in a place where I can feel safe. Your donation can provide me with the essentials I need to start over and begin a new chapter of my life.
